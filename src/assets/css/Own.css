@@ -1,0 +1,86 @@
+.bg-home-cont{
+    background-image:url("../../assets/images/Sites.png");
+  background-size: cover;
+  position: relative;
+  height: 100vh;
+  background-position: center;
+}
+
+.flexbox-container{
+    display:flex;
+    flex-direction: row;
+    width:100%;
+    margin: auto;
+    /* flex-wrap: wrap; */
+    /* we can give anyting here based on mocks */
+    justify-content: space-around;
+    margin-top:25px ;
+    margin-bottom:25px ;
+}
+.item-section{
+    flex-basis:25%;
+        border: 1px solid white;
+        border-radius: 8px 8px 8px 8px;
+        margin:10px 10px;
+        /* box-shadow: 0px 0px 2px 3px lightgrey; */
+      text-align: center;
+      background-color: white;
+      padding: 20px;
+ 
+}
+
+.twosection{
+  background-image:url("../../assets/images/Techno.png");
+  background-size: cover;
+  position: relative;
+  height: 100vh;
+  background-position: center;
+}
+
+
+.ayatanalogo-div{
+  cursor:pointer;
+}
+
+
+@media only screen and (max-width:768px){
+  .ayatanalogo-div{
+    cursor:none;
+  }
+
+}
+@media only screen and (max-width:768px){
+    .bg-home-cont{
+        /* background-image:url("../../assets/images/Sites.png"); */
+        background-image:none;
+      background-size: cover;
+      position: relative;
+      height: 100vh;
+      background-position: center;
+    }
+
+    .flexbox-container{
+        display:flex;
+        flex-direction: column;
+    }
+
+    .twosection{
+      background-image:url("../../assets/images/na.png");
+      /* background-color:#EDF5FF; */
+      /* background-image:none; */
+      /* background-color:yellow; */
+      background-size: cover;
+      position: relative;
+      height: 100vh;
+      /* opacity:0.5; */
+      /* width: 100%; */
+      background-position: 40% 0%;
+      /* background-position: top center; */
+    }
+    .idea {
+      visibility: hidden;
+    }
+
+}
+
+
