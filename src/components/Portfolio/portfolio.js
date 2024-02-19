@@ -12,7 +12,7 @@ import SectionTitle from "../common/section-title";
 
 
 import ayatana from "../../assets/images/Ayatana_logo_final 2 1 (1).png";
-import untact from "../../assets/images/isibisi-removebg-preview.png";
+import untact from "../../assets/images/Frame1.png";
 import Riilearn from "../../assets/images/Untact (2).png";
 import optifarm from "../../assets/images/Optifarm (2).png";
 
@@ -40,6 +40,13 @@ const Portfolio = () => {
     const handleAyatana = () =>{
   
         window.open("https://ayatana.netlify.app/","_blank");
+    
+    }
+
+
+    const handleIsibisi = () =>{
+  
+        window.open("https://isibisi.netlify.app/","_blank");
     
     }
     
@@ -152,7 +159,7 @@ const Portfolio = () => {
 
                                 <Col lg={3} md={4}  className="p-3">
                                     <FadeIn>
-                                        <div className="item-box" style={{border:"1px solid #F0F0F0",borderRadius:"10px",boxShadow:"1px solid #F0F0F0"}}>
+                                        <div className="item-box isibisilogo-div" style={{border:"1px solid #F0F0F0",borderRadius:"10px",boxShadow:"1px solid #F0F0F0"}} onClick={handleIsibisi}>
                                            
                                                 <img className="item-container rounded" src={untact} alt="work-img"  />
                                                 <div className="item-mask">
@@ -172,7 +179,7 @@ const Portfolio = () => {
 
                                 <Col lg={3} md={4}  className="p-3">
                                     <FadeIn>
-                                        <div className="item-box" style={{border:"1px solid #F0F0F0",borderRadius:"10px",boxShadow:"1px solid #F0F0F0"}}   onClick={handleUntact}>
+                                        <div className="item-box untactlogo-div" style={{border:"1px solid #F0F0F0",borderRadius:"10px",boxShadow:"1px solid #F0F0F0"}} onClick={handleUntact}  >
                                            
                                                 <img className="item-container rounded" src={ Riilearn } alt="work-img"  />
                                                 <div className="item-mask">
@@ -192,7 +199,7 @@ const Portfolio = () => {
 
                                 <Col lg={3} md={4}  className="p-3">
                                     <FadeIn>
-                                        <div className="item-box" style={{border:"1px solid #F0F0F0",borderRadius:"10px",boxShadow:"1px solid #F0F0F0"}} onClick={handleOptifarm}>
+                                        <div className="item-box optifarmlogo-div" style={{border:"1px solid #F0F0F0",borderRadius:"10px",boxShadow:"1px solid #F0F0F0"}} onClick={handleOptifarm}>
                                            
                                                 <img className="item-container rounded" src={optifarm} alt="work-img"  />
                                                 <div className="item-mask">

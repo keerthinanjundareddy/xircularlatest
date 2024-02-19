@@ -41,11 +41,34 @@
 .ayatanalogo-div{
   cursor:pointer;
 }
+.isibisilogo-div{
+  cursor:pointer;
 
+}
+.untactlogo-div{
+  cursor:pointer;
+
+}
+.optifarmlogo-div{
+  cursor:pointer;
+
+}
 
 @media only screen and (max-width:768px){
   .ayatanalogo-div{
     cursor:none;
+  }
+  .isibisilogo-div{
+    cursor:none;
+  
+  }
+  .untactlogo-div{
+    cursor:none;
+  
+  }
+  .optifarmlogo-div{
+    cursor:none;
+  
   }
 
 }
