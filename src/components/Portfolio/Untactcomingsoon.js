@@ -20,7 +20,7 @@ function Untactcomingsoon() {
         {/* <div className='newsite-text-div'>OUR NEW SITE IS</div> */}
     <div className='coming-soon-section'>
   
-           <div className='coming-txt'>COMMING SOON</div>
+           <div className='coming-txt'>COMING SOON</div>
            <div className='soon-txt'>we are soon coming live..</div>
          
     </div>
