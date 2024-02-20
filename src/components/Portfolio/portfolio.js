@@ -59,7 +59,7 @@ const Portfolio = () => {
         window.scrollTo(0, 0);
 
         // Navigate to the OptiFarm page
-        navigate(`/Optifarm`);
+        navigate(`/StorefrontX`);
     };
         return (
             <React.Fragment>
@@ -137,7 +137,7 @@ const Portfolio = () => {
                     </Container> */}
 
 
-<div className='row'>
+<div className='row' style={{marginTop:"40px"}}>
 <Col lg={3} md={4}  className="p-3" >
                                     <FadeIn>
                                         <div className="item-box ayatanalogo-div" style={{border:"1px solid #F0F0F0",borderRadius:"10px",boxShadow:"1px solid #F0F0F0"}} onClick={handleAyatana}>
@@ -208,7 +208,7 @@ const Portfolio = () => {
                                                 <div className="item-mask">
                                                     <div className="item-caption">
                                                         <h5 className="f-18">COMING SOON</h5>
-                                                        <div>WE are Soon Coming Live</div>
+                                                        {/* <div>WE are Soon Coming Live</div> */}
                                                       
                                                         {/* <p className="text-primary">subtitle</p> */}
                                                     </div>

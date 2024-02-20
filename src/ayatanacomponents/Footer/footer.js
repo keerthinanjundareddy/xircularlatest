@@ -69,7 +69,7 @@ function Footer(){
  
         return (
             <React.Fragment>
-                <footer className="footer  myownfooter">
+                <footer className="footer bg-lightgray myownfooter">
                     <Container>
                         <Row>
 
@@ -94,7 +94,7 @@ function Footer(){
                               
                                  <div>
                                  <hr className="" />
-                                <p className="copy-rights" style={{textAlign:"center",paddingTop:"5px"}}> 2023 © Copyright Ayatana.All Rights Reserved</p>
+                                <p className="copy-rights" style={{textAlign:"center",paddingTop:"5px"}}> 2024 © Copyright Ayatana.All Rights Reserved</p>
                                 </div>
 
                                 </div>

@@ -4,6 +4,9 @@ import { Container, Row, Col } from "reactstrap";
 import { AvForm, AvField } from "availity-reactstrap-validation";
 import { Animated } from "react-animated-css";
 import axios from 'axios'
+import phone from "../../Ayatanassets/images/Productrecomend.png"
+import map from "../../Ayatanassets/images/Product visual.png"
+import mail from "../../Ayatanassets/images/Product visual.png"
 
 function  GetInTouch() {
 
@@ -157,7 +160,10 @@ function  GetInTouch() {
             <Row className="contact-footer">
               <Col sm="4">
                 <div className="contact-footer-box text-center">
-                  <i className="ti-mobile"></i>
+                  {/* <i className="ti-mobile" ></i> */}
+                  <div style={{width:"10px",height:"10px"}}>
+                  <img src={{}} style={{width:"100%",height:"100%",objectFit:"contain"}} />
+                  </div>
                   <h5>+91 9900565911 </h5>
                 </div>
               </Col>

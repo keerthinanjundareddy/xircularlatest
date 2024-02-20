@@ -75,7 +75,7 @@ const GetInTouch = () => {
    
         return (
             <React.Fragment>
-                <section className="section" id="contact">
+                <section className="section" id="contact"  style={{backgroundColor:"#f0f9fa"}}>
                     <Container>
                     <SectionTitle
                         title="Grow with us"
@@ -132,6 +132,7 @@ const GetInTouch = () => {
                                             <Col lg={12}>
                                                 <FormGroup className="mt-3">
                                                 <AvField
+                                                  style={{backgroundColor:"white"}}
                                                     name="name"
                                                     // id="name"
                                                     type="text"
@@ -152,6 +153,7 @@ const GetInTouch = () => {
                                             <Col lg={6}>
                                                 <FormGroup className="mt-3">
                                                 <AvField
+                                                style={{backgroundColor:"white"}}
                                                     name="email"
                                                     // id="email"
                                                     type="text"
@@ -172,6 +174,7 @@ const GetInTouch = () => {
                                             <Col lg={6}>
                                                 <FormGroup className="mt-3">
                                                 <AvField
+                                                  style={{backgroundColor:"white"}}
                                                     name="number"
                                                     // id="number"
                                                     type="text"
@@ -193,7 +196,7 @@ const GetInTouch = () => {
                                             <Col lg={12}>
                                                 <FormGroup className="mt-3">
                                                     <input type="text" name="comments"  rows="5" className="form-control" placeholder="Your message"  onChange={(e)=>setMessage(e.target.value)}
-                                                    value={message}  required />
+                                                    value={message}   style={{backgroundColor:"white"}} required />
                                                 </FormGroup>
                                             </Col>
                                         </Row>

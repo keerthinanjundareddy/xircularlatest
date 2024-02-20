@@ -760,14 +760,14 @@ p {
 .navbar-custom .navbar-nav li.active a,
 .navbar-custom .navbar-nav li a:hover,
 .navbar-custom .navbar-nav li a:active {
-  color: #ffffff !important;
+  color: aqua !important;
 }
 
 .navbar-toggle {
   font-size: 24px;
   margin-top: 5px;
   margin-bottom: 0px;
-  color: #ffffff;
+  color: aqua;
 }
 
 .nav .open > a,
@@ -782,7 +782,7 @@ p {
   font-size: 18px;
   background: 0 0;
   border: 1px solid transparent;
-  color: #ffffff;
+  color: aqua;
   outline: 0;
 }
 
@@ -809,7 +809,7 @@ p {
 .nav-sticky.navbar-custom {
   margin-top: 0px;
   padding: 15px 0px;
-  background-color: #ffffff;
+  background-color: aqua;
   -webkit-box-shadow: 0 10px 33px rgba(140, 140, 140, 0.1);
           box-shadow: 0 10px 33px rgba(140, 140, 140, 0.1);
 }
@@ -823,13 +823,13 @@ p {
 }
 
 .nav-sticky .navbar-nav li a {
-  color: #343a40 !important;
+  color: aqua !important;
 }
 
 .nav-sticky.navbar-custom .navbar-nav li.active a,
 .nav-sticky.navbar-custom .navbar-nav li a:hover,
 .nav-sticky.navbar-custom .navbar-nav li a:active {
-  color: #f1894c !important;
+  color: aqua !important;
 }
 
 .nav-sticky.navbar-custom .navbar-toggles {
@@ -1475,7 +1475,7 @@ textarea.form-control {
   .navbar-custom .navbar-nav li a {
     -webkit-transition: all 0.4s;
     transition: all 0.4s;
-    color: #343a40 !important;
+    color: aqua!important;
     margin: 0px;
   }
   .navbar-custom > .container {
@@ -1484,7 +1484,7 @@ textarea.form-control {
   .navbar-custom .navbar-nav li.active a,
   .navbar-custom .navbar-nav li a:hover,
   .navbar-custom .navbar-nav li a:active {
-    color: #f1894c !important;
+    color: aqua!important;
   }
   .navbar-toggler {
     font-size: 24px;

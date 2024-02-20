@@ -25,7 +25,7 @@ class About extends Component {
     render() {
         return (
             <React.Fragment>
-                <section className="section " id="about">
+                <section className="sections " id="about">
                     {/* <Container>
                         <SectionTitle
                             title="About Agency"

@@ -27,7 +27,7 @@ function Footer() {
   
   return (
     <>
-      <footer className="footersection  ">
+      <footer className="footersection " style={{backgroundColor:"#f0f9fa"}}>
         <Container>
           <div className='footersection'>
             <div>

@@ -8,7 +8,7 @@ class Cta extends Component {
     render() {
         return (
             <React.Fragment>
-            <section className="section "  id="cta">
+            <section className="section"  id="cta">
             <Container>
 
 <Container style={{fontSize:"18px"}}>

@@ -110,7 +110,7 @@ class Index1 extends Component {
                
                     {/* <OurTeam/> */}
                     {/* Importing contact */}
-                    <Contact/>
+                    {/* <Contact/> */}
 
                       
 

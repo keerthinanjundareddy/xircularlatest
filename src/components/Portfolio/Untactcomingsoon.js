@@ -25,6 +25,7 @@ function Untactcomingsoon() {
          
     </div>
     <div>
+      
             <div className='back-to-home-btn' onClick={handleback} >Back to home</div>
            </div>
     </div>

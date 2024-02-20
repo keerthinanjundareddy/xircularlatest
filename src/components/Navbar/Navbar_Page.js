@@ -38,7 +38,7 @@ class NavbarPage extends Component {
             });
         return (
             <React.Fragment>
-                            <Navbar expand="lg" fixed="top" className={"navbar-custom sticky sticky-dark  " + this.props.navClass}>
+                            <Navbar expand="lg" fixed="top" className={"navbar-custom sticky sticky-dark  " + this.props.navClass} >
                                 <Container>
                                         <NavbarBrand className="logo text-uppercase" href="/">
                                             {

@@ -18,7 +18,7 @@ const routes = [
   // { path: "/index3", component: Index3 },
   { path: "/", component: Index2 },
   {path:"/Untact",component: Untactcomingsoon},
-  {path:"/Optifarm",component:Optifarmcomingupsoon},
+  {path:"/StorefrontX",component:Optifarmcomingupsoon},
  {path:"/Isibisi",component:Layout1},
  {path:"/Ayatana",component:Index1}
   // { path: "/index2", component: Index1},

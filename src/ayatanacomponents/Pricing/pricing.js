@@ -19,6 +19,7 @@ import three from "../../Ayatanassets/images/Carosel 14 (3).png";
 import { useNavigate } from 'react-router-dom';
 // import shopify_logo from '../assets/images/Group.png'
 import home from '../../Ayatanassets/images/home.png'
+import phone from '../../Ayatanassets/images/phone.png'
 import ayatanalogo from '../../Ayatanassets/images/Ayatana_logo_final_cropped.png'
 function Pricing(){
   const [scrolled, setScrolled] = useState(false);
@@ -52,20 +53,48 @@ function Pricing(){
     navigate(`/`);
 
   };
+  const handlebackClicktwo = () => {
+    // window.location.href = "/readmore";
+
+    // window.alert("clciked")
+
+
+    // Navigate to the "/readmore" path with additional details based on cardId
+    window.scrollTo(0, document.body.scrollHeight);
+    navigate(`/`);
+
+  };
     
         return (
             <React.Fragment>
-              <div className={`Ayatana-header-section ${scrolled ? 'scrolled' : ''}`} style={{ zIndex: '100' }}>
+               <div className={`header-section ${scrolled ? 'scrolled' : ''}`} style={{ zIndex: '100' }}>
           <div style={{ width: '100px', height: '80px', cursor: 'pointer' }} onClick={handlebackClick}>
-            <img src={ayatanalogo} style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+            <img src={ ayatanalogo } style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
           </div>
-          <div className='back-btn' onClick={handlebackClick}>
+
+        
+          <div  >
+         
+
+          <div className='back-btn' style={{textAlign:"center"}}  onClick={handlebackClicktwo}>
+          <div>
+              <img src={phone } style={{ width: '40px', height: '25px', objectFit: 'contain',paddingLeft:"5px",paddingBottom:"4px"}} />
+            </div>
+          
+            <div style={{paddingRight:"20px",paddingLeft:"5px"}} className='home-heading'>
+           contact us
+            </div>
+          </div>
+
+          <div className='back-btn' style={{marginTop:"10px"}} onClick={handlebackClick}>
             <div>
               <img src={home } style={{ width: '40px', height: '25px', objectFit: 'contain',paddingLeft:"5px",paddingBottom:"4px"}} />
             </div>
-            <div style={{paddingRight:"20px"}} className='home-heading'>
+          
+            <div style={{paddingRight:"20px",paddingLeft:"5px"}} className='home-heading'>
             Home
             </div>
+          </div>
           </div>
         </div>
     <section className="section-five" id="pricing" style={{marginTop:"50px"}} >

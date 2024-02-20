@@ -7,6 +7,7 @@ import HomeUrl from '../../isibisiassets/images/home-border.png'
 import isibisilogo from '../../isibisiassets/Userimages/isibisi-removebg-preview.png'
 import home from '../../isibisiassets/Userimages/home.png'
 import { useNavigate } from 'react-router-dom';
+import phone from '../../Ayatanassets/images/phone.png'
 
 const Section = () => {
   const [isVideoOpen, setIsVideoOpen] = useState(false);
@@ -65,22 +66,52 @@ const Section = () => {
     navigate(`/`);
 
   };
+  const handlebackClicktwo = () => {
+    // window.location.href = "/readmore";
+
+    // window.alert("clciked")
+
+
+    // Navigate to the "/readmore" path with additional details based on cardId
+    window.scrollTo(0, document.body.scrollHeight);
+    navigate(`/`);
+
+  };
 
   return (
     <React.Fragment>
+    
     <div className={`header-section ${scrolled ? 'scrolled' : ''}`} style={{ zIndex: '100' }}>
           <div style={{ width: '100px', height: '80px', cursor: 'pointer' }} onClick={handlebackClick}>
             <img src={isibisilogo} style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
           </div>
-          <div className='back-btn' onClick={handlebackClick}>
+
+        
+          <div  >
+         
+
+          <div className='back-btn' style={{textAlign:"center"}}  onClick={handlebackClicktwo}>
+          <div>
+              <img src={phone } style={{ width: '40px', height: '25px', objectFit: 'contain',paddingLeft:"5px",paddingBottom:"4px"}} />
+            </div>
+          
+            <div style={{paddingRight:"20px",paddingLeft:"5px"}} className='home-heading'>
+           contact us
+            </div>
+          </div>
+
+          <div className='back-btn' style={{marginTop:"10px"}} onClick={handlebackClick}>
             <div>
               <img src={home } style={{ width: '40px', height: '25px', objectFit: 'contain',paddingLeft:"5px",paddingBottom:"4px"}} />
             </div>
-            <div style={{paddingRight:"20px"}} className='home-heading'>
+          
+            <div style={{paddingRight:"20px",paddingLeft:"5px"}} className='home-heading'>
             Home
             </div>
           </div>
+          </div>
         </div>
+
       <section className="" id="home" style={{position:"relative",paddingTop:"100px",paddingBottom:"100px",backgroundColor:"#f0f9fa"}} >
         <div className="home-center">
           <div className="home-desc-center">

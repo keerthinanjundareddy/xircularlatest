@@ -209,7 +209,7 @@ padding-left: 30px;
 
 .faq-top-section{
     margin-top: 0px;
-    background-color: #FFFFFF;
+    background-color: #F0F9FA;;
     
     padding-top: 50px;
     padding-left: 50px;
@@ -343,15 +343,15 @@ margin-bottom: 50px !important;
     justify-content: space-between;
     padding: 10px;
     cursor: pointer;
-    background-color: #f5f8f8;
+    background-color: #ffffff;
 
     color:black;
    
     font-weight: 600;
     padding-left: 20px;
-    margin-top: 5px;
+    margin-top: 10px;
    
-    box-shadow: 1px 1px 0px 1px  rgba(0, 0, 0, 0.1);
+    box-shadow: 1px 1px 0px 1px  #ffffff;
 
   
   }
@@ -376,11 +376,11 @@ margin-bottom: 50px !important;
   
   .accordions-answers {
     padding: 10px;
-    background-color:   #f5f8f8;
+    background-color:   #ffffff;
     /* box-shadow: 1px 1px 0px 1px  rgba(0, 0, 0, 0.1); */
-    box-shadow: 1px 1px 0px 1px  rgba(0, 0, 0, 0.1);
-    color:black;
-    font-weight:100;
+    box-shadow: 1px 1px 0px 1px #ffffff;
+    color:black ;
+    /* font-weight:100; */
    border-top: none;
    padding-left: 20px;
    /* border-radius: 50px; */
@@ -693,7 +693,7 @@ margin-bottom: 50px !important;
     left:50%;
   transform: translateX(-50%);
     position: relative;
-    width:140px;
+    width:110px;
       height:15\30px;
       border:1px solid  #F0F9FA;;
       border-radius:50%;

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 
 // Importing Section
-import Navbar from "../../component/Navbar/NavBar";
+// import Navbar from "../../component/Navbar/NavBar";
 
 import Section from "./Section";
 import Services from "../../component/Services";
@@ -75,7 +75,7 @@ class Layout1 extends Component {
           <Clients />
 
           {/* Importing Contact Us */}
-          <Contact />
+          {/* <Contact /> */}
 
           {/* Importing Footer */}
           <Footer />

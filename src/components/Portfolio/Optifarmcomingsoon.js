@@ -23,6 +23,26 @@ import seo from  '../../assets/images/Userimages/Icon_search-analysis-seo.png'
 import additionalofferings from '../../assets/images/Userimages/Immersive Product experience.png'
 import support from '../../assets/images/Userimages/icon_chatbot,-chat-bot,-assistant,-chat,-laptop-07.png'
 import tickMarkWhite from '../../assets/images/Userimages/tickMarkWhite.png'
+import phone from '../../Ayatanassets/images/phone.png'
+
+
+import { Container, Row, Col } from "reactstrap";
+
+//Import Logo
+// import logo from "../../assets/images/logo.png";
+
+//Import Footer link
+// import FooterLinks from "./footer-links";
+// import LinkSection from "./link-section";
+
+import '../../Ayatanassets/css/AyatanaOwn.css'
+
+import imagetwo from '../../assets/images/Userimages/Vector (3).png';
+import facebookone from '../../Ayatanassets/images/instafinals (4).png';
+import instaone from '../../Ayatanassets/images/instafinals (1).png';
+import twitterone from '../../Ayatanassets/images/instafinals (3).png';
+import linkedinone from '../../Ayatanassets/images/instafinals (2).png';
+import youtube from '../../Ayatanassets/images/black-and-white-youtube-icon 1.png';
 
 
 function Optifarmcomingsoon() {
@@ -239,6 +259,17 @@ function Optifarmcomingsoon() {
     navigate(`/`);
 
   };
+  const handlebackClicktwo = () => {
+    // window.location.href = "/readmore";
+
+    // window.alert("clciked")
+
+
+    // Navigate to the "/readmore" path with additional details based on cardId
+    window.scrollTo(0, document.body.scrollHeight);
+    navigate(`/`);
+
+  };
 
   return (
     <>
@@ -247,13 +278,30 @@ function Optifarmcomingsoon() {
           <div style={{ width: '100px', height: '80px', cursor: 'pointer' }} onClick={handlebackClick}>
             <img src={isibisilogo} style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
           </div>
-          <div className='back-btn' onClick={handlebackClick}>
+
+        
+          <div  >
+         
+
+          <div className='back-btn' style={{textAlign:"center"}}  onClick={handlebackClicktwo}>
+          <div>
+              <img src={phone } style={{ width: '40px', height: '25px', objectFit: 'contain',paddingLeft:"5px",paddingBottom:"4px"}} />
+            </div>
+          
+            <div style={{paddingRight:"20px",paddingLeft:"5px"}} className='home-heading'>
+           contact us
+            </div>
+          </div>
+
+          <div className='back-btn' style={{marginTop:"10px"}} onClick={handlebackClick}>
             <div>
               <img src={home } style={{ width: '40px', height: '25px', objectFit: 'contain',paddingLeft:"5px",paddingBottom:"4px"}} />
             </div>
-            <div style={{paddingRight:"20px"}} className='home-heading'>
+          
+            <div style={{paddingRight:"20px",paddingLeft:"5px"}} className='home-heading'>
             Home
             </div>
+          </div>
           </div>
         </div>
 
@@ -377,13 +425,13 @@ function Optifarmcomingsoon() {
 
 
       {/* start of team section */}
-
+{/* 
       <div className='description-container'>
           <div className='theteam-heading'><b>the team</b></div>
           <div className="card-containers-team">
       {dataArray.map((data, index) => (
         <div key={index} className='card-team-div' >
-          {/* <div >{data.title}</div> */}
+         
           <div className='teamdiv-section-flexbox'>
             <div className='team-images-container-div'>
               <div><img src= {imageone} style={{borderRadius:"50%",width:"100%",height:"100%",objectFit:"contain"}} /></div>
@@ -394,13 +442,13 @@ function Optifarmcomingsoon() {
        <div  className="team-div-data-experince">{data.experience}</div>
        <div className='team-linkedin-images' ><img src={data.linkedinicons} style={{width:"100%",height:"100%",objectFit:"contain"}}/></div>
        </div>
-          {/* <div className='title-section-team'>{data.content}</div> */}
+  
   </div>
   </div>
        
       ))}
     </div>
-        </div>
+        </div> */}
         {/* end of teaam section  */}
 
         <div className='faq-top-section'>
@@ -413,7 +461,7 @@ function Optifarmcomingsoon() {
                   <span className="arrow">{index === openIndex ? '▲' : '▼'}</span>
                 </div>
                 {index === openIndex && (
-                  <div className="accordions-answers">
+                  <div className="accordions-answers" style={{color:"grey"}}>
                     {item.answer}
                   </div>
                 )}
@@ -424,7 +472,65 @@ function Optifarmcomingsoon() {
 
       </div>
       <div className='footer-top-section'>
-        {/* <Footer style={{ paddingTop: "0px" }} /> */}
+       
+      <footer className="footer  myownfooter">
+                    <Container>
+                        <Row>
+
+                            {/* <Col md="4" sm="12"> */}
+                                {/* <img src={logo} alt="logo" height="24" /> */}
+                                {/* <div style={{color:"black",fontSize:"20px"}}>Ayatana</div> */}
+
+                                <div className="full-footer-cont">
+                               
+                               <div className='footer-flex-box-container'>
+                               <div>
+                                <img src={ imagetwo }  style={{width:"180px",height:"120px"}} />
+                                </div>
+                                <div className='footer-image-container'>
+                                <img src={ facebookone } width={30} height={30} className="facebook-section"  />
+                                <img src={ instaone } width={30} height={30} className="facebook-section"  />
+                                <img src={ linkedinone }  width={30} height={30} className="facebook-section"  />
+                                <img src={ twitterone }  width={30} height={30} className="facebook-section"   />
+                                <img src={ youtube }  width={30} height={30} className="facebook-section"  />
+                                </div>
+                                </div>
+                              
+                                 <div>
+                                 <hr className="" />
+                                <p className="copy-rights" style={{textAlign:"center",paddingTop:"5px"}}> 2024 © Copyright StorefrontX.All Rights Reserved</p>
+                                </div>
+
+                                </div>
+                                
+                                {/* <p className="margin-t-20">The digital marketing platform that connects small businesses with their target audience.</p> */}
+
+                                {/* <ul className="list-inline social">
+                                    {
+                                        this.state.socials.map((social, key) =>
+                                            <li key={key} className="list-inline-item">
+                                                <Link to={social.link} className={social.class + " mr-1"}><i className={social.icon}></i></Link>
+                                            </li>
+                                        )
+                                    }
+                                </ul> */}
+                            {/* </Col> */}
+
+                            {/* <Col md={{size:3, offset : 2}} sm="6">
+                                <LinkSection title="Solutions" links={this.state.links1} />
+                            </Col> */}
+
+                            {/* <Col md="6" sm="6"> */}
+                               {/* Discover Phygital Santhe Website Here */}
+                                 {/* <button style={{ border:"none",outline:"none",border:"1px solid #f56363",backgroundColor:"#f56363",borderRadius:"20px",color:"white",width:"300px",height:"40px"}}><a href="https://incomparable-hamster-92fd22.netlify.app/"  target="_blank" style={{color:"white"}}><b>EXPLORE PHYGITAL</b></a></button> */}
+                            {/* <LinkSection title="Useful Links" links={this.state.links2}  /> */}
+                            {/* </Col> */}
+
+                        </Row>
+
+                    </Container>
+                </footer>
+       
       </div>
 
     </>
