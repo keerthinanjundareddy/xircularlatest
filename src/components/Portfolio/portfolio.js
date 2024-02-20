@@ -14,7 +14,7 @@ import SectionTitle from "../common/section-title";
 import ayatana from "../../assets/images/Ayatana_logo_final 2 1 (1).png";
 import untact from "../../assets/images/Frame1.png";
 import Riilearn from "../../assets/images/Untact (2).png";
-import optifarm from "../../assets/images/Optifarm (2).png";
+import optifarm from "../../assets/images/Vector (3).png";
 
 //Import Images
 import work1 from "../../assets/images/portfolio/img-1.jpg";
@@ -39,10 +39,10 @@ const Portfolio = () => {
 
     const handleAyatana = () =>{
   
-        window.open("https://ayatana.netlify.app/","_blank");
+        window.scrollTo(0, 0);
+       navigate(`/Ayatana`)
     
     }
-
 
     const handleIsibisi = () =>{
         window.scrollTo(0, 0);

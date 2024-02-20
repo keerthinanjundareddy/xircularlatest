@@ -88,7 +88,7 @@ const GetInTouch = () => {
                                     <div style={{backgroundImage: `url(${map})`, backgroundRepeat : "no-repeat"}} >
 
                                         <Media>
-                                            <i className="mdi mdi-map-marker text-primary h4"></i>
+                                            <i className="mdi mdi-map-marker  h4" style={{color:"#f1894c"}}></i>
                                             <Media body className=" ml-4">
                                                 <p className="text-muted">No 18'Chuncha',2nd floor,9th main road,
                                                     <br/>2nd block,jaynagara,bangalore 560011</p>
@@ -96,7 +96,7 @@ const GetInTouch = () => {
                                         </Media>
 
                                         <Media className="mt-4">
-                                            <i className="mdi mdi-phone text-primary h4"></i>
+                                            <i className="mdi mdi-phone h4" style={{color:"#f1894c"}}></i>
                                             <Media body className="ml-4">
                                                 <p className="text-muted">Phone: +91 9845116925</p>
                                                     {/* <br/>Fax: +954-627-9727</p> */}
@@ -104,7 +104,7 @@ const GetInTouch = () => {
                                         </Media>
 
                                         <Media className="media mt-4">
-                                            <i className="mdi mdi-calendar-clock text-primary h4"></i>
+                                            <i className="mdi mdi-calendar-clock h4" style={{color:"#f1894c"}}></i>
                                             <Media body className="ml-4">
                                                 <p className="text-muted">Monday-friday: 9.00-18.00
                                                     <br/>Saturday-Sunday: Holiday</p>
@@ -112,7 +112,7 @@ const GetInTouch = () => {
                                         </Media>
 
                                         <Media className="media mt-4">
-                                            <i className="mdi mdi-email text-primary h4"></i>
+                                            <i className="mdi mdi-email h4" style={{color:"#f1894c"}}></i>
                                             <Media body className="ml-4">
                                                 <p className="text-muted">Email:naghma@xircular.io</p>
                                             </Media>

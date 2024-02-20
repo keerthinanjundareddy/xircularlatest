@@ -69,7 +69,7 @@ const Section = () => {
   return (
     <React.Fragment>
     <div className={`header-section ${scrolled ? 'scrolled' : ''}`} style={{ zIndex: '100' }}>
-          <div style={{ width: '100px', height: '40px', cursor: 'pointer' }} onClick={handlebackClick}>
+          <div style={{ width: '100px', height: '80px', cursor: 'pointer' }} onClick={handlebackClick}>
             <img src={isibisilogo} style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
           </div>
           <div className='back-btn' onClick={handlebackClick}>

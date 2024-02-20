@@ -3,7 +3,7 @@ import './Shopify.css'
 import imageone from '../assets/images/users/img-1.jpg'
 // import logo from '../assets/Userimages/shopifyimage.png'
 import Footer from './Footer/Footer'
-import isibisilogo from '../assets/Userimages/isibisi-removebg-preview.png'
+import isibisilogo from '../assets/Userimages/Vector (3).png'
 // import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 // import Accordion from "@material-ui/core/Accordion";
 // import AccordionDetails from "@material-ui/core/AccordionDetails";

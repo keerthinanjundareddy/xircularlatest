@@ -1,6 +1,7 @@
-import Index1 from "./pages/Index1/Index1";
+// import Index1 from "./pages/Index1/Index1";
 import Untactcomingsoon from "./components/Portfolio/Untactcomingsoon";
 import Optifarmcomingupsoon from "./components/Portfolio/Optifarmcomingsoon"
+import Index1 from "./ayatanaPages/Ayatanaindex/Index1"
 import Optifarmcomingsoon from "./components/Portfolio/Optifarmcomingsoon";
 import Index2 from "./pages/Index2/Index2";
 import Index3 from "./pages/Index3/Index3";
@@ -19,6 +20,7 @@ const routes = [
   {path:"/Untact",component: Untactcomingsoon},
   {path:"/Optifarm",component:Optifarmcomingupsoon},
  {path:"/Isibisi",component:Layout1},
+ {path:"/Ayatana",component:Index1}
   // { path: "/index2", component: Index1},
 ];
 
