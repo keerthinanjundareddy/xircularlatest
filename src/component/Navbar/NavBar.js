@@ -83,7 +83,7 @@ const NavbarPage = (props) => {
 
     return (
       <NavbarBrand className="navbar-brand logo text-uppercase" href="/">
-        <div style={{ width: "200px", height: "60px" }}>
+        <div style={{ width: "200px", height: "100px" }}>
           <img
             src={logoSource}
             alt={filename}
@@ -115,14 +115,14 @@ const NavbarPage = (props) => {
             isOpen={isOpenMenu}
             className="navbar-collapse"
           >
-            {/* <ScrollspyNav
+            <ScrollspyNav
               scrollTargetIds={targetId}
               scrollDuration="800"
               headerBackground="true"
               activeNavClass="active"
               className="navbar-collapse"
-            > */}
-              {/* <Nav className="navbar-nav ml-auto navbar-center" id="navbar-navlist">
+            >
+              <Nav className="navbar-nav ml-auto navbar-center" id="navbar-navlist">
                 {navItems.map((item, key) => (
                   <NavItem key={key}>
                     <NavLink
@@ -136,13 +136,13 @@ const NavbarPage = (props) => {
                    
                   </NavItem>
                   
-                ))} */}
-                 {/* <div className="shopify-text-heading" onClick={handleMoreClick}>Shopify</div> */}
-              {/* </Nav> */}
+                ))}
+                 <div className="shopify-text-heading" onClick={handleMoreClick}>Shopify</div>
+              </Nav>
 
 
              
-            {/* </ScrollspyNav> */}
+            </ScrollspyNav>
           </Collapse>
          
         </Container>

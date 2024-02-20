@@ -32,30 +32,30 @@ const Contact = () => {
                   <Row>
                     <Col lg={6}>
                       <FormGroup className="mt-3">
-                        <Label className="contact-lable">First Name</Label>
-                        <Input name="name" id="name" className="form-control" type="text" />
+                        <Label className="contact-lable" style={{color:"black"}}>First Name</Label>
+                        <Input name="name" id="name" className="form-control" type="text"  style={{backgroundColor:"#FFFFFF"}}/>
                       </FormGroup>
                     </Col>
                     <Col lg={6}>
                       <FormGroup className="mt-3">
-                        <Label className="contact-lable">Last Name</Label>
-                        <Input name="name" id="lastname" className="form-control" type="text" />
+                        <Label className="contact-lable" style={{color:"black"}}>Last Name</Label>
+                        <Input name="name" id="lastname" className="form-control" type="text" style={{backgroundColor:"#FFFFFF"}} />
                       </FormGroup>
                     </Col>
                   </Row>
                   <Row>
                     <Col lg={12}>
                       <FormGroup className="mt-3">
-                        <Label className="contact-lable">Email Address</Label>
-                        <Input name="email" id="email" className="form-control" type="text" />
+                        <Label className="contact-lable" style={{color:"black"}}>Email Address</Label>
+                        <Input name="email" id="email" className="form-control" type="text" style={{backgroundColor:"#FFFFFF"}} />
                       </FormGroup>
                     </Col>
                   </Row>
                   <Row>
                     <Col lg={12}>
                       <FormGroup className="mt-3">
-                        <Label className="contact-lable">Your Message</Label>
-                        <Input type="textarea" name="comments" id="comments" rows="5" className="form-control" />
+                        <Label className="contact-lable" style={{color:"black"}}>Your Message</Label>
+                        <Input type="textarea" name="comments" id="comments" rows="5" className="form-control" style={{backgroundColor:"#FFFFFF"}}/>
                       </FormGroup>
                     </Col>
                   </Row>
@@ -65,10 +65,10 @@ const Contact = () => {
                         id="submit"
                         name="send"
                         color="primary"
-                        className="submitBnt btn btn-primary btn-round"
+                        className="submitBnt btn btn-round"
                         value="Send Message"
                         type="submit"
-                        style={{ width: 'auto', color: '#fff' }}
+                        style={{ width: 'auto', color: '#fff',backgroundColor:"#1eA591" }}
                       />{' '}
                       <div id="simple-msg"></div>
                     </Col>

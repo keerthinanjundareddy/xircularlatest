@@ -61,11 +61,11 @@ const Services = () => {
                 {offer.WebsiteofferBrandStrategycard && offer.WebsiteofferBrandStrategycard.map((card) => (
                   <Col lg={4} key={card.id} style={{display:"flex",flexWrap:"wrap"}}>
                     
-                    <div className="services-box p-4 mt-4" style={{ minHeight: "20px",minWidth: "100px", width: "100%" }}>
+                    <div className="services-box p-4 mt-4" style={{ minHeight: "20px",minWidth: "100px", width: "100%",boxShadow:"0 5px 30px -10px #0000001a"}}>
                      
                     
                       {card.Icon && 
-                       <div className="services-icons bg-soft-primary" style={{width:"80px",height:"80px",textAlign:"center"}}>
+                       <div className="services-icons " style={{width:"80px",height:"80px",textAlign:"center",backgroundColor:"#E8F6F5"}}>
                       <div style={{ width: "100%", height: "100%",textAlign:"center",objectFit:"contain"}}>
                         {/* src={`${baseUrl}${socialMedia.socialMediaImage.url}`} */}
                            <img src={card.Icon.url}  alt={card.AlternativeTextOfIcon || "Icon"} style={{ width:"100%",height:"100%",objectFit:"contain",padding:"10px",color:"white" }} />
@@ -120,8 +120,8 @@ const Services = () => {
       </Row>
       <Row>
         {MarketingOffer.WebsiteoffersDigitalMarketingCard && MarketingOffer.WebsiteoffersDigitalMarketingCard.map((card) => (
-          <Col lg={4} key={card.id} style={{ display: "flex", flexWrap: "wrap" }}>
-            <div className="services-box p-4 mt-4" style={{ minHeight: "20px", minWidth: "100px", width: "100%" }}>
+          <Col lg={4} key={card.id} style={{ display: "flex", flexWrap: "wrap",}}>
+            <div className="services-box p-4 mt-4" style={{ minHeight: "20px", minWidth: "100px", width: "100%",boxShadow:"0 5px 30px -10px #0000001a"}}>
             
                 {card.images && (
                     // <div className="services-icons  bg-soft-primary" style={{ width: "100%", height: "200px" }}>

@@ -45,8 +45,8 @@ const Portfolio = () => {
 
 
     const handleIsibisi = () =>{
-  
-       navigate('/ayatana')
+        window.scrollTo(0, 0);
+       navigate(`/Isibisi`)
     
     }
     
@@ -186,13 +186,13 @@ const Portfolio = () => {
                                                 <img className="item-container rounded" src={optifarm} alt="work-img"  />
                                                 <div className="item-mask">
                                                     <div className="item-caption">
-                                                        <h5 className="f-18">OptiFarm</h5>
+                                                        <h5 className="f-18">StorefrontX</h5>
                                                         {/* <p className="text-primary">subtitle</p> */}
                                                     </div>
                                                 </div>
                                           
                                         </div>
-                                        <h5 style={{textAlign:"center",marginTop:"10px",color:"#888888"}}>OptiFarm</h5>
+                                        <h5 style={{textAlign:"center",marginTop:"10px",color:"#888888"}}>StorefrontX</h5>
                                         <div style={{textAlign:"center"}}>
                                         {/* <a href="" >Explore here</a> */}
                                         </div>

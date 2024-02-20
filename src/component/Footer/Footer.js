@@ -27,7 +27,7 @@ function Footer() {
   
   return (
     <>
-      <footer className="footersection bottom bg-footer ">
+      <footer className="footersection  ">
         <Container>
           <div className='footersection'>
             <div>

@@ -4,6 +4,9 @@ import axios from 'axios';
 import '../../isibisiassets/css/Own.css'
 // import HomeUrl from '../../assets/images/home-border.png';
 import HomeUrl from '../../isibisiassets/images/home-border.png'
+import isibisilogo from '../../isibisiassets/Userimages/isibisi-removebg-preview.png'
+import home from '../../isibisiassets/Userimages/home.png'
+import { useNavigate } from 'react-router-dom';
 
 const Section = () => {
   const [isVideoOpen, setIsVideoOpen] = useState(false);
@@ -16,6 +19,8 @@ const Section = () => {
   const closeVideo = () => {
     setIsVideoOpen(false);
   };
+
+  const [scrolled, setScrolled] = useState(false);
 
   const baseUrl = 'https://strapi.ayatana.world';
   // const baseUrltwo='http://localhost:4000'
@@ -30,9 +35,52 @@ const Section = () => {
     });
   }, []);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      // Set a threshold value based on your design
+      const threshold = 50;
+
+      // Update the state based on scroll position
+      setScrolled(scrollY > threshold);
+    };
+    // Attach the event listener
+    window.addEventListener('scroll', handleScroll);
+
+    // Clean up the event listener when the component is unmounted
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+
+  const navigate = useNavigate();
+  const handlebackClick = () => {
+    // window.location.href = "/readmore";
+
+    // window.alert("clciked")
+
+
+    // Navigate to the "/readmore" path with additional details based on cardId
+    navigate(`/`);
+
+  };
+
   return (
     <React.Fragment>
-    
+    <div className={`header-section ${scrolled ? 'scrolled' : ''}`} style={{ zIndex: '100' }}>
+          <div style={{ width: '100px', height: '40px', cursor: 'pointer' }} onClick={handlebackClick}>
+            <img src={isibisilogo} style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
+          </div>
+          <div className='back-btn' onClick={handlebackClick}>
+            <div>
+              <img src={home } style={{ width: '40px', height: '25px', objectFit: 'contain',paddingLeft:"5px",paddingBottom:"4px"}} />
+            </div>
+            <div style={{paddingRight:"20px"}} className='home-heading'>
+            Home
+            </div>
+          </div>
+        </div>
       <section className="" id="home" style={{position:"relative",paddingTop:"100px",paddingBottom:"100px",backgroundColor:"#f0f9fa"}} >
         <div className="home-center">
           <div className="home-desc-center">

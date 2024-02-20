@@ -51,12 +51,13 @@ class Layout1 extends Component {
     return (
       <React.Fragment>
           {/* Importing Navbar */}
-          <Navbar
+          {/* <Navbar
             navItems={this.state.navItems}
             navClass={this.state.navClass}
             imglight={this.state.imglight}
             top={this.state.fixTop}
-          />
+          /> */}
+          
 
           {/* Importing Section */}
           <Section />
