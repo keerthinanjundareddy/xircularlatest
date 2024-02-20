@@ -78,11 +78,11 @@ class Pricing extends Component {
                         </Row> */}
                     </Container>
 
-                     <div className="flexbox-container" >
+                     <div className="xircular-flexbox-container" >
                             {/* <AboutBox data={this.state.data} /> */}
                             {/* <PricingBox pricings={this.state.data} /> */}
                       {     this.state.data.map((data, key) =>{
-                            return( <div className='item-section' key={key}  >
+                            return( <div className='xircular-item-section' key={key}  >
                             {/* <div className={data.isLight === true ? " box-shadow rounded text-center mt-4" : "  box-shadow rounded text-center mt-4"}  > */}
                                 <i className={data.icon + " text-primary"}><img src={data.icon} alt="money-icon" style={{width:"50px"}} /></i>
                                 {/* <img>{data.icon}</div> */}

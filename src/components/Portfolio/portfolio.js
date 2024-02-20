@@ -46,20 +46,21 @@ const Portfolio = () => {
 
     const handleIsibisi = () =>{
   
-        window.open("https://isibisi.netlify.app/","_blank");
+       navigate('/ayatana')
     
     }
     
 
-    const handleUntact = () => {
-      navigate(`/Untact`);
-       };
+ 
 
 
-       const handleOptifarm = () => {
+    const handleOptifarm = () => {
+        // Scroll to the top of the page
+        window.scrollTo(0, 0);
+
+        // Navigate to the OptiFarm page
         navigate(`/Optifarm`);
-         };
-
+    };
         return (
             <React.Fragment>
                 <section className="section" id="portfolio">
@@ -177,25 +178,6 @@ const Portfolio = () => {
                                     </FadeIn>
                                 </Col>
 
-                                <Col lg={3} md={4}  className="p-3">
-                                    <FadeIn>
-                                        <div className="item-box untactlogo-div" style={{border:"1px solid #F0F0F0",borderRadius:"10px",boxShadow:"1px solid #F0F0F0"}} onClick={handleUntact}  >
-                                           
-                                                <img className="item-container rounded" src={ Riilearn } alt="work-img"  />
-                                                <div className="item-mask">
-                                                    <div className="item-caption">
-                                                        <h5 className="f-18">Untact</h5>
-                                                        {/* <p className="text-primary">subtitle</p> */}
-                                                    </div>
-                                                </div>
-                                          
-                                        </div>
-                                        <h5 style={{textAlign:"center",marginTop:"10px",color:"#888888"}}>Untact</h5>
-                                        <div style={{textAlign:"center"}}>
-                                        {/* <a href="" >Explore here</a> */}
-                                        </div>
-                                    </FadeIn>
-                                </Col>
 
                                 <Col lg={3} md={4}  className="p-3">
                                     <FadeIn>
@@ -216,6 +198,31 @@ const Portfolio = () => {
                                         </div>
                                     </FadeIn>
                                 </Col>
+
+
+                                <Col lg={3} md={4}  className="p-3">
+                                    <FadeIn>
+                                        <div className="item-box untactlogo-div" style={{border:"1px solid #F0F0F0",borderRadius:"10px",boxShadow:"1px solid #F0F0F0"}}  >
+                                           
+                                                <img className="item-container rounded" src={ Riilearn } alt="work-img"  />
+                                                <div className="item-mask">
+                                                    <div className="item-caption">
+                                                        <h5 className="f-18">COMING SOON</h5>
+                                                        <div>WE are Soon Coming Live</div>
+                                                      
+                                                        {/* <p className="text-primary">subtitle</p> */}
+                                                    </div>
+                                                </div>
+                                          
+                                        </div>
+                                        <h5 style={{textAlign:"center",marginTop:"10px",color:"#888888"}}>Untact</h5>
+                                        <div style={{textAlign:"center"}}>
+                                        {/* <a href="" >Explore here</a> */}
+                                        </div>
+                                    </FadeIn>
+                                </Col>
+
+                               
 
                                 </div>
 

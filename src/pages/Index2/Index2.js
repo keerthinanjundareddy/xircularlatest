@@ -24,7 +24,7 @@ class Index2 extends Component {
                 { id: 2 , idnm : "about", navheading: "About" },
                 { id: 3 , idnm : "pricing", navheading: "what we offer" },
                 // { id: 4 , idnm : "team", navheading: "Team" },
-                { id: 4 , idnm : "cta", navheading: "how it works" },
+                { id: 4 , idnm : "cta", navheading: "How we work" },
                 { id: 5 , idnm : "testimonial", navheading: "Investors" },
                 { id: 6 , idnm : "portfolio", navheading: "Portfolio" },
                 { id: 7 , idnm : "contact", navheading: "Contact" },

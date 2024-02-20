@@ -219,11 +219,11 @@ class Clients extends Component {
 
 
 
-    <div className="flexbox-container" >
+    <div className="xircular-flexbox-container" >
                             {/* <AboutBox data={this.state.data} /> */}
                             {/* <PricingBox pricings={this.state.data} /> */}
                       {     this.state.data.map((data, key) =>{
-                            return( <div className='item-section' key={key}  >
+                            return( <div className='xircular-item-section' key={key}  >
                             {/* <div className={data.isLight === true ? "about-box box-shadow rounded text-center mt-4" : "about-box box-shadow rounded text-center mt-4"}  style={{backgroundColor:"white"}} > */}
                                 <i className={data.icon + " text-primary"}><img src={data.icon} alt="money-icon" style={{width:"60px"}} /></i>
                                 {/* <img>{data.icon}</div> */}

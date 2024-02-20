@@ -7,6 +7,7 @@ import Index3 from "./pages/Index3/Index3";
 import Index4 from "./pages/Index4/Index4";
 import Index5 from "./pages/Index5/Index5";
 import Index6 from "./pages/Index6/Index6";
+import Layout1 from "./pages/Layout1/Layout1";
 
 
 const routes = [
@@ -16,7 +17,8 @@ const routes = [
   // { path: "/index3", component: Index3 },
   { path: "/", component: Index2 },
   {path:"/Untact",component: Untactcomingsoon},
-  {path:"/Optifarm",component:Optifarmcomingupsoon}
+  {path:"/Optifarm",component:Optifarmcomingupsoon},
+ {path:"/ayatana",component:Layout1}
   // { path: "/index2", component: Index1},
 ];
 

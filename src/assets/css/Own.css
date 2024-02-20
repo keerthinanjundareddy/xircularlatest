@@ -1,12 +1,12 @@
-.bg-home-cont{
+/* .bg-home-cont{
     background-image:url("../../assets/images/Sites.png");
   background-size: cover;
   position: relative;
   height: 100vh;
   background-position: center;
-}
+} */
 
-.flexbox-container{
+.xircular-flexbox-container{
     display:flex;
     flex-direction: row;
     width:100%;
@@ -17,7 +17,7 @@
     margin-top:25px ;
     margin-bottom:25px ;
 }
-.item-section{
+.xircular-item-section{
     flex-basis:25%;
         border: 1px solid white;
         border-radius: 8px 8px 8px 8px;
@@ -73,16 +73,16 @@
 
 }
 @media only screen and (max-width:768px){
-    .bg-home-cont{
+    /* .bg-home-cont{ */
         /* background-image:url("../../assets/images/Sites.png"); */
-        background-image:none;
-      background-size: cover;
-      position: relative;
-      height: 100vh;
-      background-position: center;
-    }
+        /* background-image:none; */
+      /* background-size: cover; */
+      /* position: relative; */
+      /* height: 100vh; */
+      /* background-position: center; */
+    /* } */
 
-    .flexbox-container{
+    .xircular-flexbox-container{
         display:flex;
         flex-direction: column;
     }
