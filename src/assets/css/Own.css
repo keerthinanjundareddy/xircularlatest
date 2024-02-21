@@ -151,9 +151,6 @@
   color:violet !important;
 } */
 
-.portfolio-item:hover{
-  background-color: aqua!important;
-}
 
 .portfolio-item:active{
   background-color: #F8F8F8 !important;
@@ -167,22 +164,16 @@
   color: aqua !important;
 } */
 
-.active-link:active{
-  /* color:pink !important ; */
-  background-color: aqua !important;
-  /* your desired color for the active link */;
-  /* Add any other styling as needed */
-}
-
-.port:active{
-  background-color: aqua;
-}
 
 /* Add this to your CSS file or style tag */
 .dropdown-toggle.dropup::after {
   transform: rotate(-180deg);
 }
 
+
+.activepor ul li a{
+  color:blue !important;
+}
 
 
 

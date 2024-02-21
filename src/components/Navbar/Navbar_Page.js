@@ -94,7 +94,7 @@ const NavbarPage = (props) => {
 
     return (
         <React.Fragment>
-            <Navbar expand="lg" fixed="top" className={" " + props.navClass}>
+            <Navbar expand="lg" fixed="top" className={" " + ""}>
                 <Container>
                     <NavbarBrand className="logo text-uppercase" href="/">
                         {props.imglight === true ?
@@ -111,27 +111,30 @@ const NavbarPage = (props) => {
                             headerBackground="true"
                             className="navbar-collapse"
                         >
-                            <Nav navbar className="ml-auto navbar-center" id="mySidenav">
+                            <Nav navbar className="ml-auto navbar-center" id="mySidenav"  >
                                 {props.navItems.map((item, key) => (
-                                    <NavItem
-                                        key={key}
-                                        onMouseEnter={item.idnm === "portfolio" ? handleMouseEnter : undefined}
-                                        onMouseLeave={item.idnm === "portfolio" ? handleMouseLeave : undefined}
-                                        
-                                    >
+                                   
+<NavItem
+    key={key}
+    onMouseEnter={item.idnm === "portfolio" ? handleMouseEnter : undefined}
+    onMouseLeave={item.idnm === "portfolio" ? handleMouseLeave : undefined}
+    className={item.idnm === "portfolio" ? "portfolio-item" : ""}
+   
+    onClick={() => setActiveNavItem(item.idnm)}
+>
                                         {item.idnm === "portfolio" ? (
-                                            <Dropdown nav inNavbar isOpen={dropdownOpen} toggle={toggleDropdown}  style={{ color: "#03272E" ,backgroundColor: activeNavItem === item.idnm ? "aqua" : "transparent"}}  activeClassName="active-link"  onClick={() => setActiveNavItem(item.idnm)} >
-                                                <DropdownToggle nav caret  style={{ color: "#03272E" ,backgroundColor: activeNavItem === item.idnm ? "aqua" : "transparent"}}  activeClassName="active-link"  onClick={() => setActiveNavItem(item.idnm)}   className={`dropdown-toggle ${dropdownOpen ? 'dropup' : ''}`} >
+                                              <Dropdown nav inNavbar isOpen={dropdownOpen} toggle={toggleDropdown}  style={{ color: "pink" }}  ClassName="activeport"  onClick={() => setActiveNavItem(item.idnm)} >
+                                                <DropdownToggle nav caret  style={{Color: activeNavItem === item.idnm ? "aqua" : "transparent" }}   onClick={() => setActiveNavItem(item.idnm)}   className={`dropdown-toggle ${dropdownOpen ? 'dropup' : ''}`} >
                                                     {item.navheading}
                                                 </DropdownToggle>
                                                 <DropdownMenu style={{backgroundColor:"#FFFFFF",border:"1px solid grey "}}>
-                                                    <DropdownItem href=""  className="portfolio-item" onClick={handlePortfolioItemClicktwo}  >Isibisi</DropdownItem>
-                                                    <DropdownItem href=""  className="portfolio-item"  onClick={handlePortfolioItemClick}  style={{borderTop:"1px solid #E8E8E8"}}>Ayatana</DropdownItem>
-                                                    <DropdownItem href=""  className="portfolio-item" onClick={handlePortfolioItemClickthree} style={{borderTop:"1px solid #E8E8E8"}}>StorefrontX</DropdownItem>
+                                                    <DropdownItem href=""  className="portfolio-item" onClick={handlePortfolioItemClicktwo}>Isibisi</DropdownItem>
+                                                    <DropdownItem href=""  className="portfolio-item"  onClick={handlePortfolioItemClick} >Ayatana</DropdownItem>
+                                                    <DropdownItem href=""  className="portfolio-item" onClick={handlePortfolioItemClickthree}>StorefrontX</DropdownItem>
                                                 </DropdownMenu>
                                             </Dropdown>
                                         ) : (
-                                            <NavLink href={"#" + item.idnm} style={{ color: "#03272E" ,backgroundColor: activeNavItem === item.idnm ? "aqua" : "transparent"}}  activeClassName="active-link"  onClick={() => setActiveNavItem(item.idnm)} >
+                                            <NavLink href={"#" + item.idnm} style={{ color: activeNavItem === item.idnm ? "aqua" : "black" }}   onClick={() => setActiveNavItem(item.idnm)} >
                                                 {item.navheading}
                                             </NavLink>
                                         )}
