@@ -114,12 +114,26 @@
   background-color: black !important;
 }
 
-.navbar-collapse ul li a{
+
+/* for static changing color */
+/* .navbar-collapse ul li a{
   color:black !important;
+} */
+
+
+/* .nav-sticky .navbar-nav li a {
+  color: red !important;
+}
+.navbar-collapse ul li a:active{
+  color:red !important;
+}
+
+.nav-sticky .navbar-nav li a {
+  color: black !important;
 }
 .navbar-collapse ul li a:active{
   color:white !important;
-}
+} */
 .navbar{
   /* border:1px solid red; */
   position:fixed;
@@ -127,9 +141,9 @@
   z-index: 100;
   box-shadow:1px 1px 1px 1px #cdcdcd ;
 }
-.navbar ul li a{
+/* .navbar ul li a{
   color:red;
-}
+} */
 /* .navbar-collapse ul li a {
   color:red !important;
 } */
@@ -168,6 +182,8 @@
 .dropdown-toggle.dropup::after {
   transform: rotate(-180deg);
 }
+
+
 
 
 

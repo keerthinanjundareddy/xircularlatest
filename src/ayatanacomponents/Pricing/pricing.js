@@ -54,16 +54,23 @@ function Pricing(){
 
   };
   const handlebackClicktwo = () => {
-    // window.location.href = "/readmore";
-
-    // window.alert("clciked")
-
-
-    // Navigate to the "/readmore" path with additional details based on cardId
-    window.scrollTo(0, document.body.scrollHeight-100);
-    navigate(`/`);
-
+    // Temporarily add extra padding to the bottom of the body to increase scrollable area
+    const originalPaddingBottom = document.body.style.paddingBottom;
+    document.body.style.paddingBottom = "400px"; // Adjust the "100px" as needed to scroll a bit further
+  
+    // Scroll to the new bottom of the page
+    window.scrollTo(0, document.body.scrollHeight);
+  
+    // Wait for the scroll to finish (adjust delay as needed)
+    setTimeout(() => {
+      // Navigate to the desired location
+      navigate(`/`);
+  
+      // Optionally, remove the added padding to restore original page length
+      document.body.style.paddingBottom = originalPaddingBottom;
+    }, 150); // Adjust timing as needed
   };
+  
     
         return (
             <React.Fragment>
