@@ -128,9 +128,9 @@ const NavbarPage = (props) => {
                                                     {item.navheading}
                                                 </DropdownToggle>
                                                 <DropdownMenu style={{backgroundColor:"#FFFFFF",border:"1px solid grey "}}>
-                                                    <DropdownItem href=""  className="portfolio-item" onClick={handlePortfolioItemClicktwo}>Isibisi</DropdownItem>
-                                                    <DropdownItem href=""  className="portfolio-item"  onClick={handlePortfolioItemClick} >Ayatana</DropdownItem>
-                                                    <DropdownItem href=""  className="portfolio-item" onClick={handlePortfolioItemClickthree}>StorefrontX</DropdownItem>
+                                                    <DropdownItem href=""  className="portfolio-item" onClick={handlePortfolioItemClicktwo} >Isibisi</DropdownItem>
+                                                    <DropdownItem href=""  className="portfolio-item"  onClick={handlePortfolioItemClick} style={{borderTop:"1px solid #D3D3D3"}} >Ayatana</DropdownItem>
+                                                    <DropdownItem href=""  className="portfolio-item" onClick={handlePortfolioItemClickthree} style={{borderTop:"1px solid #D3D3D3"}}>StorefrontX</DropdownItem>
                                                 </DropdownMenu>
                                             </Dropdown>
                                         ) : (
