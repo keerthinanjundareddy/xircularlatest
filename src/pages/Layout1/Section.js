@@ -82,7 +82,7 @@ const Section = () => {
     <React.Fragment>
     
     <div className={`header-section ${scrolled ? 'scrolled' : ''}`} style={{ zIndex: '100' }}>
-          <div style={{ width: '100px', height: '80px', cursor: 'pointer' }} onClick={handlebackClick}>
+          <div style={{ width: '100px', height: '100px', cursor: 'pointer' }} onClick={handlebackClick}>
             <img src={isibisilogo} style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
           </div>
 
@@ -90,12 +90,14 @@ const Section = () => {
           <div  >
          
 
-          <div className='back-btn' style={{textAlign:"center"}}  onClick={handlebackClicktwo}>
+         <div style={{display:"flex",flexDirection:"row",gap:"10px"}}>
+
+          <div className='back-btn' style={{textAlign:"center",marginTop:"10px"}}  onClick={handlebackClicktwo}>
           <div>
               <img src={phone } style={{ width: '40px', height: '25px', objectFit: 'contain',paddingLeft:"5px",paddingBottom:"4px"}} />
             </div>
           
-            <div style={{paddingRight:"20px",paddingLeft:"5px"}} className='home-heading'>
+            <div style={{paddingRight:"20px",paddingLeft:"1px"}} className='home-heading-xircular'>
            contact us
             </div>
           </div>
@@ -105,11 +107,12 @@ const Section = () => {
               <img src={home } style={{ width: '40px', height: '25px', objectFit: 'contain',paddingLeft:"5px",paddingBottom:"4px"}} />
             </div>
           
-            <div style={{paddingRight:"20px",paddingLeft:"5px"}} className='home-heading'>
+            <div style={{paddingRight:"20px",paddingLeft:"1px"}} className='home-heading-xircular'>
             Home
             </div>
           </div>
           </div>
+        </div>
         </div>
 
       <section className="" id="home" style={{position:"relative",paddingTop:"100px",paddingBottom:"100px",backgroundColor:"#f0f9fa"}} >

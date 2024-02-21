@@ -11,7 +11,7 @@
     /* background-color: #F9F8FF !important; */
     font-family: 'Poppins', sans-serif;
 }
-.home-heading{
+.home-heading-xircular{
   cursor: pointer;
 }
 .image-section-cont{
@@ -1140,6 +1140,9 @@ font-size: 24px;
   color:grey;
 }
 @media (max-width: 768px) {
+ .home-heading-xircular{
+  display:none;
+ }
   .card-team-div{
       flex-basis: calc(50% - 20px); /* Show 2 cards in a row */
   }

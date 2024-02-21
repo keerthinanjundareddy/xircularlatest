@@ -283,12 +283,14 @@ function Optifarmcomingsoon() {
           <div  >
          
 
-          <div className='back-btn' style={{textAlign:"center"}}  onClick={handlebackClicktwo}>
+         <div style={{display:"flex",flexDirection:"row",gap:"10px"}}>
+
+          <div className='back-btn' style={{textAlign:"center",marginTop:"10px"}}  onClick={handlebackClicktwo}>
           <div>
               <img src={phone } style={{ width: '40px', height: '25px', objectFit: 'contain',paddingLeft:"5px",paddingBottom:"4px"}} />
             </div>
           
-            <div style={{paddingRight:"20px",paddingLeft:"5px"}} className='home-heading'>
+            <div style={{paddingRight:"20px",paddingLeft:"1px"}} className='home-heading-xircular'>
            contact us
             </div>
           </div>
@@ -298,11 +300,12 @@ function Optifarmcomingsoon() {
               <img src={home } style={{ width: '40px', height: '25px', objectFit: 'contain',paddingLeft:"5px",paddingBottom:"4px"}} />
             </div>
           
-            <div style={{paddingRight:"20px",paddingLeft:"5px"}} className='home-heading'>
+            <div style={{paddingRight:"20px",paddingLeft:"1px"}} className='home-heading-xircular'>
             Home
             </div>
           </div>
           </div>
+        </div>
         </div>
 
         <div className='banner-main-div'>
