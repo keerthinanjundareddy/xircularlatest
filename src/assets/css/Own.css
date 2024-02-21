@@ -176,6 +176,25 @@
 }
 
 
+.nav-link .activeport{
+  color:red !important
+}
+
+.nav-link {
+  display: block;
+  padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+  font-size: var(--bs-nav-link-font-size);
+  font-weight: var(--bs-nav-link-font-weight);
+  /* color: var(--bs-nav-link-color); */
+  color:red ;
+  text-decoration: none;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+
+.dropdown-toggle{
+  color:black !important;
+}
+
 
 
 
