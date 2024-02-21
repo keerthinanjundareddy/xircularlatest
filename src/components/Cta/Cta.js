@@ -13,7 +13,7 @@ class Cta extends Component {
 
 <Container style={{fontSize:"18px"}}>
         <SectionTitle
-           title ="How it works"
+           title ="How we work"
         //    subtitle ="We follow a four-step process to create value for our investors and our startups:"
          
             desc="We enable co-founders to build and scale successful companies, creating value for investors, customers, and the world."
