@@ -60,7 +60,7 @@ function Pricing(){
 
 
     // Navigate to the "/readmore" path with additional details based on cardId
-    window.scrollTo(0, document.body.scrollHeight);
+    window.scrollTo(0, document.body.scrollHeight-100);
     navigate(`/`);
 
   };

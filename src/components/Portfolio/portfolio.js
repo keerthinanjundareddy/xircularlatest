@@ -138,25 +138,7 @@ const Portfolio = () => {
 
 
 <div className='row' style={{marginTop:"40px"}}>
-<Col lg={3} md={4}  className="p-3" >
-                                    <FadeIn>
-                                        <div className="item-box ayatanalogo-div" style={{border:"1px solid #F0F0F0",borderRadius:"10px",boxShadow:"1px solid #F0F0F0"}} onClick={handleAyatana}>
-                                           
-                                                <img className="item-container rounded" src={ayatana} alt="work-img"  />
-                                                <div className="item-mask">
-                                                    <div className="item-caption">
-                                                        <h5 className="f-18" >Ayatana</h5>
-                                                        {/* <p className="text-primary">subtitle</p> */}
-                                                    </div>
-                                                </div>
-                                          
-                                        </div>
-                                        <h5 style={{textAlign:"center",marginTop:"10px",color:"#888888"}}>Ayatana</h5>
-                                        <div style={{textAlign:"center"}}>
-                                        {/* <a href="" >Explore here</a> */}
-                                        </div>
-                                    </FadeIn>
-                                </Col>
+
 
                                 <Col lg={3} md={4}  className="p-3">
                                     <FadeIn>
@@ -178,6 +160,26 @@ const Portfolio = () => {
                                     </FadeIn>
                                 </Col>
 
+
+                                <Col lg={3} md={4}  className="p-3" >
+                                    <FadeIn>
+                                        <div className="item-box ayatanalogo-div" style={{border:"1px solid #F0F0F0",borderRadius:"10px",boxShadow:"1px solid #F0F0F0"}} onClick={handleAyatana}>
+                                           
+                                                <img className="item-container rounded" src={ayatana} alt="work-img"  />
+                                                <div className="item-mask">
+                                                    <div className="item-caption">
+                                                        <h5 className="f-18" >Ayatana</h5>
+                                                        {/* <p className="text-primary">subtitle</p> */}
+                                                    </div>
+                                                </div>
+                                          
+                                        </div>
+                                        <h5 style={{textAlign:"center",marginTop:"10px",color:"#888888"}}>Ayatana</h5>
+                                        <div style={{textAlign:"center"}}>
+                                        {/* <a href="" >Explore here</a> */}
+                                        </div>
+                                    </FadeIn>
+                                </Col>
 
                                 <Col lg={3} md={4}  className="p-3">
                                     <FadeIn>
