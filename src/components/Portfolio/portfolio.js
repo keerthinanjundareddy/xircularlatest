@@ -14,7 +14,7 @@ import SectionTitle from "../common/section-title";
 import ayatana from "../../assets/images/Ayatana_logo_final 2 1 (1).png";
 import untact from "../../assets/images/Frame1.png";
 import Riilearn from "../../assets/images/Untact (2).png";
-import optifarm from "../../assets/images/Vector (3).png";
+import optifarm from "../../assets/images/Userimages/store front 1200 px 1 (1).png";
 
 //Import Images
 import work1 from "../../assets/images/portfolio/img-1.jpg";

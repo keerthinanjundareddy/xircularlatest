@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import './Optifarmcomingsoon.css'
 import imageone from '../../assets/images/Userimages/img-1.jpg'
 
-import isibisilogo from '../../assets/images/Userimages/Vector (3).png'
+import isibisilogo from '../../assets/images/Userimages/store front 1200 px 1 (1).png'
 
 import home from '../../assets/images/Userimages/home.png'
 
@@ -275,7 +275,7 @@ function Optifarmcomingsoon() {
     <>
       <div className='read-more-section' >
         <div className={`header-section ${scrolled ? 'scrolled' : ''}`} style={{ zIndex: '100' }}>
-          <div style={{ width: '100px', height: '80px', cursor: 'pointer' }} onClick={handlebackClick}>
+          <div style={{ width: '100px', height: '100px', cursor: 'pointer' }} onClick={handlebackClick}>
             <img src={isibisilogo} style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
           </div>
 

@@ -127,7 +127,7 @@ const NavbarPage = (props) => {
                                                 <DropdownMenu style={{backgroundColor:"#FFFFFF",border:"1px solid grey "}}>
                                                     <DropdownItem href="" style={{ color: "#000000" }} className="portfolio-item" onClick={handlePortfolioItemClicktwo}>Isibisi</DropdownItem>
                                                     <DropdownItem href="" style={{ color: "#000000",borderTop:"1px solid #E8E8E8" }} className="portfolio-item"  onClick={handlePortfolioItemClick} >Ayatana</DropdownItem>
-                                                    <DropdownItem href="" style={{ color: "#000000" ,borderTop:"1px solid #E8E8E8"}} className="portfolio-item" onClick={handlePortfolioItemClickthree}>StoreshopX</DropdownItem>
+                                                    <DropdownItem href="" style={{ color: "#000000" ,borderTop:"1px solid #E8E8E8"}} className="portfolio-item" onClick={handlePortfolioItemClickthree}>StorefrontX</DropdownItem>
                                                 </DropdownMenu>
                                             </Dropdown>
                                         ) : (

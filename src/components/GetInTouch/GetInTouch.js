@@ -55,7 +55,8 @@ const GetInTouch = () => {
                     console.log("result",res.data.msg)
                     if(res.data.status==="success")
                     {
-                window.alert("your message will be attended soon by our team")
+                window.alert("your message will be attended soon by our team");
+               
                     }
                     else{
                         window.alert(res.data.msg)  
@@ -114,7 +115,7 @@ const GetInTouch = () => {
                                         <Media className="media mt-4">
                                             <i className="mdi mdi-email h4" style={{color:"#f1894c"}}></i>
                                             <Media body className="ml-4">
-                                                <p className="text-muted">Email:naghma@xircular.io</p>
+                                                <p className="text-muted">Email:vidhya@xircular.io</p>
                                             </Media>
                                         </Media>
 
