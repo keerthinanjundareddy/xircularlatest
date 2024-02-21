@@ -47,7 +47,7 @@ const GetInTouch = () => {
             
         }
 
-        const formDataApi="http://sales.apprikart.com/core/api/insert_enquiry/";
+        const formDataApi="https://sales.apprikart.com/core/api/insert_enquiry/";
 
         axios.post(formDataApi,formDatas,{headers: headerObject})
                 .then((res) =>{
