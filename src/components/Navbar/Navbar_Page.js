@@ -127,7 +127,7 @@ const NavbarPage = (props) => {
                                                 <DropdownToggle nav caret  style={{Color: activeNavItem === item.idnm ? "aqua" : "aqua" }}   onClick={() => setActiveNavItem(item.idnm)}   className={`dropdown-toggle ${dropdownOpen ? 'dropup' : ''}`} >
                                                     {item.navheading}
                                                 </DropdownToggle>
-                                                <DropdownMenu style={{backgroundColor:"#FFFFFF",border:"1px solid grey "}}>
+                                                <DropdownMenu style={{backgroundColor:"#FFFFFF",border:"none",outline:"none"}}>
                                                     <DropdownItem href=""  className="portfolio-item" onClick={handlePortfolioItemClicktwo} >Isibisi</DropdownItem>
                                                     <DropdownItem href=""  className="portfolio-item"  onClick={handlePortfolioItemClick} style={{borderTop:"1px solid #D3D3D3"}} >Ayatana</DropdownItem>
                                                     <DropdownItem href=""  className="portfolio-item" onClick={handlePortfolioItemClickthree} style={{borderTop:"1px solid #D3D3D3"}}>StorefrontX</DropdownItem>
