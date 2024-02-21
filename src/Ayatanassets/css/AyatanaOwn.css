@@ -709,15 +709,23 @@ span.carousel-control-next-icon {
   background-color: black !important; 
 }
 
-.carousel-dark .carousel-control-next-icon, .carousel-dark .carousel-control-prev-icon {
+/* .carousel-dark .carousel-control-next-icon, .carousel-dark .carousel-control-prev-icon {
   filter: invert(0) grayscale(0) !important;
-}
+} */
 
 span.carousel-control-prev-icon {
   background-color: black !important; 
 }
 
-.carousel-dark .carousel-control-next-icon, .carousel-dark .carousel-control-prev-icon {
+/* .carousel-dark .carousel-control-next-icon, .carousel-dark .carousel-control-prev-icon {
   filter: invert(0) grayscale(0) !important;
+} */
+
+/* .carousel-dark .carousel-control-next-icon, .carousel-dark .carousel-control-prev-icon {
+  filter: invert(0) grayscale(0)!important;
+} */
+
+.carousel-dark .carousel-control-next-icon, .carousel-dark .carousel-control-prev-icon {
+  filter: invert(1) grayscale(100);
 }
 
