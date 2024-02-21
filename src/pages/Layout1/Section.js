@@ -94,7 +94,7 @@ const Section = () => {
 
           <div className='back-btn' style={{textAlign:"center",marginTop:"10px"}}  onClick={handlebackClicktwo}>
           <div>
-              <img src={phone } style={{ width: '40px', height: '25px', objectFit: 'contain',paddingLeft:"5px",paddingBottom:"4px"}} />
+              <img src={phone } style={{ width: '40px', height: '25px', objectFit: 'contain',paddingLeft:"1px",paddingBottom:"4px"}} />
             </div>
           
             <div style={{paddingRight:"20px",paddingLeft:"1px"}} className='home-heading-xircular'>
@@ -104,7 +104,7 @@ const Section = () => {
 
           <div className='back-btn' style={{marginTop:"10px"}} onClick={handlebackClick}>
             <div>
-              <img src={home } style={{ width: '40px', height: '25px', objectFit: 'contain',paddingLeft:"5px",paddingBottom:"4px"}} />
+              <img src={home } style={{ width: '40px', height: '25px', objectFit: 'contain',paddingLeft:"1px",paddingBottom:"4px"}} />
             </div>
           
             <div style={{paddingRight:"20px",paddingLeft:"1px"}} className='home-heading-xircular'>
