@@ -54,7 +54,7 @@ class Section extends Component {
                     {/* </div> */}
                 {/* </div> */}
             {/* </section> */}
-            <section className="section"  id="home" style={{backgroundColor:"#EDF5FF"}}>
+            <section className="section"  id="home" style={{backgroundColor:"#EDF5FF",paddingTop:"150px"}}>
           <Container>
             <Row className="align-items-center justify-content-center">
               <Col lg={6}>

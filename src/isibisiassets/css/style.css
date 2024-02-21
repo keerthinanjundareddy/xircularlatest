@@ -838,7 +838,7 @@ p {
 
 .navbar-custom .navbar-nav li a {
   line-height: 26px;
-  color: #828f99;
+  color: red;
   font-size: 15px;
   text-transform: capitalize;
   -webkit-transition: all 0.5s;
@@ -902,7 +902,7 @@ p {
   font-size: 18px;
   background: 0 0;
   border: 1px solid transparent;
-  color: #ffffff;
+  color: red;
   outline: 0;
 }
 
@@ -944,7 +944,7 @@ p {
 .nav-sticky.navbar-custom {
   margin-top: 0px;
   padding: 0;
-  background-color: #ffffff;
+  background-color: red;
   -webkit-box-shadow: 0px 5px 30px -10px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 5px 30px -10px rgba(0, 0, 0, 0.1);
 }
@@ -959,7 +959,7 @@ p {
 }
 
 .nav-sticky .navbar-nav li a {
-  color: #1e3547 !important;
+  color: red !important;
 }
 
 .nav-sticky .btn-custom-light {
@@ -1695,7 +1695,7 @@ textarea.form-control {
   .navbar-custom {
     margin-top: 0px;
     padding: 15px 0px !important;
-    background-color: #ffffff !important;
+    background-color: red!important;
     -webkit-box-shadow: 0 -2px 10px rgba(67, 83, 255, 0.14);
             box-shadow: 0 -2px 10px rgba(67, 83, 255, 0.14);
     color: #ffffff !important;
@@ -1710,7 +1710,7 @@ textarea.form-control {
   .navbar-custom .navbar-nav li a {
     -webkit-transition: all 0.4s;
     transition: all 0.4s;
-    color: #1e3547 !important;
+    color: red!important;
     margin: 0px;
     padding: 6px 0;
     border-top: none !important;

@@ -83,34 +83,55 @@ class ScrollspyNav extends Component {
     }
     
     scrollSection = () => {
-            let scrollSectionOffsetTop;
-            this.scrollTargetIds.forEach((sectionID, index) => {
-                scrollSectionOffsetTop = document.getElementById(sectionID).offsetTop - (this.headerBackground ? document.querySelector("div[data-nav='list']").scrollHeight : 0);
-
-                if (window.pageYOffset >= scrollSectionOffsetTop && window.pageYOffset < scrollSectionOffsetTop + document.getElementById(sectionID).scrollHeight) {
-                    this.getNavLinkElement(sectionID).classList.add(this.activeNavClass);
-                    this.getNavLinkElement(sectionID).parentNode.classList.add(this.activeNavClass);
-                    this.clearOtherNavLinkActiveStyle(sectionID)
-                } else {
-                    this.getNavLinkElement(sectionID).classList.remove(this.activeNavClass);
-                    this.getNavLinkElement(sectionID).parentNode.classList.remove(this.activeNavClass);
-                }
-
-                if (window.innerHeight + window.pageYOffset >= document.body.scrollHeight && index === this.scrollTargetIds.length - 1) {
-                    this.getNavLinkElement(sectionID).classList.add(this.activeNavClass);
-                    this.getNavLinkElement(sectionID).parentNode.classList.add(this.activeNavClass);
-                    this.clearOtherNavLinkActiveStyle(sectionID);
-                }
-            });
-    }
-    clearOtherNavLinkActiveStyle(excludeSectionID) {
+        let scrollSectionOffsetTop;
         this.scrollTargetIds.forEach((sectionID, index) => {
-            if (sectionID !== excludeSectionID) {
-                this.getNavLinkElement(sectionID).classList.remove(this.activeNavClass);
-                this.getNavLinkElement(sectionID).parentNode.classList.remove(this.activeNavClass);
+            const targetElement = document.getElementById(sectionID);
+            
+            if (targetElement) {
+                scrollSectionOffsetTop = targetElement.offsetTop - (this.headerBackground ? document.querySelector("div[data-nav='list']").scrollHeight : 0);
+    
+                if (window.pageYOffset >= scrollSectionOffsetTop && window.pageYOffset < scrollSectionOffsetTop + targetElement.scrollHeight) {
+                    const navLinkElement = this.getNavLinkElement(sectionID);
+                    if (navLinkElement) {
+                        const parentNode = navLinkElement.parentNode;
+                        navLinkElement.classList.add(this.activeNavClass);
+                        parentNode.classList.add(this.activeNavClass);
+                        this.clearOtherNavLinkActiveStyle(sectionID);
+                    }
+                } else {
+                    const navLinkElement = this.getNavLinkElement(sectionID);
+                    if (navLinkElement) {
+                        const parentNode = navLinkElement.parentNode;
+                        navLinkElement.classList.remove(this.activeNavClass);
+                        parentNode.classList.remove(this.activeNavClass);
+                    }
+                }
+    
+                if (window.innerHeight + window.pageYOffset >= document.body.scrollHeight && index === this.scrollTargetIds.length - 1) {
+                    const navLinkElement = this.getNavLinkElement(sectionID);
+                    if (navLinkElement) {
+                        const parentNode = navLinkElement.parentNode;
+                        navLinkElement.classList.add(this.activeNavClass);
+                        parentNode.classList.add(this.activeNavClass);
+                        this.clearOtherNavLinkActiveStyle(sectionID);
+                    }
+                }
             }
         });
     }
+    clearOtherNavLinkActiveStyle(excludeSectionID) {
+        this.scrollTargetIds.forEach((sectionID, index) => {
+            const navLinkElement = this.getNavLinkElement(sectionID);
+            if (navLinkElement) {
+                const parentNode = navLinkElement.parentNode;
+                if (sectionID !== excludeSectionID && parentNode) {
+                    navLinkElement.classList.remove(this.activeNavClass);
+                    parentNode.classList.remove(this.activeNavClass);
+                }
+            }
+        });
+    }
+    
 
     render() {
         return (

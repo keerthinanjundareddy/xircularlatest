@@ -71,7 +71,7 @@ class Index2 extends Component {
                 <Suspense fallback = {this.Loader()} >
 
                     {/* Importing Navbar */}
-                    <NavbarPage navItems={this.state.navItems} navClass={this.state.navClass} imglight={this.state.imglight} />
+                    <NavbarPage navItems={this.state.navItems} navClass={this.state.navClass} imglight={this.state.imglight} style={{color:"red"}} />
 
                     {/* Importing section */}
                     <Section/>

@@ -106,4 +106,69 @@
 
 }
 
+/* 
+.portfolio-item:hover {
+  color:red !important; /* your desired hover color */;
+/* } */ 
+.portfolio-item ul li:active{
+  background-color: black !important;
+}
+
+.navbar-collapse ul li a{
+  color:black !important;
+}
+.navbar-collapse ul li a:active{
+  color:white !important;
+}
+.navbar{
+  /* border:1px solid red; */
+  position:fixed;
+  background-color: white;
+  z-index: 100;
+  box-shadow:1px 1px 1px 1px #cdcdcd ;
+}
+.navbar ul li a{
+  color:red;
+}
+/* .navbar-collapse ul li a {
+  color:red !important;
+} */
+/* .navbar-collapse ul li a:active {
+  color:violet !important;
+} */
+
+.portfolio-item:hover{
+  background-color: aqua!important;
+}
+
+.portfolio-item:active{
+  background-color: #F8F8F8 !important;
+}
+
+
+
+/* .navbar-collapse ul li a.active a,
+.navbar-collapse ul li a:hover,
+.navbar-collapse ul li a:active {
+  color: aqua !important;
+} */
+
+.active-link:active{
+  /* color:pink !important ; */
+  background-color: aqua !important;
+  /* your desired color for the active link */;
+  /* Add any other styling as needed */
+}
+
+.port:active{
+  background-color: aqua;
+}
+
+/* Add this to your CSS file or style tag */
+.dropdown-toggle.dropup::after {
+  transform: rotate(-180deg);
+}
+
+
+
 
