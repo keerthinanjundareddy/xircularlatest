@@ -763,6 +763,7 @@ margin-bottom: 50px !important;
   height: 420px;
   margin: 20px 70px;
   margin-top: 120px;
+  padding:30px;
  
 }
 
@@ -802,8 +803,9 @@ padding: 50px;
 
 
 .Text-para{
-width: 501px;
-word-break: break-all;
+/* width: 501px; */
+/* word-break: break-all !important; */
+flex-wrap: nowrap;
 color: white;
 line-height: 35px;
 font-size: 24px;
@@ -826,6 +828,7 @@ font-size: 24px;
     height: 100%;
     width: 93%;
     margin: 135px 10px 40px 35px;
+    padding:30px;
    
   }
 
@@ -868,7 +871,7 @@ font-size: 24px;
     
     .Text-para{
     width: 300px;
-    word-break: break-all;
+    /* word-break: break-all !important; */
     color: white;
     line-height: 35px;
     font-size: 22px;
@@ -893,6 +896,7 @@ font-size: 24px;
     height: 100%;
     width: 700px;
     margin: 125px 10px 40px 35px;
+    padding:30px;
    
   }
   
@@ -916,7 +920,7 @@ font-size: 24px;
     
     .expert-div{
     color: #FFE8AE;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 900;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
@@ -934,7 +938,7 @@ font-size: 24px;
     
     .Text-para{
     width: 300px;
-    word-break: break-all;
+    /* word-break: break-all !important; */
     color: white;
     line-height: 35px;
     font-size: 22px;
@@ -960,6 +964,7 @@ font-size: 24px;
     margin-left: 20px;
     margin-right: 0px;
     margin-top: 120px;
+    padding:30px;
    
   }
   
@@ -983,7 +988,7 @@ font-size: 24px;
   
   .expert-div{
   color: #FFE8AE;
-  font-size: 40px;
+  font-size: 25px;
   font-weight: 900;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
@@ -1000,7 +1005,7 @@ font-size: 24px;
   
   .Text-para{
   width: 300px;
-  word-break: break-all;
+  /* word-break: break-all !important; */
   color: white;
   line-height: 35px;
   font-size: 22px;

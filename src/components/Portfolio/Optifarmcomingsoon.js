@@ -320,8 +320,8 @@ function Optifarmcomingsoon() {
             </div>
 
             <div className='Text-para'>
-              Transform your online store with
-              our Shopify experts. From setup to optimization, we have got your ecommerce covered.
+              Transform your online store with  our Shopify experts. From setup to optimization, we have got your ecommerce covered.
+             
             </div>
           </div>
 
