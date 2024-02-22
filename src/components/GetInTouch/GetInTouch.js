@@ -56,6 +56,11 @@ const GetInTouch = () => {
                     if(res.data.status==="success")
                     {
                 window.alert("your message will be attended soon by our team");
+                setName('');
+                setEmail('');
+                setPhone('');
+                setMessage('');
+               
                
                     }
                     else{
@@ -143,7 +148,7 @@ const GetInTouch = () => {
                                                     // validate={{ required: { value: true } }}
                                                     onChange={(e)=>setName(e.target.value)}
                                                     value={name}
-                                                    required
+                                                    // required
                                                     
                                                 />
                                                 </FormGroup>
@@ -187,7 +192,7 @@ const GetInTouch = () => {
                                                     // }}
                                                     onChange={(e)=>setPhone(e.target.value)}
                                                     value={phone}
-                                                    required
+                                                    // required
                                                 />
                                                 </FormGroup>
                                             </Col>
