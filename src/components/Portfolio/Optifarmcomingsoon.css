@@ -200,6 +200,7 @@ padding-left: 30px;
     background-color:#FEBF35 ;
     cursor:pointer;
    
+   
 }
 
 .footer-top-section{
@@ -637,16 +638,9 @@ margin-bottom: 50px !important;
           /* display: flex; */
           /* flex-direction: row; */
           /* gap:2px; */ 
-          border:1px solid #FEBF35;
-          border-radius: 50%;
-          text-align: left;
-          display: flex;
-          flex-direction: row;
-          padding-top: 5px;
-          padding-bottom: 5px;
-          background-color:#FEBF35 ;
+         
           cursor:none;
-          width:100%;
+        
          
       }
     
