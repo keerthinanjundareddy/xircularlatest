@@ -9,6 +9,7 @@ import SectionTitle from "../common/section-title";
 //Import Images
 import axios from 'axios'
 import map from "../../assets/images/features/map.png";
+import close from '../../assets/images/closeblackicon.png'
 
 
 const GetInTouch = () => {
@@ -16,6 +17,9 @@ const GetInTouch = () => {
     const[email,setEmail] = useState('');
     const[phone,setPhone] = useState('');
     const[message,setMessage] = useState('');
+    // const[popup,setPopup]=useState([]);
+    const [isOpen, setIsOpen] = useState(false);
+    const[errmsg,setErrmsg]=useState('');
 
 
     function handleSubmit(e){
@@ -55,7 +59,9 @@ const GetInTouch = () => {
                     console.log("result",res.data.msg)
                     if(res.data.status==="success")
                     {
-                window.alert("your message will be attended soon by our team");
+                // window.alert("your message will be attended soon by our team");
+                setIsOpen(true);
+                setErrmsg("your message will be attended soon by our team"); 
                 setName('');
                 setEmail('');
                 setPhone('');
@@ -64,14 +70,18 @@ const GetInTouch = () => {
                
                     }
                     else{
-                        window.alert(res.data.msg)  
+                        // window.alert(res.data.msg) 
+                        setIsOpen(true);
+                        setErrmsg(res.data.msg); 
                     }
                
 
                 }).catch((err)=>{
                    
-                      console.log(err)    
-                      window.alert(err.message)
+                      console.log(err)  
+                      setIsOpen(true);  
+                    //   window.alert(err.message);
+                      setErrmsg(err.message);
                
                     
                     
@@ -225,6 +235,30 @@ const GetInTouch = () => {
                         </Row>
 
                     </Container>
+                      {
+                    isOpen &&  (
+                   <>
+
+                        <div className="backdrop-blur" onClick={() => setIsOpen(false)}   />
+                        <div className="popup-container" >
+                          {/* Popup content */}
+                          <div className="popup-content" style={{display:"flex",flexDirection:"column",}} >
+                            <div style={{display:"flex",flexDirection:"row",justifyContent:"space-between"}}>
+                              
+                            <div ></div>
+                            <div className="close-button"  onClick={() => setIsOpen(false)}>
+                           <img src={close}  style={{paddingTop:"10px",paddingRight:"10px",width:"30px",height:"30px"}} alt="close-icon" className='close-section-popup'/>
+                            </div>
+                            </div>
+                            <div className='popup-content-text' style={{color:"black"}}> {errmsg}</div>
+                            {/* <div className='popup-title'>text</div> */}
+                          </div>
+                        </div>
+
+                        </>
+        
+        
+                     ) }
                 </section>
             </React.Fragment>
         );
