@@ -28,6 +28,7 @@ const GetInTouch = () => {
         console.log("sections",name,email,phone,message)
          
             
+
         
         const datas={name,email,phone,message}
         const formDatas = new FormData();
@@ -247,7 +248,7 @@ const GetInTouch = () => {
                               
                             <div ></div>
                             <div className="close-button"  onClick={() => setIsOpen(false)}>
-                           <img src={close}  style={{paddingTop:"10px",paddingRight:"10px",width:"30px",height:"30px"}} alt="close-icon" className='close-section-popup'/>
+                           <img src={close}  style={{paddingTop:"10px",paddingRight:"10px",width:"40px",height:"40px"}} alt="close-icon" className='close-section-popup'/>
                             </div>
                             </div>
                             <div className='popup-content-text' style={{color:"black"}}> {errmsg}</div>
