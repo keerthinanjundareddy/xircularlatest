@@ -28,7 +28,21 @@ const GetInTouch = () => {
  
 
 
+    function handleMsgChange(e) {
+        // Clear the message error message when the user starts typing
+        setMsgerr('');
+        setMessage(e.target.value);
+    }
 
+    function handleEmailChanges(e){
+        setEmailmsg('')
+        setEmail(e.target.value);
+    }
+
+    function handlePhone(e){
+        setPhonerrmsg('')
+        setPhone(e.target.value);
+    }
     function handleSubmit(e){
         e.preventDefault();
         
@@ -73,10 +87,24 @@ const GetInTouch = () => {
         }
 
 
+
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+            setEmailmsg("Invalid email format");
+            return; // Stop form submission if email format is invalid
+        }
+
         if (phone.trim() === '') {
             setPhonerrmsg("phoneNumber cannot be empty");
             return; // Stop form submission if name is empty
         }
+
+        const phoneRegex = /^\d{10}$/;
+        if (!phoneRegex.test(phone)) {
+            setPhonerrmsg("phoneNumber must contain 10 digits");
+            return; // Stop form submission if phone number format is invalid
+        }
+
 
         if (message.trim() === '') {
             setMsgerr("Message cannot be empty");
@@ -90,12 +118,7 @@ const GetInTouch = () => {
         }
 
 
-        const phoneRegex = /^\d{10}$/;
-        if (!phoneRegex.test(phone)) {
-            setPhonerrmsg("phoneNumber must contain 10 digits");
-            return; // Stop form submission if phone number format is invalid
-        }
-
+      
         axios.post(formDataApi,formDatas,{headers: headerObject})
                 .then((res) =>{
                     console.log("res",res.data)
@@ -106,7 +129,7 @@ const GetInTouch = () => {
                     {
                 // window.alert("your message will be attended soon by our team");
                 setIsOpen(true);
-                setSuccessmsg("your message will be attended soon by our team!")
+                setSuccessmsg("Your message will be attended soon by our team!")
                 // setErrmsg("your message will be attended soon by our team"); 
                 setName('');
                 setEmail('');
@@ -246,7 +269,9 @@ const GetInTouch = () => {
                                                     //     required: { value: true },
                                                     //     email: { value: true }
                                                     // }}
-                                                    onChange={(e)=>setEmail(e.target.value)}
+                                                    // onChange={(e)=>setEmail(e.target.value)}
+                                                 
+                                                    onChange={handleEmailChanges}
                                                     value={email}
                                                    
                                                 />
@@ -269,17 +294,8 @@ const GetInTouch = () => {
                                                     // validate={{
                                                     //     required: { value: true },
                                                     // }}
-                                                    onChange={(e) => {
-                                                        const enteredPhone = e.target.value;
-                                                        // Ensure only numeric input
-                                                        const phoneNumber = enteredPhone.replace(/\D/g, '');
-                                                        setPhone(phoneNumber);
-                                                        if (phoneNumber.length !== 10 && phoneNumber !== '') {
-                                                            setPhonerrmsg("Phone number must contain exactly 10 digits");
-                                                        } else {
-                                                            setPhonerrmsg("");
-                                                        }
-                                                    }}
+                                                   
+                                                    onChange={handlePhone}
                                                     value={phone}
                                                     // required
                                                 />
@@ -292,7 +308,7 @@ const GetInTouch = () => {
                                         <Row>
                                             <Col lg={12}>
                                                 <div className="mt-3">
-                                                    <input type="text" name="comments"  rows="5" className="form-control" placeholder="Your message"  onChange={(e)=>setMessage(e.target.value)}
+                                                    <input type="text" name="comments"  rows="5" className="form-control" placeholder="Your message"  onChange={handleMsgChange}
                                                     value={message}   style={{backgroundColor:"white"}} required />
                                                 </div>
                                                 <div style={{color:"red",fontSize:"14px"}}>{msgerr}</div>
