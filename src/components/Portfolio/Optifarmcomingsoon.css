@@ -1288,8 +1288,8 @@ font-size: 24px;
 .timeline-one-right::after {
   content: "";
   position: absolute;
-  width: 45px;
-  height: 45px;
+  width: 50px;
+  height: 50px;
  left: -22px;
   background-color:  #FEBF35;
  
@@ -1310,8 +1310,8 @@ font-size: 24px;
 .timeline-two-left::after {
   content: "";
   position: absolute;
-  width: 45px;
-  height: 45px;
+  width: 50px;
+  height: 50px;
   right: -22px;
   background-color: #0D71B9;
  
