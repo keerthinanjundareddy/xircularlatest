@@ -20,6 +20,11 @@ const GetInTouch = () => {
     // const[popup,setPopup]=useState([]);
     const [isOpen, setIsOpen] = useState(false);
     const[errmsg,setErrmsg]=useState('');
+    const[namerrmsg,setNamerrmsg]=useState('');
+    const[phonerrmsg,setPhonerrmsg]=useState('');
+    const[successmsg,setSuccessmsg]=useState('');
+ 
+
 
 
     function handleSubmit(e){
@@ -54,15 +59,42 @@ const GetInTouch = () => {
 
         const formDataApi="https://sales.apprikart.com/core/api/insert_enquiry/";
 
+        if (name.trim() === '') {
+            setNamerrmsg("Name cannot be empty");
+            return; // Stop form submission if name is empty
+        }
+
+
+        if (phone.trim() === '') {
+            setPhonerrmsg("phoneNumber cannot be empty");
+            return; // Stop form submission if name is empty
+        }
+
+        const nameRegex = /^[A-Za-z]+$/;
+        if (!nameRegex.test(name)) {
+            setNamerrmsg("Name can only contain alphabets");
+            return; // Stop form submission if name contains non-alphabetic characters
+        }
+
+
+        // const phoneRegex = /^\d{10}$/;
+        // if (!phoneRegex.test(phone)) {
+        //     setPhonerrmsg("phoneNumber must contain 10 digits");
+        //     return; // Stop form submission if phone number format is invalid
+        // }
+
         axios.post(formDataApi,formDatas,{headers: headerObject})
                 .then((res) =>{
                     console.log("res",res.data)
                     console.log("result",res.data.msg)
+                    setNamerrmsg(" ");
+                setPhonerrmsg(" ");
                     if(res.data.status==="success")
                     {
                 // window.alert("your message will be attended soon by our team");
                 setIsOpen(true);
-                setErrmsg("your message will be attended soon by our team"); 
+                setSuccessmsg("your message will be attended soon by our team!")
+                // setErrmsg("your message will be attended soon by our team"); 
                 setName('');
                 setEmail('');
                 setPhone('');
@@ -70,24 +102,31 @@ const GetInTouch = () => {
                
                
                     }
-                    else{
-                        // window.alert(res.data.msg) 
-                        setIsOpen(true);
-                        setErrmsg(res.data.msg); 
+                    if (res.data.msg === "name can not be empty") {
+                        setNamerrmsg("Name cannot be empty");
+                    } else {
+                        setNamerrmsg("");
                     }
+
+                    if (res.data.msg==="phone_number can not be empty") {
+                        setPhonerrmsg("phone number cannot be empty")
+
+                    }
+                    else{
+                        setPhonerrmsg("");
+                        setNamerrmsg("");
+                    }
+                      
+                })
+            }
+                            
+
+
+                        
+                  
+                    
                
 
-                }).catch((err)=>{
-                   
-                      console.log(err)  
-                      setIsOpen(true);  
-                    //   window.alert(err.message);
-                      setErrmsg(err.message);
-               
-                    
-                    
-                })
-    }
 
    
         return (
@@ -147,9 +186,10 @@ const GetInTouch = () => {
                                     <AvForm name="contact-form" id="contact-form">
                                         <Row>
                                             <Col lg={12}>
-                                                <FormGroup className="mt-3">
-                                                <AvField
-                                                  style={{backgroundColor:"white"}}
+                                                <div className="mt-3">
+                                                <div>
+                                                    <input 
+                                                  style={{backgroundColor:"white",color:"black"}}
                                                     name="name"
                                                     // id="name"
                                                     type="text"
@@ -157,19 +197,31 @@ const GetInTouch = () => {
                                                     placeholder="Your name"
                                                     // errorMessage="Enter Your Name"
                                                     // validate={{ required: { value: true } }}
-                                                    onChange={(e)=>setName(e.target.value)}
+                                                    onChange={(e) => {
+                                                        const enteredName = e.target.value;
+                                                        // Ensure only alphabetic characters
+                                                        if (/^[A-Za-z]*$/.test(enteredName) || enteredName === '') {
+                                                            setName(enteredName);
+                                                            setNamerrmsg(""); // Clear name error message
+                                                        } else {
+                                                            setNamerrmsg("Name should only contain alphabets");
+                                                        }
+                                                    }}
                                                     value={name}
                                                     // required
-                                                    
-                                                />
-                                                </FormGroup>
+                                                    />
+                                           
+                                                </div>
+                                                <div style={{color:"red",fontSize:"14px"}}>{namerrmsg}</div>
+                                                </div>
                                             </Col>
                                         </Row>
 
                                         <Row>
                                             <Col lg={6}>
-                                                <FormGroup className="mt-3">
-                                                <AvField
+                                                <div className="mt-3" >
+                                                <div>
+                                                    <input 
                                                 style={{backgroundColor:"white"}}
                                                     name="email"
                                                     // id="email"
@@ -185,12 +237,14 @@ const GetInTouch = () => {
                                                     value={email}
                                                    
                                                 />
-                                                </FormGroup>
+                                                </div>
+                                                </div>
                                             </Col>
 
                                             <Col lg={6}>
-                                                <FormGroup className="mt-3">
-                                                <AvField
+                                                <div className="mt-3">
+                                                <div>
+                                                    <input 
                                                   style={{backgroundColor:"white"}}
                                                     name="number"
                                                     // id="number"
@@ -205,16 +259,18 @@ const GetInTouch = () => {
                                                     value={phone}
                                                     // required
                                                 />
-                                                </FormGroup>
+                                                </div>
+                                                <div style={{color:"red",fontSize:"14px"}}>{phonerrmsg}</div>
+                                                </div>
                                             </Col>
                                         </Row>
 
                                         <Row>
                                             <Col lg={12}>
-                                                <FormGroup className="mt-3">
+                                                <div className="mt-3">
                                                     <input type="text" name="comments"  rows="5" className="form-control" placeholder="Your message"  onChange={(e)=>setMessage(e.target.value)}
                                                     value={message}   style={{backgroundColor:"white"}} required />
-                                                </FormGroup>
+                                                </div>
                                             </Col>
                                         </Row>
 
@@ -240,18 +296,20 @@ const GetInTouch = () => {
                     isOpen &&  (
                    <>
 
-                        <div className="backdrop-blur" onClick={() => setIsOpen(false)}   />
+                        {/* <div className="backdrop-blur" onClick={() => setIsOpen(false)}   /> */}
                         <div className="popup-container" >
                           {/* Popup content */}
                           <div className="popup-content" style={{display:"flex",flexDirection:"column",}} >
                             <div style={{display:"flex",flexDirection:"row",justifyContent:"space-between"}}>
                               
                             <div ></div>
-                            <div className="close-button"  onClick={() => setIsOpen(false)}>
-                           <img src={close}  style={{paddingTop:"10px",paddingRight:"10px",width:"40px",height:"40px"}} alt="close-icon" className='close-section-popup'/>
+                            {/* <div className="close-button"  onClick={() => setIsOpen(false)}> */}
+                           {/* <img src={close}  style={{paddingTop:"10px",paddingRight:"10px",width:"40px",height:"40px"}} alt="close-icon" className='close-section-popup'/> */}
+                            {/* </div> */}
                             </div>
-                            </div>
-                            <div className='popup-content-text' style={{color:"black"}}> {errmsg}</div>
+                            <div className='popup-content-text-two' style={{textAlign:"center"}}>Thank you!!</div>
+                            <div className='popup-content-text' style={{color:"black"}}> {successmsg}</div>
+                            <button onClick={() => setIsOpen(false)} className='xircular-ok-btn'>OK</button>
                             {/* <div className='popup-title'>text</div> */}
                           </div>
                         </div>

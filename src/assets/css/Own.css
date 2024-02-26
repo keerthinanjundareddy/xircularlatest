@@ -203,17 +203,18 @@
 
 .popup-container {
   position: fixed;
-  top: 50%;
+  top: 0%; /* Adjust this value as needed */
   left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 100; 
-  /* border:1px solid rgb(6, 5, 5); */
-  background-color:white;
+  transform: translate(-50%, 0);
+  background-color: #FFFFFF;
   border-radius: 10px;
-
-  /* padding:100px; */
-  /* Ensure the popup is above other content */
-  /* Additional styling properties */
+  box-shadow: 3px 3px 3px 3px #cccccc;
+  z-index: 11560 !important;
+  max-width: 400px; /* Set a max-width if needed */
+  width: 90%; /* Make the width 100% to stretch across the screen */
+  margin: auto;
+  padding: 20px; /* Adjust padding as needed */
+  box-sizing: border-box; 
 }
 .span-border-class{
  
@@ -233,9 +234,20 @@
   z-index: 1; /* Ensure the backdrop is behind the popup */
 }
 .popup-content-text{
-  padding-top:10px ;
+  padding-top:1px ;
 
   padding-bottom:30px ;
+  padding-left:40px;
+  padding-right:40px ;
+  color:black;
+  font-size: 15px;
+}
+.popup-content-text-two{
+  padding-top:5px ;
+  font-size: 20px;
+  color:#F1894C;
+
+  padding-bottom:10px ;
   padding-left:40px;
   padding-right:40px ;
 }
@@ -250,6 +262,22 @@
 .close-section-popup{
   cursor:pointer;
 }
+.xircular-ok-btn {
+  width: 50%;
+  border: none;
+  outline: none;
+  border: 1px solid #F1894C;
+  border-radius: 10px;
+  background-color: #F1894C;
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  height:40px;
+}
+
 
 
 
@@ -257,27 +285,19 @@
 @media  (max-width: 768px) {
 
 
-  .popup-container {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 100; 
-    /* border:1px solid rgb(6, 5, 5); */
-    background-color:white;
-    border-radius: 10px;
-    /* width:80%; */
-  
-    /* padding:100px; */
-    /* Ensure the popup is above other content */
-    /* Additional styling properties */
-  }
 
 
 .popup-content-text{
   padding-top:10px ;
 
   padding-bottom:30px ;
+   padding-left:40px;
+  padding-right:40px ; 
+}
+.popup-content-text-two{
+  padding-top:10px ;
+
+  padding-bottom:10px ;
    padding-left:40px;
   padding-right:40px ; 
 }
