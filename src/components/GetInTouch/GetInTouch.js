@@ -35,13 +35,18 @@ const GetInTouch = () => {
     }
 
     function handleEmailChanges(e){
-        setEmailmsg('')
+        setEmailmsg('');
         setEmail(e.target.value);
     }
 
     function handlePhone(e){
-        setPhonerrmsg('')
+        setPhonerrmsg('');
         setPhone(e.target.value);
+    }
+
+   function handlenameChanges(e){
+        setNamerrmsg('');
+        setName(e.target.value)
     }
     function handleSubmit(e){
         e.preventDefault();
@@ -81,6 +86,14 @@ const GetInTouch = () => {
         }
 
 
+        const nameRegex = /^[A-Za-z]+$/;
+        if (!nameRegex.test(name)) {
+            setNamerrmsg("Name should contain  only alphabets");
+            return; // Stop form submission if name contains non-alphabetic characters
+        }
+
+
+
         if (email.trim() === '') {
             setEmailmsg("Email cannot be empty");
             return; // Stop form submission if name is empty
@@ -111,13 +124,7 @@ const GetInTouch = () => {
             return; // Stop form submission if name is empty
         }
      
-        const nameRegex = /^[A-Za-z]+$/;
-        if (!nameRegex.test(name)) {
-            setNamerrmsg("Name can only contain alphabets");
-            return; // Stop form submission if name contains non-alphabetic characters
-        }
-
-
+     
       
         axios.post(formDataApi,formDatas,{headers: headerObject})
                 .then((res) =>{
@@ -218,7 +225,7 @@ const GetInTouch = () => {
                             <Col lg={7}>
                                 <div className="custom-form">
                                     <div id="message"></div>
-                                    <form onSubmit={handleSubmit}>
+                                    <form onSubmit={handleSubmit}  >
                                     <AvForm name="contact-form" id="contact-form">
                                         <Row>
                                             <Col lg={12}>
@@ -233,16 +240,17 @@ const GetInTouch = () => {
                                                     placeholder="Your name"
                                                     // errorMessage="Enter Your Name"
                                                     // validate={{ required: { value: true } }}
-                                                    onChange={(e) => {
-                                                        const enteredName = e.target.value;
-                                                        // Ensure only alphabetic characters
-                                                        if (/^[A-Za-z]*$/.test(enteredName) || enteredName === '') {
-                                                            setName(enteredName);
-                                                            setNamerrmsg(""); // Clear name error message
-                                                        } else {
-                                                            setNamerrmsg("Name should only contain alphabets");
-                                                        }
-                                                    }}
+                                                    // onChange={(e) => {
+                                                    //     const enteredName = e.target.value;
+                                                    //     // Ensure only alphabetic characters
+                                                    //     if (/^[A-Za-z]*$/.test(enteredName) || enteredName === '') {
+                                                    //         setName(enteredName);
+                                                    //         setNamerrmsg(""); // Clear name error message
+                                                    //     } else {
+                                                    //         setNamerrmsg("Name should only contain alphabets");
+                                                    //     }
+                                                    // }}
+                                                    onChange={handlenameChanges}
                                                     value={name}
                                                     // required
                                                     />
@@ -270,7 +278,6 @@ const GetInTouch = () => {
                                                     //     email: { value: true }
                                                     // }}
                                                     // onChange={(e)=>setEmail(e.target.value)}
-                                                 
                                                     onChange={handleEmailChanges}
                                                     value={email}
                                                    

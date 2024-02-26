@@ -1496,6 +1496,7 @@ position:absolute;
     /* Make sure that all arrows are pointing leftwards */
     .timeline-two-left::before {
       left: 70px;
+      top: 25px;
       border: medium solid #DAEFFF;
       border-width: 10px 10px 10px 0;
       border-color: transparent #DAEFFF transparent transparent;
