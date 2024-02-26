@@ -434,7 +434,7 @@ function Optifarmcomingsoon() {
               <div style={{ backgroundColor: "#DAEFFF", borderBottom: "3px solid #0D71B9 ", borderRadius: "15px",boxShadow:"0.5px 0.5px 0px 1px #cccccc" }} className="timelineRight-first">
                 <div className="p-4">
                   <div className="num-one">
-                  <img src ={finaldesign} style={{width:"100%",height:"100%",objectFit:"contain"}} />
+                  <img src ={productdelivery} style={{width:"100%",height:"100%",objectFit:"contain"}} />
                   </div>
                   <div className="bubble-one"></div>
                   <div className="bubble-ones"></div>
@@ -503,7 +503,7 @@ function Optifarmcomingsoon() {
               <div style={{ backgroundColor: "#DAEFFF", borderBottom: "3px solid #0D71B9 ", borderRadius: "15px",boxShadow:"0.5px 0.5px 0px 1px #cccccc" }} className="timelineRight-first">
                 <div className="p-4">
                   <div className="num-one">
-                  <img src ={milestone} style={{width:"100%",height:"100%",objectFit:"contain"}} />
+                  <img src ={productdelivery} style={{width:"100%",height:"100%",objectFit:"contain"}} />
                   </div>
                   <div className="bubble-one"></div>
                   <div className="bubble-ones"></div>
@@ -521,7 +521,7 @@ function Optifarmcomingsoon() {
               <div style={{ backgroundColor: "#DAEFFF", borderBottom: "3px solid #0D71B9 ", borderRadius: "15px",boxShadow:"0.5px 0.5px 0px 1px #cccccc" }} className="timelineLeft-first">
                 <div className="p-4">
                   <div className="num-two">
-                  <img src ={finalrevision} style={{width:"100%",height:"100%",objectFit:"contain"}} />
+                  <img src ={finaldesign} style={{width:"100%",height:"100%",objectFit:"contain"}} />
                   </div>
                   <div className="bubble-two"></div>
                   <div className="bubble-three"></div>

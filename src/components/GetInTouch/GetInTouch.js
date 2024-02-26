@@ -77,11 +77,11 @@ const GetInTouch = () => {
         }
 
 
-        // const phoneRegex = /^\d{10}$/;
-        // if (!phoneRegex.test(phone)) {
-        //     setPhonerrmsg("phoneNumber must contain 10 digits");
-        //     return; // Stop form submission if phone number format is invalid
-        // }
+        const phoneRegex = /^\d{10}$/;
+        if (!phoneRegex.test(phone)) {
+            setPhonerrmsg("phoneNumber must contain 10 digits");
+            return; // Stop form submission if phone number format is invalid
+        }
 
         axios.post(formDataApi,formDatas,{headers: headerObject})
                 .then((res) =>{
@@ -307,7 +307,7 @@ const GetInTouch = () => {
                            {/* <img src={close}  style={{paddingTop:"10px",paddingRight:"10px",width:"40px",height:"40px"}} alt="close-icon" className='close-section-popup'/> */}
                             {/* </div> */}
                             </div>
-                            <div className='popup-content-text-two' style={{textAlign:"center"}}>Thank you!!</div>
+                            <div className='popup-content-text-two' style={{textAlign:"center"}}><b>Thank you!!</b></div>
                             <div className='popup-content-text' style={{color:"black"}}> {successmsg}</div>
                             <button onClick={() => setIsOpen(false)} className='xircular-ok-btn'>OK</button>
                             {/* <div className='popup-title'>text</div> */}

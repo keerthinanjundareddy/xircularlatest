@@ -1290,7 +1290,7 @@ font-size: 24px;
   position: absolute;
   width: 50px;
   height: 50px;
- left: -22px;
+ left: -25px;
   background-color:  #FEBF35;
  
   border: 2px solid #0C0C0B;
@@ -1312,7 +1312,7 @@ font-size: 24px;
   position: absolute;
   width: 50px;
   height: 50px;
-  right: -22px;
+  right: -25px;
   background-color: #0D71B9;
  
   border: 2px solid #0C0C0B;
@@ -1383,11 +1383,11 @@ font-size: 24px;
   position:absolute;
   color:white;
   z-index:100;
-  left: -16px;
+  left: -19px;
   top:20px;
    /* bottom:-5px; */
-  width:35px;
-  height:35px;
+  width:40px;
+  height:40px;
   text-align: center;
   align-items: center;
   justify-content: center;
@@ -1401,7 +1401,7 @@ font-size: 24px;
   border-radius:50%;
   position:absolute;
    left: -4px;
-   top:55px;
+   top:58px;
    background-color:#FEBF35;
    z-Index:100;
 }
@@ -1419,12 +1419,12 @@ font-size: 24px;
 }
 .num-two{
 position:absolute;
- right: -18px;
+ right: -21px;
  top:20px;
  color:white;
 z-index: 100;
-width:35px;
-height:35px;
+width:40px;
+height:40px;
 text-align: center;
 align-items: center;
 justify-content: center;
@@ -1437,9 +1437,9 @@ height:10px;
 border-radius:50%;
 position:absolute;
 right: -6px;
-top:55px;
+top:58px;
 background-color:#0D71B9;
-z-index:100;
+z-index:1100;
 }
 .bubble-three{
 border:2px solid #0C0C0B;
