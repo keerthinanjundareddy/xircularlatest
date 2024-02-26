@@ -23,6 +23,8 @@ const GetInTouch = () => {
     const[namerrmsg,setNamerrmsg]=useState('');
     const[phonerrmsg,setPhonerrmsg]=useState('');
     const[successmsg,setSuccessmsg]=useState('');
+    const[emailmsg,setEmailmsg]=useState('');
+    const[msgerr,setMsgerr]=useState('');
  
 
 
@@ -65,11 +67,22 @@ const GetInTouch = () => {
         }
 
 
+        if (email.trim() === '') {
+            setEmailmsg("Email cannot be empty");
+            return; // Stop form submission if name is empty
+        }
+
+
         if (phone.trim() === '') {
             setPhonerrmsg("phoneNumber cannot be empty");
             return; // Stop form submission if name is empty
         }
 
+        if (message.trim() === '') {
+            setMsgerr("Message cannot be empty");
+            return; // Stop form submission if name is empty
+        }
+     
         const nameRegex = /^[A-Za-z]+$/;
         if (!nameRegex.test(name)) {
             setNamerrmsg("Name can only contain alphabets");
@@ -238,6 +251,7 @@ const GetInTouch = () => {
                                                    
                                                 />
                                                 </div>
+                                                <div style={{color:"red",fontSize:"14px"}}>{emailmsg}</div>
                                                 </div>
                                             </Col>
 
@@ -255,7 +269,17 @@ const GetInTouch = () => {
                                                     // validate={{
                                                     //     required: { value: true },
                                                     // }}
-                                                    onChange={(e)=>setPhone(e.target.value)}
+                                                    onChange={(e) => {
+                                                        const enteredPhone = e.target.value;
+                                                        // Ensure only numeric input
+                                                        const phoneNumber = enteredPhone.replace(/\D/g, '');
+                                                        setPhone(phoneNumber);
+                                                        if (phoneNumber.length !== 10 && phoneNumber !== '') {
+                                                            setPhonerrmsg("Phone number must contain exactly 10 digits");
+                                                        } else {
+                                                            setPhonerrmsg("");
+                                                        }
+                                                    }}
                                                     value={phone}
                                                     // required
                                                 />
@@ -271,6 +295,7 @@ const GetInTouch = () => {
                                                     <input type="text" name="comments"  rows="5" className="form-control" placeholder="Your message"  onChange={(e)=>setMessage(e.target.value)}
                                                     value={message}   style={{backgroundColor:"white"}} required />
                                                 </div>
+                                                <div style={{color:"red",fontSize:"14px"}}>{msgerr}</div>
                                             </Col>
                                         </Row>
 
