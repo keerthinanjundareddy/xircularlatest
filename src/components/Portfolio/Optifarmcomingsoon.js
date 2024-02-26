@@ -437,6 +437,8 @@ function Optifarmcomingsoon() {
                   <img src ={finaldesign} style={{width:"100%",height:"100%",objectFit:"contain"}} />
                   </div>
                   <div className="bubble-one"></div>
+                  <div className="bubble-ones"></div>
+              
                   <div className='timeline-heading-div'>Final Review</div>       
                   <div className='timeline-para-div' >
                   When all the changes (if there are any required) are revised, we will deliver the final design for your approval to start the development process.
@@ -469,6 +471,7 @@ function Optifarmcomingsoon() {
                   <img src ={contentupload} style={{width:"100%",height:"100%",objectFit:"contain"}} />
                   </div>
                   <div className="bubble-one"></div>
+                  <div className="bubble-ones"></div>
                   <div className='timeline-heading-div'>Content Upload</div>  
                   <div className='timeline-para-div' >
                   Our team will begin with uploading pages, plugins, images, products, videos & more onto the shopify admin panel.
@@ -503,6 +506,7 @@ function Optifarmcomingsoon() {
                   <img src ={milestone} style={{width:"100%",height:"100%",objectFit:"contain"}} />
                   </div>
                   <div className="bubble-one"></div>
+                  <div className="bubble-ones"></div>
                   <div className='timeline-heading-div'>Final Revision</div>  
                   <div className='timeline-para-div' >
                   The team will work on the feedback provided in the previous step and will work towards the changes.
@@ -536,6 +540,7 @@ function Optifarmcomingsoon() {
                   <img src ={ownership} style={{width:"100%",height:"100%",objectFit:"contain"}} />
                   </div>
                   <div className="bubble-one"></div>
+                  <div className="bubble-ones"></div>
                   <div className='timeline-heading-div'>Ownership Transfer</div>  
                   <div className='timeline-para-div' >
                   At the last stage, we transfer over the ownership to you, from where you can start your e-commerce journey!:)

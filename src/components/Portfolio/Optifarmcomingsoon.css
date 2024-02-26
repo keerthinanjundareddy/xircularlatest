@@ -1405,6 +1405,18 @@ font-size: 24px;
    background-color:#FEBF35;
    z-Index:100;
 }
+.bubble-ones{
+  border:2px solid #0C0C0B;
+  /* border:2px solid  white; */
+  width:10px;
+  height:10px;
+  border-radius:50%;
+  position:absolute;
+   left: -4px;
+   top:10px;
+   background-color:#FEBF35;
+   z-Index:100;
+}
 .num-two{
 position:absolute;
  right: -18px;
@@ -1531,6 +1543,18 @@ position:absolute;
 
 
      
+  }
+  .bubble-ones{
+    border:2px solid #0C0C0B;
+    /* border:2px solid  white; */
+    width:10px;
+    height:10px;
+    border-radius:50%;
+    position:absolute;
+     left: 27px;
+     top:10px;
+     background-color:#FEBF35;
+     z-Index:100;
   }
   .bubble-two{
     border:2px solid #0C0C0B;
