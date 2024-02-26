@@ -399,7 +399,7 @@ function Optifarmcomingsoon() {
           <div className="main-timeline" style={{marginTop:"20px"}}>
 
             <div className="timeline-one-right">
-              <div style={{ backgroundColor: "#DAEFFF", borderBottom: "3px solid #0D71B9 ", borderRadius: "15px" }} className="timelineRight-first">
+              <div style={{ backgroundColor: "#DAEFFF", borderBottom: "3px solid #0D71B9 ", borderRadius: "15px",boxShadow:"0.5px 0.5px 0px 1px #cccccc" }} className="timelineRight-first">
                 <div className="p-3">
                   <div className="num-one">
                     <img src ={websiteconsultaion} style={{width:"100%",height:"100%",objectFit:"contain"}} />
@@ -414,10 +414,10 @@ function Optifarmcomingsoon() {
             </div>
 
             <div className="timeline-two-left">
-              <div style={{ backgroundColor: "#DAEFFF", borderBottom: "3px solid #0D71B9 ", borderRadius: "15px" }} className="timelineLeft-first">
+              <div style={{ backgroundColor: "#DAEFFF", borderBottom: "3px solid #0D71B9 ", borderRadius: "15px",boxShadow:"0.5px 0.5px 0px 1px #cccccc" }} className="timelineLeft-first">
                 <div className="p-4">
                   <div className="num-two">
-                  <img src ={Branddesign} style={{width:"100%",height:"100%",objectFit:"contain"}} />
+                  <img src={finalrevision} style={{width:"100%",height:"100%",objectFit:"contain"}} />
                   </div>
                   <div className="bubble-two"></div>
                   <div className="bubble-three"></div>
@@ -431,29 +431,13 @@ function Optifarmcomingsoon() {
 
 
             <div className="timeline-one-right">
-              <div style={{ backgroundColor: "#DAEFFF", borderBottom: "3px solid #0D71B9 ", borderRadius: "15px" }} className="timelineRight-first">
+              <div style={{ backgroundColor: "#DAEFFF", borderBottom: "3px solid #0D71B9 ", borderRadius: "15px",boxShadow:"0.5px 0.5px 0px 1px #cccccc" }} className="timelineRight-first">
                 <div className="p-4">
                   <div className="num-one">
                   <img src ={finaldesign} style={{width:"100%",height:"100%",objectFit:"contain"}} />
                   </div>
                   <div className="bubble-one"></div>
-                  <div className='timeline-heading-div'>Final Design</div>       
-                  <div className='timeline-para-div' >
-                  After taking the design requirements, we will come up with a design prototype to discuss with you and await for your feedback.
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="timeline-two-left">
-              <div style={{ backgroundColor: "#DAEFFF", borderBottom: "3px solid #0D71B9 ", borderRadius: "15px" }} className="timelineLeft-first">
-                <div className="p-4">
-                  <div className="num-two">
-                  <img src ={finalreview} style={{width:"100%",height:"100%",objectFit:"contain"}} />
-                  </div>
-                  <div className="bubble-two"></div>
-                  <div className="bubble-three"></div>
-                  <div className='timeline-heading-div'>Final Review</div>  
+                  <div className='timeline-heading-div'>Final Review</div>       
                   <div className='timeline-para-div' >
                   When all the changes (if there are any required) are revised, we will deliver the final design for your approval to start the development process.
                   </div>
@@ -461,51 +445,50 @@ function Optifarmcomingsoon() {
               </div>
             </div>
 
-
-            <div className="timeline-one-right">
-              <div style={{ backgroundColor: "#DAEFFF", borderBottom: "3px solid #0D71B9 ", borderRadius: "15px" }} className="timelineRight-first">
+            <div className="timeline-two-left">
+              <div style={{ backgroundColor: "#DAEFFF", borderBottom: "3px solid #0D71B9 ", borderRadius: "15px",boxShadow:"0.5px 0.5px 0px 1px #cccccc" }} className="timelineLeft-first">
                 <div className="p-4">
-                  <div className="num-one">
+                  <div className="num-two">
                   <img src ={storedev} style={{width:"100%",height:"100%",objectFit:"contain"}} />
                   </div>
-                  <div className="bubble-one"></div>
+                  <div className="bubble-two"></div>
+                  <div className="bubble-three"></div>
                   <div className='timeline-heading-div'>Store Development</div>  
                   <div className='timeline-para-div' >
                   When the back-end is finished, we move on to start designing the front-end. We always ensure it's responsive & suits your requirements. This step mostly includes the overall webstore site development based on the design.
                   </div>
-                  <p className="mb-0">
-                    this steps includes
-                  </p>
-                  <div>
-                    <div>
+                </div>
+              </div>
+            </div>
 
-                    </div>
-                    <div>
-                      video meeting
-                    </div>
-                  </div>
-                  <div>
-                    <div>
 
-                    </div>
-                    <div>
-                      video meeting
-                    </div>
+            <div className="timeline-one-right">
+              <div style={{ backgroundColor: "#DAEFFF", borderBottom: "3px solid #0D71B9 ", borderRadius: "15px",boxShadow:"0.5px 0.5px 0px 1px #cccccc"}} className="timelineRight-first">
+                <div className="p-4">
+                  <div className="num-one">
+                  <img src ={contentupload} style={{width:"100%",height:"100%",objectFit:"contain"}} />
                   </div>
+                  <div className="bubble-one"></div>
+                  <div className='timeline-heading-div'>Content Upload</div>  
+                  <div className='timeline-para-div' >
+                  Our team will begin with uploading pages, plugins, images, products, videos & more onto the shopify admin panel.
+                  </div>
+              
+                 
                 </div>
               </div>
             </div>
             <div className="timeline-two-left">
-              <div style={{ backgroundColor: "#DAEFFF", borderBottom: "3px solid #0D71B9 ", borderRadius: "15px" }} className="timelineLeft-first">
+              <div style={{ backgroundColor: "#DAEFFF", borderBottom: "3px solid #0D71B9 ", borderRadius: "15px",boxShadow:"0.5px 0.5px 0px 1px #cccccc" }} className="timelineLeft-first">
                 <div className="p-4">
                   <div className="num-two">
-                  <img src ={contentupload} style={{width:"100%",height:"100%",objectFit:"contain"}} />
+                  <img src ={milestone} style={{width:"100%",height:"100%",objectFit:"contain"}} />
                   </div>
                   <div className="bubble-two"></div>
                   <div className="bubble-three"></div>
-                  <div className='timeline-heading-div'>Content Upload</div>  
+                  <div className='timeline-heading-div'>Milestone</div>  
                   <div className='timeline-para-div' >
-                  Our team will begin with uploading pages, plugins, images, products, videos & more onto the shopify admin panel.
+                  All the stakeholders will have a meeting with you to discuss about the development and you will get a chance to see your store development and the first milestone.
                   </div>
                 </div>
               </div>
@@ -514,104 +497,70 @@ function Optifarmcomingsoon() {
             
 
             <div className="timeline-one-right">
-              <div style={{ backgroundColor: "#DAEFFF", borderBottom: "3px solid #0D71B9 ", borderRadius: "15px" }} className="timelineRight-first">
+              <div style={{ backgroundColor: "#DAEFFF", borderBottom: "3px solid #0D71B9 ", borderRadius: "15px",boxShadow:"0.5px 0.5px 0px 1px #cccccc" }} className="timelineRight-first">
                 <div className="p-4">
                   <div className="num-one">
                   <img src ={milestone} style={{width:"100%",height:"100%",objectFit:"contain"}} />
                   </div>
                   <div className="bubble-one"></div>
-                  <div className='timeline-heading-div'>Milestone</div>  
+                  <div className='timeline-heading-div'>Final Revision</div>  
                   <div className='timeline-para-div' >
-                  All the stakeholders will have a meeting with you to discuss about the development and you will get a chance to see your store development and the first milestone.
+                  The team will work on the feedback provided in the previous step and will work towards the changes.
                   </div>
-                  <p className="mb-0">
-                    this steps includes
-                  </p>
-                  <div>
-                    <div>
-
-                    </div>
-                    <div>
-                      video meeting
-                    </div>
-                  </div>
-                  <div>
-                    <div>
-
-                    </div>
-                    <div>
-                      video meeting
-                    </div>
-                  </div>
+                
+                
+                
                 </div>
               </div>
             </div>
             <div className="timeline-two-left">
-              <div style={{ backgroundColor: "#DAEFFF", borderBottom: "3px solid #0D71B9 ", borderRadius: "15px" }} className="timelineLeft-first">
+              <div style={{ backgroundColor: "#DAEFFF", borderBottom: "3px solid #0D71B9 ", borderRadius: "15px",boxShadow:"0.5px 0.5px 0px 1px #cccccc" }} className="timelineLeft-first">
                 <div className="p-4">
                   <div className="num-two">
                   <img src ={finalrevision} style={{width:"100%",height:"100%",objectFit:"contain"}} />
                   </div>
                   <div className="bubble-two"></div>
                   <div className="bubble-three"></div>
-                  <div className='timeline-heading-div'>Final Revision</div>  
-                  <div className='timeline-para-div' >
-                  The team will work on the feedback provided in the previous step and will work towards the changes.
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="timeline-one-right">
-              <div style={{ backgroundColor: "#DAEFFF", borderBottom: "3px solid #0D71B9 ", borderRadius: "15px" }} className="timelineRight-first">
-                <div className="p-4">
-                  <div className="num-one">
-                  <img src ={productdelivery} style={{width:"100%",height:"100%",objectFit:"contain"}} />
-                  </div>
-                  <div className="bubble-one"></div>
                   <div className='timeline-heading-div'>Product Delivery</div>  
                   <div className='timeline-para-div' >
                   After the final revision, we should be ready with the product. You will get your fully-working shopify webstore that is ready to go live for the public.
                   </div>
-                  <p className="mb-0">
-                    this steps includes
-                  </p>
-                  <div>
-                    <div>
-
-                    </div>
-                    <div>
-                      video meeting
-                    </div>
-                  </div>
-                  <div>
-                    <div>
-
-                    </div>
-                    <div>
-                      video meeting
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="timeline-two-left">
-              <div style={{ backgroundColor: "#DAEFFF", borderBottom: "3px solid #0D71B9 ", borderRadius: "15px" }} className="timelineLeft-first">
-                <div className="p-4">
-                  <div className="num-two">
-                  <img src ={ownership} style={{width:"100%",height:"100%",objectFit:"contain"}} />
-                  </div>
-                  <div className="bubble-two"></div>
-                  <div className="bubble-three"></div>
-                  <div className='timeline-heading-div'>Ownership Transfer</div>  
-                  <div className='timeline-para-div' >
-                  At the last stage, we transfer over the ownership to you, from where you can start your e-commerce journey!:)
-                  </div>
                 </div>
               </div>
             </div>
 
             <div className="timeline-one-right">
+              <div style={{ backgroundColor: "#DAEFFF", borderBottom: "3px solid #0D71B9 ", borderRadius: "15px",boxShadow:"0.5px 0.5px 0px 1px #cccccc" }} className="timelineRight-first">
+                <div className="p-4">
+                  <div className="num-one">
+                  <img src ={ownership} style={{width:"100%",height:"100%",objectFit:"contain"}} />
+                  </div>
+                  <div className="bubble-one"></div>
+                  <div className='timeline-heading-div'>Ownership Transfer</div>  
+                  <div className='timeline-para-div' >
+                  At the last stage, we transfer over the ownership to you, from where you can start your e-commerce journey!:)
+                  </div>
+                
+                </div>
+              </div>
+            </div>
+            <div className="timeline-two-left">
+              <div style={{ backgroundColor: "#DAEFFF", borderBottom: "3px solid #0D71B9 ", borderRadius: "15px",boxShadow:"0.5px 0.5px 0px 1px #cccccc" }} className="timelineLeft-first">
+                <div className="p-4">
+                  <div className="num-two">
+                  <img src ={maintanence} style={{width:"100%",height:"100%",objectFit:"contain"}} />
+                  </div>
+                  {/* <div className="bubble-two"></div> */}
+                  <div className="bubble-three"></div>
+                  <div className='timeline-heading-div'>Maintenance support</div>  
+                  <div className='timeline-para-div' >
+                  We at renergii will always be happy to help you should you need help with anything while operating the shopify webstore. We have a dedicated support team to work with you on a daily basis whenever you need us to step in.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* <div className="timeline-one-right">
               <div style={{ backgroundColor: "#DAEFFF", borderBottom: "3px solid #0D71B9 ", borderRadius: "15px" }} className="timelineRight-first">
                 <div className="p-4">
                   <div className="num-one">
@@ -622,28 +571,12 @@ function Optifarmcomingsoon() {
                   <div className='timeline-para-div' >
                   We at renergii will always be happy to help you should you need help with anything while operating the shopify webstore. We have a dedicated support team to work with you on a daily basis whenever you need us to step in.
                   </div>
-                  <p className="mb-0">
-                    this steps includes
-                  </p>
-                  <div>
-                    <div>
-
-                    </div>
-                    <div>
-                      video meeting
-                    </div>
-                  </div>
-                  <div>
-                    <div>
-
-                    </div>
-                    <div>
-                      video meeting
-                    </div>
-                  </div>
+                
+       
+                
                 </div>
               </div>
-            </div>
+            </div> */}
 
 
 

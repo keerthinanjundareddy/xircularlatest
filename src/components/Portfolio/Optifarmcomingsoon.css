@@ -1288,12 +1288,12 @@ font-size: 24px;
 .timeline-one-right::after {
   content: "";
   position: absolute;
-  width: 40px;
-  height: 40px;
+  width: 45px;
+  height: 45px;
  left: -22px;
   background-color:  #FEBF35;
  
-  border: 1px solid #0C0C0B;
+  border: 2px solid #0C0C0B;
   top: 15px;
   border-radius: 50%;
   z-index: 1;
@@ -1310,12 +1310,12 @@ font-size: 24px;
 .timeline-two-left::after {
   content: "";
   position: absolute;
-  width: 40px;
-  height: 40px;
+  width: 45px;
+  height: 45px;
   right: -22px;
   background-color: #0D71B9;
  
-  border: 1px solid #0C0C0B;
+  border: 2px solid #0C0C0B;
   top: 15px;
   border-radius: 50%;
   z-index: 1;
@@ -1341,7 +1341,7 @@ font-size: 24px;
   position: absolute;
   top: 18px;
   z-index: 1;
-  right: 25px;
+  right: 32px;
   border: medium solid #DAEFFF ;
   border-width: 20px 0 20px 20px;
   border-color: transparent transparent transparent #DAEFFF ;
@@ -1353,9 +1353,9 @@ font-size: 24px;
   position: absolute;
   top: 18px;
   z-index: 1;
-  left: 30px;
+  left: 32px;
   border: medium solid #DAEFFF ;
-  border-width: 10px 10px 10px 0;
+  border-width: 20px 20px 20px 0;
   border-color: transparent #DAEFFF  transparent transparent;
 }
 
@@ -1370,9 +1370,11 @@ font-size: 24px;
 .timelineRight-first{
   /* width:80%; */
   margin-right: 100px;
+  margin-left: 10px;
 }
 .timelineLeft-first{
   /* width:80%; */
+  margin-right: 10px;
   margin-left: 100px;
 
 }
@@ -1381,8 +1383,8 @@ font-size: 24px;
   position:absolute;
   color:white;
   z-index:100;
-  left: -20px;
-  top:17px;
+  left: -16px;
+  top:20px;
    /* bottom:-5px; */
   width:35px;
   height:35px;
@@ -1399,14 +1401,14 @@ font-size: 24px;
   border-radius:50%;
   position:absolute;
    left: -4px;
-   top:50px;
+   top:55px;
    background-color:#FEBF35;
    z-Index:100;
 }
 .num-two{
 position:absolute;
- right: -20px;
- top:17px;
+ right: -18px;
+ top:20px;
  color:white;
 z-index: 100;
 width:35px;
@@ -1423,7 +1425,7 @@ height:10px;
 border-radius:50%;
 position:absolute;
 right: -6px;
-top:50px;
+top:55px;
 background-color:#0D71B9;
 z-index:100;
 }
@@ -1434,7 +1436,7 @@ height:10px;
 border-radius:50%;
 position:absolute;
  right: -6px;
- top:8px;
+ top:10px;
  background-color:#0D71B9;
  z-index:100;
 }
