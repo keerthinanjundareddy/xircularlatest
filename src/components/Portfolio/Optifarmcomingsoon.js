@@ -17,13 +17,25 @@ import linkedinicon from '../../assets/images/Userimages/linkedin-square-icon (1
 
 import datamigration from '../../assets/images/Userimages/Icon_architecture,-structure,-database,-database-structure,-database-architecture.png'
 import uiux from '../../assets/images/Userimages/9860 - Photo-App.png'
-import socialmedia from  '../../assets/images/Userimages/CHAT.png'
-import shopifyapps from  '../../assets/images/Userimages/DATING APPS.png'
-import seo from  '../../assets/images/Userimages/Icon_search-analysis-seo.png'
+import socialmedia from '../../assets/images/Userimages/CHAT.png'
+import shopifyapps from '../../assets/images/Userimages/DATING APPS.png'
+import seo from '../../assets/images/Userimages/Icon_search-analysis-seo.png'
 import additionalofferings from '../../assets/images/Userimages/Immersive Product experience.png'
 import support from '../../assets/images/Userimages/icon_chatbot,-chat-bot,-assistant,-chat,-laptop-07.png'
 import tickMarkWhite from '../../assets/images/Userimages/tickMarkWhite.png'
 import phone from '../../Ayatanassets/images/phone.png'
+import websiteconsultaion from '../../assets/images/Userimages/Frame 38.png'
+import Branddesign from '../../assets/images/Userimages/Frame 40.png'
+import finaldesign from '../../assets/images/Userimages/Frame 45.png'
+import finalreview from '../../assets/images/Userimages/Frame 45.png'
+import storedev from '../../assets/images/Userimages/Frame 41.png'
+import contentupload from '../../assets/images/Userimages/Frame 42.png'
+import milestone from '../../assets/images/Userimages/Frame 43.png'
+import finalrevision from '../../assets/images/Userimages/Frame 39.png'
+import productdelivery from '../../assets/images/Userimages/Frame 40.png'
+import ownership from '../../assets/images/Userimages/Frame 46.png'
+import maintanence from '../../assets/images/Userimages/Frame 47.png'
+
 
 
 import { Container, Row, Col } from "reactstrap";
@@ -56,36 +68,36 @@ function Optifarmcomingsoon() {
     {
       heading: "TEAM MEMBER NAME",
       text: "Designation ",
-      experience:"2yrs",
+      experience: "2yrs",
       image: imageone,
       linkedinicons: linkedinicon,
     },
     {
       heading: "TEAM MEMBER NAME",
       text: "Designation",
-      experience:"2yrs",
+      experience: "2yrs",
       image: imageone,
       linkedinicons: linkedinicon,
-     
+
     },
     {
       heading: "TEAM MEMBER NAME",
       text: "Designation",
-      experience:"2yrs",
+      experience: "2yrs",
       image: imageone,
       linkedinicons: linkedinicon,
     },
     {
       heading: "TEAM MEMBER NAME",
       text: "Designation",
-      experience:"2yrs",
+      experience: "2yrs",
       image: imageone,
       linkedinicons: linkedinicon,
     },
     // Add more objects as needed
   ];
 
- 
+
   const dummyData = [
     {
       title: datamigration, heading: 'Data Migration', contenttwo: `Migrating data on Shopify can be challenging due to the limitations of the Product template, which is constrained in terms of properties.
@@ -133,7 +145,7 @@ function Optifarmcomingsoon() {
       question: 'What are your charges?',
       answer: 'Get in touch with us to discuss about your need and we would suggest you the best plan to get started with.',
     },
-    
+
     {
       question: 'How do I get a domain for my Shopify website?',
       answer: 'We would just need an account created on your name or you can share the access to your existing domain registry and we will take care the rest.',
@@ -274,38 +286,38 @@ function Optifarmcomingsoon() {
   return (
     <>
       <div className='read-more-section' >
-        <div className={`header-section ${scrolled ? 'scrolled' : ''}`} style={{ zIndex: '100' }}>
+        <div className={`header-section ${scrolled ? 'scrolled' : ''}`} style={{ zIndex: '10000' }}>
           <div style={{ width: '100px', height: '100px', cursor: 'pointer' }} onClick={handlebackClick}>
             <img src={isibisilogo} style={{ width: '100%', height: '100%', objectFit: 'contain' }} />
           </div>
 
-        
+
           <div  >
-         
 
-         <div style={{display:"flex",flexDirection:"row",gap:"10px"}}>
 
-          <div className='back-btn' style={{textAlign:"center",marginTop:"10px"}}  onClick={handlebackClicktwo}>
-          <div>
-              <img src={phone } style={{ width: '40px', height: '25px', objectFit: 'contain',paddingLeft:"1px",paddingBottom:"4px"}} />
-            </div>
-          
-            <div style={{paddingRight:"20px",paddingLeft:"1px"}} className='home-heading-xircular'>
-           contact us
+            <div style={{ display: "flex", flexDirection: "row", gap: "10px" }}>
+
+              <div className='back-btn' style={{ textAlign: "center", marginTop: "10px" }} onClick={handlebackClicktwo}>
+                <div>
+                  <img src={phone} style={{ width: '40px', height: '25px', objectFit: 'contain', paddingLeft: "1px", paddingBottom: "4px" }} />
+                </div>
+
+                <div style={{ paddingRight: "20px", paddingLeft: "1px" }} className='home-heading-xircular'>
+                  contact us
+                </div>
+              </div>
+
+              <div className='back-btn' style={{ marginTop: "10px" }} onClick={handlebackClick}>
+                <div>
+                  <img src={home} style={{ width: '40px', height: '25px', objectFit: 'contain', paddingLeft: "1px", paddingBottom: "4px" }} />
+                </div>
+
+                <div style={{ paddingRight: "20px", paddingLeft: "1px" }} className='home-heading-xircular'>
+                  Home
+                </div>
+              </div>
             </div>
           </div>
-
-          <div className='back-btn' style={{marginTop:"10px"}} onClick={handlebackClick}>
-            <div>
-              <img src={home } style={{ width: '40px', height: '25px', objectFit: 'contain',paddingLeft:"1px",paddingBottom:"4px"}} />
-            </div>
-          
-            <div style={{paddingRight:"20px",paddingLeft:"1px"}} className='home-heading-xircular'>
-            Home
-            </div>
-          </div>
-          </div>
-        </div>
         </div>
 
         <div className='banner-main-div'>
@@ -321,7 +333,7 @@ function Optifarmcomingsoon() {
 
             <div className='Text-para'>
               Transform your online store with  our Shopify experts. From setup to optimization, we have got your ecommerce covered.
-             
+
             </div>
           </div>
 
@@ -380,79 +392,270 @@ function Optifarmcomingsoon() {
 
 
 
-        {/* stepper section */}
-        <div className='shopify-howitworks-section'>
-          <div className='howitworks-heading'><b>how it works</b></div>
-          <div className="vertical-stepper">
 
-            {steps.map((step, index) => (
-              <div key={step.label} className="step">
-                <div className="step-number">{index === steps.length -1 ? <img src={tickMarkWhite} height={23} width={23} alt="completed"/> : index + 1}</div>
-                <div className="step-content" style={{ marginLeft: "50px", padding: "20px", marginTop: "0px" }}>
-                  <h5>{step.label}</h5>
-                  <p>{step.description}</p>
-                  <div style={{ color: "black", }}>
-                    <b>{step.howitworks}</b>
-                    {step.textone && (
-                      <div style={{ paddingLeft: "10px" }}>
-                        <img
-                          src={step.iconone}
-                          alt="icon"
-                          style={{ width: "15px", height: "15px", objectFit: "contain" }}
-                        />
-                        <span style={{ paddingLeft: "5px" }}>{step.textone}</span>
-                      </div>
-                    )}
-                    {step.icontwo && (
-                      <div style={{ paddingLeft: "10px" }}>
-                        <img
-                          src={step.icontwo}
-                          alt="icon"
-                          style={{ width: "15px", height: "15px", objectFit: "contain" }}
-                        />
-                        <span style={{ paddingLeft: "5px" }}>{step.textwo}</span>
-                      </div>
-                    )}
+
+        <div className="py-5" style={{ backgroundColor: "#FFFFFF", width: "100%", overflowX: "hidden" }}>
+        <div className='shopify-timelines-heading'><b>HOW WE WORK</b></div>
+          <div className="main-timeline" style={{marginTop:"20px"}}>
+
+            <div className="timeline-one-right">
+              <div style={{ backgroundColor: "#DAEFFF", borderBottom: "3px solid #0D71B9 ", borderRadius: "15px" }} className="timelineRight-first">
+                <div className="p-3">
+                  <div className="num-one">
+                    <img src ={websiteconsultaion} style={{width:"100%",height:"100%",objectFit:"contain"}} />
+                  </div>
+                  <div className="bubble-one"></div>
+                  <div className='timeline-heading-div'>Website Consultation</div>
+                  <div className='timeline-para-div' >
+                    We will discuss the details of the selected niche, products & brand ideas. After niche discussion, we will find a suitable Shopify store template to start with.
                   </div>
                 </div>
-
-                {index !== steps.length - 1 && <div className="step-line" />}
               </div>
-            ))}
+            </div>
+
+            <div className="timeline-two-left">
+              <div style={{ backgroundColor: "#DAEFFF", borderBottom: "3px solid #0D71B9 ", borderRadius: "15px" }} className="timelineLeft-first">
+                <div className="p-4">
+                  <div className="num-two">
+                  <img src ={Branddesign} style={{width:"100%",height:"100%",objectFit:"contain"}} />
+                  </div>
+                  <div className="bubble-two"></div>
+                  <div className="bubble-three"></div>
+                  <div className='timeline-heading-div'>Brand Design</div>
+                  <div className='timeline-para-div' >
+                  In this step, we shall discuss about the store design that will be aligned to your brand. We have dedicated designers to help you choose or suggest the best design for your brand.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div className="timeline-one-right">
+              <div style={{ backgroundColor: "#DAEFFF", borderBottom: "3px solid #0D71B9 ", borderRadius: "15px" }} className="timelineRight-first">
+                <div className="p-4">
+                  <div className="num-one">
+                  <img src ={finaldesign} style={{width:"100%",height:"100%",objectFit:"contain"}} />
+                  </div>
+                  <div className="bubble-one"></div>
+                  <div className='timeline-heading-div'>Final Design</div>       
+                  <div className='timeline-para-div' >
+                  After taking the design requirements, we will come up with a design prototype to discuss with you and await for your feedback.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="timeline-two-left">
+              <div style={{ backgroundColor: "#DAEFFF", borderBottom: "3px solid #0D71B9 ", borderRadius: "15px" }} className="timelineLeft-first">
+                <div className="p-4">
+                  <div className="num-two">
+                  <img src ={finalreview} style={{width:"100%",height:"100%",objectFit:"contain"}} />
+                  </div>
+                  <div className="bubble-two"></div>
+                  <div className="bubble-three"></div>
+                  <div className='timeline-heading-div'>Final Review</div>  
+                  <div className='timeline-para-div' >
+                  When all the changes (if there are any required) are revised, we will deliver the final design for your approval to start the development process.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div className="timeline-one-right">
+              <div style={{ backgroundColor: "#DAEFFF", borderBottom: "3px solid #0D71B9 ", borderRadius: "15px" }} className="timelineRight-first">
+                <div className="p-4">
+                  <div className="num-one">
+                  <img src ={storedev} style={{width:"100%",height:"100%",objectFit:"contain"}} />
+                  </div>
+                  <div className="bubble-one"></div>
+                  <div className='timeline-heading-div'>Store Development</div>  
+                  <div className='timeline-para-div' >
+                  When the back-end is finished, we move on to start designing the front-end. We always ensure it's responsive & suits your requirements. This step mostly includes the overall webstore site development based on the design.
+                  </div>
+                  <p className="mb-0">
+                    this steps includes
+                  </p>
+                  <div>
+                    <div>
+
+                    </div>
+                    <div>
+                      video meeting
+                    </div>
+                  </div>
+                  <div>
+                    <div>
+
+                    </div>
+                    <div>
+                      video meeting
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="timeline-two-left">
+              <div style={{ backgroundColor: "#DAEFFF", borderBottom: "3px solid #0D71B9 ", borderRadius: "15px" }} className="timelineLeft-first">
+                <div className="p-4">
+                  <div className="num-two">
+                  <img src ={contentupload} style={{width:"100%",height:"100%",objectFit:"contain"}} />
+                  </div>
+                  <div className="bubble-two"></div>
+                  <div className="bubble-three"></div>
+                  <div className='timeline-heading-div'>Content Upload</div>  
+                  <div className='timeline-para-div' >
+                  Our team will begin with uploading pages, plugins, images, products, videos & more onto the shopify admin panel.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            
+
+            <div className="timeline-one-right">
+              <div style={{ backgroundColor: "#DAEFFF", borderBottom: "3px solid #0D71B9 ", borderRadius: "15px" }} className="timelineRight-first">
+                <div className="p-4">
+                  <div className="num-one">
+                  <img src ={milestone} style={{width:"100%",height:"100%",objectFit:"contain"}} />
+                  </div>
+                  <div className="bubble-one"></div>
+                  <div className='timeline-heading-div'>Milestone</div>  
+                  <div className='timeline-para-div' >
+                  All the stakeholders will have a meeting with you to discuss about the development and you will get a chance to see your store development and the first milestone.
+                  </div>
+                  <p className="mb-0">
+                    this steps includes
+                  </p>
+                  <div>
+                    <div>
+
+                    </div>
+                    <div>
+                      video meeting
+                    </div>
+                  </div>
+                  <div>
+                    <div>
+
+                    </div>
+                    <div>
+                      video meeting
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="timeline-two-left">
+              <div style={{ backgroundColor: "#DAEFFF", borderBottom: "3px solid #0D71B9 ", borderRadius: "15px" }} className="timelineLeft-first">
+                <div className="p-4">
+                  <div className="num-two">
+                  <img src ={finalrevision} style={{width:"100%",height:"100%",objectFit:"contain"}} />
+                  </div>
+                  <div className="bubble-two"></div>
+                  <div className="bubble-three"></div>
+                  <div className='timeline-heading-div'>Final Revision</div>  
+                  <div className='timeline-para-div' >
+                  The team will work on the feedback provided in the previous step and will work towards the changes.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="timeline-one-right">
+              <div style={{ backgroundColor: "#DAEFFF", borderBottom: "3px solid #0D71B9 ", borderRadius: "15px" }} className="timelineRight-first">
+                <div className="p-4">
+                  <div className="num-one">
+                  <img src ={productdelivery} style={{width:"100%",height:"100%",objectFit:"contain"}} />
+                  </div>
+                  <div className="bubble-one"></div>
+                  <div className='timeline-heading-div'>Product Delivery</div>  
+                  <div className='timeline-para-div' >
+                  After the final revision, we should be ready with the product. You will get your fully-working shopify webstore that is ready to go live for the public.
+                  </div>
+                  <p className="mb-0">
+                    this steps includes
+                  </p>
+                  <div>
+                    <div>
+
+                    </div>
+                    <div>
+                      video meeting
+                    </div>
+                  </div>
+                  <div>
+                    <div>
+
+                    </div>
+                    <div>
+                      video meeting
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="timeline-two-left">
+              <div style={{ backgroundColor: "#DAEFFF", borderBottom: "3px solid #0D71B9 ", borderRadius: "15px" }} className="timelineLeft-first">
+                <div className="p-4">
+                  <div className="num-two">
+                  <img src ={ownership} style={{width:"100%",height:"100%",objectFit:"contain"}} />
+                  </div>
+                  <div className="bubble-two"></div>
+                  <div className="bubble-three"></div>
+                  <div className='timeline-heading-div'>Ownership Transfer</div>  
+                  <div className='timeline-para-div' >
+                  At the last stage, we transfer over the ownership to you, from where you can start your e-commerce journey!:)
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="timeline-one-right">
+              <div style={{ backgroundColor: "#DAEFFF", borderBottom: "3px solid #0D71B9 ", borderRadius: "15px" }} className="timelineRight-first">
+                <div className="p-4">
+                  <div className="num-one">
+                  <img src ={maintanence} style={{width:"100%",height:"100%",objectFit:"contain"}} />
+                  </div>
+                  <div className="bubble-one"></div>
+                  <div className='timeline-heading-div'>Maintenance support</div>  
+                  <div className='timeline-para-div' >
+                  We at renergii will always be happy to help you should you need help with anything while operating the shopify webstore. We have a dedicated support team to work with you on a daily basis whenever you need us to step in.
+                  </div>
+                  <p className="mb-0">
+                    this steps includes
+                  </p>
+                  <div>
+                    <div>
+
+                    </div>
+                    <div>
+                      video meeting
+                    </div>
+                  </div>
+                  <div>
+                    <div>
+
+                    </div>
+                    <div>
+                      video meeting
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+
           </div>
 
         </div>
 
-
         {/* end of stepper section */}
 
 
-      {/* start of team section */}
-{/* 
-      <div className='description-container'>
-          <div className='theteam-heading'><b>the team</b></div>
-          <div className="card-containers-team">
-      {dataArray.map((data, index) => (
-        <div key={index} className='card-team-div' >
-         
-          <div className='teamdiv-section-flexbox'>
-            <div className='team-images-container-div'>
-              <div><img src= {imageone} style={{borderRadius:"50%",width:"100%",height:"100%",objectFit:"contain"}} /></div>
-              </div>
-            <div className='team-detail-section'>
-       <div className="team-div-data-heading" >{data.heading}</div>
-       <div className="team-div-data-text">{data.text}</div>
-       <div  className="team-div-data-experince">{data.experience}</div>
-       <div className='team-linkedin-images' ><img src={data.linkedinicons} style={{width:"100%",height:"100%",objectFit:"contain"}}/></div>
-       </div>
-  
-  </div>
-  </div>
-       
-      ))}
-    </div>
-        </div> */}
-        {/* end of teaam section  */}
+
 
         <div className='faq-top-section'>
           <div className='faq-heading'><b>Frequently Asked Questions</b></div>
@@ -464,7 +667,7 @@ function Optifarmcomingsoon() {
                   <span className="arrow">{index === openIndex ? '▲' : '▼'}</span>
                 </div>
                 {index === openIndex && (
-                  <div className="accordions-answers" style={{color:"grey"}}>
+                  <div className="accordions-answers" style={{ color: "grey" }}>
                     {item.answer}
                   </div>
                 )}
@@ -475,40 +678,40 @@ function Optifarmcomingsoon() {
 
       </div>
       <div className='footer-top-section'>
-       
-      <footer className="footer  myownfooter">
-                    <Container>
-                        <Row>
 
-                            {/* <Col md="4" sm="12"> */}
-                                {/* <img src={logo} alt="logo" height="24" /> */}
-                                {/* <div style={{color:"black",fontSize:"20px"}}>Ayatana</div> */}
+        <footer className="footer  myownfooter">
+          <Container>
+            <Row>
 
-                                <div className="full-footer-cont">
-                               
-                               <div className='footer-flex-box-container'>
-                               <div>
-                                <img src={ imagetwo }  style={{width:"180px",height:"120px"}} />
-                                </div>
-                                <div className='footer-image-container'>
-                                <img src={ facebookone } width={30} height={30} className="facebook-section"  />
-                                <img src={ instaone } width={30} height={30} className="facebook-section"  />
-                                <img src={ linkedinone }  width={30} height={30} className="facebook-section"  />
-                                <img src={ twitterone }  width={30} height={30} className="facebook-section"   />
-                                <img src={ youtube }  width={30} height={30} className="facebook-section"  />
-                                </div>
-                                </div>
-                              
-                                 <div>
-                                 <hr className="" />
-                                <p className="copy-rights" style={{textAlign:"center",paddingTop:"5px"}}> 2024 © Copyright StorefrontX.All Rights Reserved</p>
-                                </div>
+              {/* <Col md="4" sm="12"> */}
+              {/* <img src={logo} alt="logo" height="24" /> */}
+              {/* <div style={{color:"black",fontSize:"20px"}}>Ayatana</div> */}
 
-                                </div>
-                                
-                                {/* <p className="margin-t-20">The digital marketing platform that connects small businesses with their target audience.</p> */}
+              <div className="full-footer-cont">
 
-                                {/* <ul className="list-inline social">
+                <div className='footer-flex-box-container'>
+                  <div>
+                    <img src={imagetwo} style={{ width: "180px", height: "120px" }} />
+                  </div>
+                  <div className='footer-image-container'>
+                    <img src={facebookone} width={30} height={30} className="facebook-section" />
+                    <img src={instaone} width={30} height={30} className="facebook-section" />
+                    <img src={linkedinone} width={30} height={30} className="facebook-section" />
+                    <img src={twitterone} width={30} height={30} className="facebook-section" />
+                    <img src={youtube} width={30} height={30} className="facebook-section" />
+                  </div>
+                </div>
+
+                <div>
+                  <hr className="" />
+                  <p className="copy-rights" style={{ textAlign: "center", paddingTop: "5px" }}> 2024 © Copyright StorefrontX.All Rights Reserved</p>
+                </div>
+
+              </div>
+
+              {/* <p className="margin-t-20">The digital marketing platform that connects small businesses with their target audience.</p> */}
+
+              {/* <ul className="list-inline social">
                                     {
                                         this.state.socials.map((social, key) =>
                                             <li key={key} className="list-inline-item">
@@ -517,23 +720,23 @@ function Optifarmcomingsoon() {
                                         )
                                     }
                                 </ul> */}
-                            {/* </Col> */}
+              {/* </Col> */}
 
-                            {/* <Col md={{size:3, offset : 2}} sm="6">
+              {/* <Col md={{size:3, offset : 2}} sm="6">
                                 <LinkSection title="Solutions" links={this.state.links1} />
                             </Col> */}
 
-                            {/* <Col md="6" sm="6"> */}
-                               {/* Discover Phygital Santhe Website Here */}
-                                 {/* <button style={{ border:"none",outline:"none",border:"1px solid #f56363",backgroundColor:"#f56363",borderRadius:"20px",color:"white",width:"300px",height:"40px"}}><a href="https://incomparable-hamster-92fd22.netlify.app/"  target="_blank" style={{color:"white"}}><b>EXPLORE PHYGITAL</b></a></button> */}
-                            {/* <LinkSection title="Useful Links" links={this.state.links2}  /> */}
-                            {/* </Col> */}
+              {/* <Col md="6" sm="6"> */}
+              {/* Discover Phygital Santhe Website Here */}
+              {/* <button style={{ border:"none",outline:"none",border:"1px solid #f56363",backgroundColor:"#f56363",borderRadius:"20px",color:"white",width:"300px",height:"40px"}}><a href="https://incomparable-hamster-92fd22.netlify.app/"  target="_blank" style={{color:"white"}}><b>EXPLORE PHYGITAL</b></a></button> */}
+              {/* <LinkSection title="Useful Links" links={this.state.links2}  /> */}
+              {/* </Col> */}
 
-                        </Row>
+            </Row>
 
-                    </Container>
-                </footer>
-       
+          </Container>
+        </footer>
+
       </div>
 
     </>
