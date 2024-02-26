@@ -1394,7 +1394,7 @@ font-size: 24px;
 
 }
 .bubble-one{
-  border:2px solid black;
+  border:2px solid #0C0C0B;
   /* border:2px solid  white; */
   width:10px;
   height:10px;
@@ -1419,7 +1419,7 @@ justify-content: center;
 
 }
 .bubble-two{
-border:2px solid black;
+border:2px solid #0C0C0B;
 width:10px;
 height:10px;
 border-radius:50%;
@@ -1430,7 +1430,7 @@ background-color:#0D71B9;
 z-index:100;
 }
 .bubble-three{
-border:2px solid black;
+border:2px solid #0C0C0B;
 width:10px;
 height:10px;
 border-radius:50%;
@@ -1519,7 +1519,7 @@ position:absolute;
   
     }
     .bubble-one{
-      border:1px solid green;
+      border:2px solid #0C0C0B;
       width:10px;
       height:10px;
       border-radius:50%;
@@ -1528,9 +1528,12 @@ position:absolute;
        top:50px;
        background-color:yellow;
        z-Index:100;
+
+
+     
   }
   .bubble-two{
-    border:1px solid green;
+    border:2px solid #0C0C0B;
     width:10px;
     height:10px;
     border-radius:50%;
@@ -1544,9 +1547,10 @@ position:absolute;
      /* right: 90%;  */
      background-color:#0D71B9;
      z-index:100;
+
     }
     .bubble-three{
-      border:1px solid green;
+      border:2px solid #0C0C0B;
       width:10px;
       height:10px;
       border-radius:50%;
