@@ -112,7 +112,7 @@ const GetInTouch = () => {
             return; // Stop form submission if name is empty
         }
 
-        const phoneRegex = /^\d{10}$/;
+        const phoneRegex = /^(\+\d{1,2})?[-\s]?\d{10}$/;
         if (!phoneRegex.test(phone)) {
             setPhonerrmsg("phoneNumber must contain 10 digits");
             return; // Stop form submission if phone number format is invalid
