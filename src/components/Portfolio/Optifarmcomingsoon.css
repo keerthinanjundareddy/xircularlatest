@@ -1289,9 +1289,9 @@ font-size: 24px;
 .popup {
   position: absolute;
   /* top: -100%; */
-  top:-100%;
-  left: 50px;
-  min-width:200px;
+  top:-230%;
+  left: -100px;
+  min-width:400px;
   min-height: 100px;
   transform: translateX(0%);
   background-color: #fff;
