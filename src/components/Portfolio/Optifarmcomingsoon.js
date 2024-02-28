@@ -32,7 +32,7 @@ import storedev from '../../assets/images/Userimages/Frame 41.png'
 import contentupload from '../../assets/images/Userimages/Frame 42.png'
 import milestone from '../../assets/images/Userimages/Frame 43.png'
 import finalrevision from '../../assets/images/Userimages/Frame 39.png'
-import productdelivery from '../../assets/images/Userimages/Frame 40.png'
+import productdelivery from '../../assets/images/Userimages/Product_sampling_opportunities_2-u6gbbFhs.png'
 import ownership from '../../assets/images/Userimages/Frame 46.png'
 import maintanence from '../../assets/images/Userimages/Frame 47.png'
 
@@ -295,6 +295,24 @@ function Optifarmcomingsoon() {
   };
 
 
+
+
+   const [isMobile, setIsMobile] = useState(window.innerWidth <= 767);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 767);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    // Cleanup the event listener when the component unmounts
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+
   return (
     <>
       <div className='read-more-section' >
@@ -405,85 +423,475 @@ function Optifarmcomingsoon() {
 
 
 {/* start of stepper section */}
-<div className='faq-heading' style={{textAlign:"center"}}><b>How We Work</b></div>
-<div className='xircularhowitworks-top-section'  >
+{isMobile ? (
+        // Mobile layout
+        <>
+          <div className='xircular-how-we-work-sec' style={{textAlign:"center"}}><b>How We Work</b></div>
+          
+
+
+          <div className='xircularhowitworks-top-sections-two'   >
 
 
 
-<div className='full-timeline-container'>
-    <div className="timeline">
-      <div className="timeline-event" onMouseEnter={() => handleNumberHover(1)} onMouseLeave={handleNumberLeave}>
-        <div className="number">1</div>
+<div className='full-timeline-containers' >
+    <div className="timeline-mobile" >
+   
+      <div className="timeline-event"  id="consultation" onMouseEnter={() => handleNumberHover(1)} onMouseLeave={handleNumberLeave}>
+        <div className="number" >
+          <div className='xircular-home-images'>
+          <img src={websiteconsultaion} style={{width:"100%",height:"100%",objectFit:"contain"}} />
+          </div>
+        </div>
         {/* <div className='bubble-three'></div> */}
         <div className='bubble-four'></div>
-        <div className='num-contents'>Website Consultation</div>
-        {hoveredNumber === 1 && <div className="popup">We will discuss the details of the selected niche, products & brand ideas. After niche discussion, we will find a suitable Shopify store template to start with.</div>}
+        <div className='num-contents-mobile'>Website Consultation</div>
+        {hoveredNumber === 1 && <div className="mobile-popup-left">
+          <div className='xircular-popup-heading'>Website consultation</div>
+          <div className='xircular-popup-textheading'>We will discuss the details of the selected niche, products & brand ideas. After niche discussion, we will find a suitable Shopify store template to start with.</div>
+          </div>}
       </div>
 
       <div className="timeline-event" onMouseEnter={() => handleNumberHover(2)} onMouseLeave={handleNumberLeave}>
-        <div className="numbers">2</div>
+        <div className="numbers">
+        <div className='xircular-home-images'>
+          <img src={Branddesign} style={{width:"100%",height:"100%",objectFit:"contain"}} />
+          </div>
+        </div>
         <div className='bubble-one'></div>
         <div className='bubble-two'></div>
-        <div  className='num-contents'>Brand Design</div>
-        {hoveredNumber === 2 && <div className="popup">In this step, we shall discuss about the store design that will be aligned to your brand. We have dedicated designers to help you choose or suggest the best design for your brand.</div>}
+        <div  className='num-contents-mobile'>Brand Design</div>
+        {hoveredNumber === 2 && <div className="mobile-popup-center">
+        <div className='xircular-popup-heading'>Brand Design</div>
+          <div className='xircular-popup-textheading'>In this step, we shall discuss about the store design that will be aligned to your brand. We have dedicated designers to help you choose or suggest the best design for your brand.</div>
+          </div>}
       </div>
 
       <div className="timeline-event" onMouseEnter={() => handleNumberHover(3)} onMouseLeave={handleNumberLeave}>
-        <div className="number ">3</div>
+        <div className="number mobileyellow ">
+        <div className='xircular-home-images'>
+          <img src={finaldesign} style={{width:"100%",height:"100%",objectFit:"contain"}} />
+          </div>
+        </div>
         <div className='bubble-three'></div>
         <div className='bubble-four'></div>
-        <div  className='num-contents'> Final Review</div>
-        {hoveredNumber === 3 && <div className="popup">When all the changes (if there are any required) are revised, we will deliver the final design for your approval to start the development process.</div>}
+        <div  className='num-contents-mobile'> Final Review</div>
+        {hoveredNumber === 3 && <div className="mobile-popup-right">
+        <div className='xircular-popup-heading'>Final Review</div>
+          <div className='xircular-popup-textheading'>When all the changes (if there are any required) are revised, we will deliver the final design for your approval to start the development process.</div>
+          </div>
+        }
       </div>
 
 
-      <div className="timeline-event" onMouseEnter={() => handleNumberHover(4)} onMouseLeave={handleNumberLeave}>
-        <div className="numbers  yellow">4</div>
+   
+
+     
+
+    </div>
+
+    {/* <hr className='first-hr' /> */}
+
+
+    <div className="timeline-two-mobile" >
+
+    
+    <div className="timeline-event" onMouseEnter={() => handleNumberHover(6)} onMouseLeave={handleNumberLeave}>
+        <div className="numbers mobileyellows">
+        <div className='xircular-home-images'>
+          <img src={milestone} style={{width:"100%",height:"100%",objectFit:"contain"}} />
+          </div>
+        </div>
+        <div className='bubble-one xircularowner'></div>
+        <div className='bubble-two'></div>
+        <div  className='num-contents-mobile'>Milestone</div>
+        {hoveredNumber === 6 && <div className="mobile-popup-left">
+        <div className='xircular-popup-heading'>Milestone</div>
+        <div className='xircular-popup-textheading'>All the stakeholders will have a meeting with you to discuss about the development and you will get a chance to see your store development and the first milestone.</div>
+        </div>}
+      </div>
+
+
+
+      <div className="timeline-event newfour" onMouseEnter={() => handleNumberHover(5)} onMouseLeave={handleNumberLeave}>
+        <div className="number">
+        <div className='xircular-home-images'>
+          <img src={contentupload} style={{width:"100%",height:"100%",objectFit:"contain"}} />
+          </div>
+        </div>
+        <div className='bubble-three'></div>
+        <div className='bubble-four'></div>
+        <div className='num-contents-mobile' >Content Upload</div>
+        {hoveredNumber === 5 && <div className="mobile-popup-center">
+        <div className='xircular-popup-heading'>Content Upload</div>
+          <div className='xircular-popup-textheading'>Our team will begin with uploading pages, plugins, images, products, videos & more onto the shopify admin panel.</div>
+          </div>}
+      </div>
+
+
+      
+
+
+      <div className="timeline-event  newfour" onMouseEnter={() => handleNumberHover(4)} onMouseLeave={handleNumberLeave}>
+        <div className="numbers  ">
+        <div className='xircular-home-images'>
+          <img src={storedev} style={{width:"100%",height:"100%",objectFit:"contain"}} />
+          </div>
+
+        </div>
+        <div className='bubble-one'></div>
+        <div className='bubble-two'></div>
+        <div  className='num-contents-mobile'>Store Development</div>
+        {hoveredNumber === 4 && <div className="mobile-popup-right">
+        <div className='xircular-popup-heading'>Store Development</div>
+        <div className='xircular-popup-textheading'>When the back-end is finished, we move on to start designing the front-end. We always ensure it's responsive & suits your requirements. This step mostly includes the overall webstore site development based on the design.</div>
+        </div>
+        }
+      </div>
+
+      
+   
+   
+
+    
+
+    </div>
+
+
+    
+    <div className="timeline-three-mobile" >
+
+    <div className="timeline-event" onMouseEnter={() => handleNumberHover(9)} onMouseLeave={handleNumberLeave}>
+        <div className="number">
+        <div className='xircular-home-images'>
+          <img src={finalrevision} style={{width:"100%",height:"100%",objectFit:"contain"}} />
+          </div>
+        </div>
+        <div className='bubble-three xircularowner'></div>
+        <div className='bubble-four'></div>
+        <div className="num-contents-mobile">Final Revision</div>
+        {hoveredNumber === 9 && <div className="mobile-popup-left">
+        <div className='xircular-popup-heading'>Final Revision</div>
+        <div className='xircular-popup-textheading'>
+        The team will work on the feedback provided in the previous step and will work towards the changes.</div>
+        </div>}
+      </div>
+   
+
+      {/* <div className="timeline-event" onMouseEnter={() => handleNumberHover(9)} onMouseLeave={handleNumberLeave}>
+        <div className="numbers">
+        <div className='xircular-home-images'>
+          <img src={productdelivery} style={{width:"100%",height:"100%",objectFit:"contain"}} />
+          </div>
+        </div>
+        <div className='bubble-one'></div>
+        <div className='bubble-two'></div>
+        <div className="num-contents-mobile">Product Delivery</div>
+        {hoveredNumber === 8 && <div className="mobile-popup-center">
+        <div className='xircular-popup-heading'>Product Delivery</div>
+        <div className='xircular-popup-textheading'>
+        After the final revision, we should be ready with the product. You will get your fully-working shopify webstore that is ready to go live for the public.</div>
+        </div>}
+      </div> */}
+
+
+      
+      {/* <div className="timeline-event" onMouseEnter={() => handleNumberHover(2)} onMouseLeave={handleNumberLeave}>
+        <div className="numbers">
+        <div className='xircular-home-images'>
+          <img src={{}} style={{width:"100%",height:"100%",objectFit:"contain"}} />
+          </div>
+        </div>
+        <div className='bubble-one'></div>
+        <div className='bubble-two'></div>
+        <div  className='num-contents-mobile'>Product Delivery</div>
+        {hoveredNumber === 4 && <div className="mobile-popup-centers">
+        <div className='xircular-popup-heading'>Product Delivery</div>
+          <div className='xircular-popup-textheading'> After the final revision, we should be ready with the product. You will get your fully-working shopify webstore that is ready to go live for the public.</div>
+          </div>}
+      </div> */}
+
+
+    {/* <div className="timeline-event " onMouseEnter={() => handleNumberHover(8)} onMouseLeave={handleNumberLeave}>
+        <div className="numbers ">
+        <div className='xircular-home-images'>
+          <img src={productdelivery} style={{width:"100%",height:"100%",objectFit:"contain"}} />
+          </div>
+
+        </div>
+        <div className='bubble-one'></div>
+        <div className='bubble-two'></div>
+        <div  className='num-contents-mobile'>Product Delivery</div>
+       
+        {hoveredNumber === 8 && <div className="mobile-popup-center">
+        <div className='xircular-popup-heading'>Product Delivery</div>
+          
+          <div className='xircular-popup-textheading'>After the final revision, we should be ready with the product. You will get your fully-working shopify webstore that is ready to go live for the public.</div>
+          </div>
+          }
+      </div> */}
+
+
+<div className="timeline-event " onMouseEnter={() => handleNumberHover(8)} onMouseLeave={handleNumberLeave}>
+        <div className="numbers  ">
+        <div className='xircular-home-images'>
+          <img src={productdelivery} style={{width:"100%",height:"100%",objectFit:"contain"}} />
+          </div>
+
+        </div>
+        <div className='bubble-one'></div>
+        <div className='bubble-two'></div>
+        <div  className='num-contents-mobile'>Product Delivery</div>
+        {hoveredNumber === 8 && <div className="mobile-popup-center">
+        <div className='xircular-popup-heading'>Product Delivery</div>
+        <div className='xircular-popup-textheading'>After the final revision, we should be ready with the product. You will get your fully-working shopify webstore that is ready to go live for the public.</div>
+        </div>
+        }
+      </div>
+
+      <div className="timeline-event" onMouseEnter={() => handleNumberHover(7)} onMouseLeave={handleNumberLeave}>
+        <div className="number mobileyellow">
+        <div className='xircular-home-images'>
+          <img src={ownership} style={{width:"100%",height:"100%",objectFit:"contain"}} />
+          </div>
+        </div>
+        <div className='bubble-three'></div>
+        <div className='bubble-four'></div>
+        <div  className='num-contents-mobile'>Ownership Transfer</div>
+        {hoveredNumber === 7 && <div className="mobile-popup-right">
+        <div className='xircular-popup-heading'>Ownership Transfer</div>
+          <div className='xircular-popup-textheading'>At the last stage, we transfer over the ownership to you, from where you can start your e-commerce journey! :).</div>
+
+          </div>
+        
+        }
+      </div>
+
+ </div>
+ 
+
+
+
+
+ <div className="timeline-threethree-mobile" >
+
+<div className="timeline-event" onMouseEnter={() => handleNumberHover(9)} onMouseLeave={handleNumberLeave} style={{visibility:"hidden"}}>
+    <div className="number">
+    <div className='xircular-home-images'>
+      <img src={finalrevision} style={{width:"100%",height:"100%",objectFit:"contain"}} />
+      </div>
+    </div>
+    <div className='bubble-three xircularowner'></div>
+    <div className='bubble-four'></div>
+    <div className="num-contents-mobile">Final Revision</div>
+    {hoveredNumber === 9 && <div className="mobile-popup-left">
+    <div className='xircular-popup-heading'>Final Revision</div>
+    <div className='xircular-popup-textheading'>
+    The team will work on the feedback provided in the previous step and will work towards the changes.</div>
+    </div>}
+  </div>
+
+
+
+
+<div className="timeline-event " onMouseEnter={() => handleNumberHover(8)} onMouseLeave={handleNumberLeave} style={{visibility:"hidden"}}>
+    <div className="numbers  ">
+    <div className='xircular-home-images'>
+      <img src={productdelivery} style={{width:"100%",height:"100%",objectFit:"contain"}} />
+      </div>
+
+    </div>
+    <div className='bubble-one'></div>
+    <div className='bubble-two'></div>
+    <div  className='num-contents-mobile'>Product Delivery</div>
+    {hoveredNumber === 8 && <div className="mobile-popup-center">
+    <div className='xircular-popup-heading'>Product Delivery</div>
+    <div className='xircular-popup-textheading'>After the final revision, we should be ready with the product. You will get your fully-working shopify webstore that is ready to go live for the public.</div>
+    </div>
+    }
+  </div>
+
+  
+  <div className="timeline-event  newfour" onMouseEnter={() => handleNumberHover(10)} onMouseLeave={handleNumberLeave}>
+        <div className="numbers  ">
+        <div className='xircular-home-images'>
+          <img src={maintanence} style={{width:"100%",height:"100%",objectFit:"contain"}} />
+          </div>
+
+        </div>
+        {/* <div className='bubble-one'></div> */}
+        <div className='bubble-two xircularownethree'></div>
+        <div  className='num-contents-mobile'>Maintenance support</div>
+        {hoveredNumber === 10 && <div className="mobile-popup-right">
+        <div className='xircular-popup-heading'>Maintenance support</div>
+        <div className='xircular-popup-textheading'>We at renergii will always be happy to help you should you need help with anything while operating the shopify webstore. We have a dedicated support team to work with you on a daily basis whenever you need us to step in.</div>
+        </div>
+        }
+      </div>
+
+</div>
+
+
+
+
+
+    </div>
+    </div>
+
+
+
+
+        </>
+      ) : (
+        <>
+<div className='xircular-how-we-work-sec' style={{textAlign:"center"}}><b>How We Work</b></div>
+<div className='xircularhowitworks-top-sections'  >
+
+
+
+<div className='full-timeline-containers' >
+    <div className="timeline" >
+   
+      <div className="timeline-event"  id="consultation" onMouseEnter={() => handleNumberHover(1)} onMouseLeave={handleNumberLeave}>
+        <div className="number" >
+          <div className='xircular-home-images'>
+          <img src={websiteconsultaion} style={{width:"100%",height:"100%",objectFit:"contain"}} />
+          </div>
+        </div>
+        {/* <div className='bubble-three'></div> */}
+        <div className='bubble-four'></div>
+        <div className='num-contents'>Website Consultation</div>
+        {hoveredNumber === 1 && <div className="popup">
+          <div className='xircular-popup-heading'>Website consultation</div>
+          <div className='xircular-popup-textheading'>We will discuss the details of the selected niche, products & brand ideas. After niche discussion, we will find a suitable Shopify store template to start with.</div>
+          </div>}
+      </div>
+
+      <div className="timeline-event" onMouseEnter={() => handleNumberHover(2)} onMouseLeave={handleNumberLeave}>
+        <div className="numbers">
+        <div className='xircular-home-images'>
+          <img src={Branddesign} style={{width:"100%",height:"100%",objectFit:"contain"}} />
+          </div>
+        </div>
+        <div className='bubble-one'></div>
+        <div className='bubble-two'></div>
+        <div  className='num-contents'>Brand Design</div>
+        {hoveredNumber === 2 && <div className="popup">
+        <div className='xircular-popup-heading'>Brand Design</div>
+          <div className='xircular-popup-textheading'>In this step, we shall discuss about the store design that will be aligned to your brand. We have dedicated designers to help you choose or suggest the best design for your brand.</div>
+          </div>}
+      </div>
+
+      <div className="timeline-event" onMouseEnter={() => handleNumberHover(3)} onMouseLeave={handleNumberLeave}>
+        <div className="number ">
+        <div className='xircular-home-images'>
+          <img src={finaldesign} style={{width:"100%",height:"100%",objectFit:"contain"}} />
+          </div>
+        </div>
+        <div className='bubble-three'></div>
+        <div className='bubble-four'></div>
+        <div  className='num-contents'> Final Review</div>
+        {hoveredNumber === 3 && <div className="popup">
+        <div className='xircular-popup-heading'>Final Review</div>
+          <div className='xircular-popup-textheading'>When all the changes (if there are any required) are revised, we will deliver the final design for your approval to start the development process.</div>
+          </div>
+        }
+      </div>
+
+
+      <div className="timeline-event  newfour" onMouseEnter={() => handleNumberHover(4)} onMouseLeave={handleNumberLeave}>
+        <div className="numbers  yellow">
+        <div className='xircular-home-images'>
+          <img src={storedev} style={{width:"100%",height:"100%",objectFit:"contain"}} />
+          </div>
+
+        </div>
         <div className='bubble-one'></div>
         <div className='bubble-five'></div>
-        <div  className='num-contents-two'>Store Development</div>
-        {hoveredNumber === 4 && <div className="popup">When the back-end is finished, we move on to start designing the front-end. We always ensure it's responsive & suits your requirements. This step mostly includes the overall webstore site development based on the design.</div>}
+        <div  className='num-contents-two stores'>Store Development</div>
+        {hoveredNumber === 4 && <div className="popup">
+        <div className='xircular-popup-heading'>Store Development</div>
+        <div className='xircular-popup-textheading'>When the back-end is finished, we move on to start designing the front-end. We always ensure it's responsive & suits your requirements. This step mostly includes the overall webstore site development based on the design.</div>
+        </div>
+        }
       </div>
 
      
 
     </div>
 
+    {/* <hr className='first-hr' /> */}
 
-    <div className="timeline-two">
+
+    <div className="timeline-two" >
      
 
-      <div className="timeline-event" onMouseEnter={() => handleNumberHover(8)} onMouseLeave={handleNumberLeave}>
-        <div className="numbers yellow">8</div>
+      <div className="timeline-event " onMouseEnter={() => handleNumberHover(8)} onMouseLeave={handleNumberLeave}>
+        <div className="numbers yellow">
+        <div className='xircular-home-images'>
+          <img src={productdelivery} style={{width:"100%",height:"100%",objectFit:"contain"}} />
+          </div>
+
+        </div>
         <div className='bubble-eightyfive'></div>
         <div className='bubble-eightysix'></div>
         <div  className='num-contents-three'>Product Delivery</div>
-        {hoveredNumber === 8 && <div className="popup">After the final revision, we should be ready with the product. You will get your fully-working shopify webstore that is ready to go live for the public.</div>}
+       
+        {hoveredNumber === 8 && <div className="popup">
+        <div className='xircular-popup-heading'>Product Delivery</div>
+          
+          <div className='xircular-popup-textheading'>After the final revision, we should be ready with the product. You will get your fully-working shopify webstore that is ready to go live for the public.</div>
+          </div>
+          }
       </div>
 
       <div className="timeline-event" onMouseEnter={() => handleNumberHover(7)} onMouseLeave={handleNumberLeave}>
-        <div className="number">7</div>
+        <div className="number">
+        <div className='xircular-home-images'>
+          <img src={finalrevision} style={{width:"100%",height:"100%",objectFit:"contain"}} />
+          </div>
+        </div>
         <div className='bubble-three'></div>
         <div className='bubble-four'></div>
         <div  className='num-contents'>Final Revision</div>
-        {hoveredNumber === 7 && <div className="popup">The team will work on the feedback provided in the previous step and will work towards the changes.</div>}
+        {hoveredNumber === 7 && <div className="popup">
+        <div className='xircular-popup-heading'>Final Revision</div>
+          <div className='xircular-popup-textheading'>The team will work on the feedback provided in the previous step and will work towards the changes.</div>
+
+          </div>
+        
+        }
       </div>
 
       
       <div className="timeline-event" onMouseEnter={() => handleNumberHover(6)} onMouseLeave={handleNumberLeave}>
-        <div className="numbers">6</div>
+        <div className="numbers">
+        <div className='xircular-home-images'>
+          <img src={milestone} style={{width:"100%",height:"100%",objectFit:"contain"}} />
+          </div>
+        </div>
         <div className='bubble-one'></div>
         <div className='bubble-two'></div>
         <div  className='num-contents'>Milestone</div>
-        {hoveredNumber === 6 && <div className="popup">All the stakeholders will have a meeting with you to discuss about the development and you will get a chance to see your store development and the first milestone.</div>}
+        {hoveredNumber === 6 && <div className="popup">
+        <div className='xircular-popup-heading'>Milestone</div>
+        <div className='xircular-popup-textheading'>All the stakeholders will have a meeting with you to discuss about the development and you will get a chance to see your store development and the first milestone.</div>
+        </div>}
       </div>
 
-      <div className="timeline-event" onMouseEnter={() => handleNumberHover(5)} onMouseLeave={handleNumberLeave}>
-        <div className="number">5</div>
+      <div className="timeline-event newfour" onMouseEnter={() => handleNumberHover(5)} onMouseLeave={handleNumberLeave}>
+        <div className="number">
+        <div className='xircular-home-images'>
+          <img src={contentupload} style={{width:"100%",height:"100%",objectFit:"contain"}} />
+          </div>
+        </div>
         <div className='bubble-fiftyfive'></div>
         <div className='bubble-fiftysix'></div>
-        <div className='num-contents' >Content Upload</div>
-        {hoveredNumber === 5 && <div className="popup">Our team will begin with uploading pages, plugins, images, products, videos & more onto the shopify admin panel.</div>}
+        <div className='num-contents stores' >Content Upload</div>
+        {hoveredNumber === 5 && <div className="popup">
+        <div className='xircular-popup-heading'>Content Upload</div>
+          <div className='xircular-popup-textheading'>Our team will begin with uploading pages, plugins, images, products, videos & more onto the shopify admin panel.</div>
+          </div>}
       </div>
 
     
@@ -492,22 +900,37 @@ function Optifarmcomingsoon() {
 
 
     
-    <div className="timeline-three">
+    <div className="timeline-three" >
      
 
       <div className="timeline-event" onMouseEnter={() => handleNumberHover(9)} onMouseLeave={handleNumberLeave}>
-        <div className="number">9</div>
+        <div className="number">
+        <div className='xircular-home-images'>
+          <img src={ownership} style={{width:"100%",height:"100%",objectFit:"contain"}} />
+          </div>
+        </div>
         <div className='bubble-ninetyfive'></div>
         <div className='bubble-ninetysix'></div>
         <div className="num-contents">Ownership Transfer</div>
-        {hoveredNumber === 9 && <div className="popup">At the last stage, we transfer over the ownership to you, from where you can start your e-commerce journey! :).</div>}
+        {hoveredNumber === 9 && <div className="popup">
+        <div className='xircular-popup-heading'>Ownership Transfer</div>
+        <div className='xircular-popup-textheading'>At the last stage, we transfer over the ownership to you, from where you can start your e-commerce journey! :).</div>
+        </div>}
       </div>
-      <div className="timeline-event" onMouseEnter={() => handleNumberHover(10)} onMouseLeave={handleNumberLeave}>
-      <div className="numbers">10</div>
+      <div className="timeline-event newfour" onMouseEnter={() => handleNumberHover(10)} onMouseLeave={handleNumberLeave}>
+      <div className="numbers">
+      <div className='xircular-home-images'>
+          <img src={maintanence} style={{width:"100%",height:"100%",objectFit:"contain"}} />
+          </div>
+
+      </div>
         <div className='bubble-one'></div>
         {/* <div className='bubble-two'></div> */}
-        <div className='num-contents'>Maintenance support</div>
-        {hoveredNumber === 10 && <div className="popup">We at renergii will always be happy to help you should you need help with anything while operating the shopify webstore. We have a dedicated support team to work with you on a daily basis whenever you need us to step in.</div>}
+        <div className='num-contents stores'>Maintenance support</div>
+        {hoveredNumber === 10 && <div className="popup">
+        <div className='xircular-popup-heading'>Maintenance support</div>
+        <div className='xircular-popup-textheading'>We at renergii will always be happy to help you should you need help with anything while operating the shopify webstore. We have a dedicated support team to work with you on a daily basis whenever you need us to step in.</div>
+        </div>}
       </div>
       <div className="timeline-event" onMouseEnter={() => handleNumberHover(11)} onMouseLeave={handleNumberLeave} style={{display:"hidden",visibility:"hidden"}}>
         <div className="number">11</div>
@@ -527,8 +950,8 @@ function Optifarmcomingsoon() {
     
     </div>
     </div>
-         
-
+    </>  
+      )}
 
             
             
@@ -593,7 +1016,7 @@ function Optifarmcomingsoon() {
                 </div>
 
                 <div>
-                  <hr className="" />
+                  {/* <hr className="" /> */}
                   <p className="copy-rights" style={{ textAlign: "center", paddingTop: "5px" }}> 2024 © Copyright StorefrontX.All Rights Reserved</p>
                 </div>
 
