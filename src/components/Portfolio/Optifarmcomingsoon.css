@@ -175,21 +175,7 @@ padding-left: 30px;
    top:0px;
 }
 .back-btn{
-    /* margin-top: 10px;
-   
-    border:none;
-    outline:none;
-    background-color: transparent;
-    border:1px solid black;
-    align-items: center;
-    align-items: center;
-    /* padding-left: 10px; */
-    /* padding-top: 2px; */
-    /* border-radius: 5px; */
-    /* cursor:pointer; */
-    /* display: flex; */
-    /* flex-direction: row; */
-    /* gap:2px; */ 
+ 
     border:1px solid #FEBF35;
     border-radius: 60px;
     text-align: left;
@@ -461,31 +447,7 @@ margin-bottom: 50px !important;
          margin-bottom: 20px; 
 
   }
-  .shopify-timelines-heading{
-    padding-left: 50px;
-    text-align: left;
-     color: black;
-      text-transform: uppercase;
-       font-size: 20px;
-        margin-top: 10px;
-         margin-bottom: 20px; 
-
-  }
-  .timeline-heading-div{
-    color:  #0D71B9;
-    font-weight: 800;
-    font-size: 20px;
- 
   
-
-  }
-  .timeline-para-div{
-    color:#707070;
-    font-weight: 400;
-    padding-top: 10px;
-
-
-  }
 
 @media only screen and (max-width: 600px) {
     .image-flexboxcontainter{
@@ -624,10 +586,7 @@ margin-bottom: 50px !important;
           padding-left: 20px;
       
         }
-        .shopify-timelines-heading{
-          padding-left: 20px;
-      
-        }
+       
         .image-section-cont{
           width: 40%;
           height: 22%;
@@ -652,21 +611,7 @@ margin-bottom: 50px !important;
           
         }
         .back-btn{
-          /* margin-top: 10px;
-         
-          border:none;
-          outline:none;
-          background-color: transparent;
-          border:1px solid black;
-          align-items: center;
-          align-items: center;
-          /* padding-left: 10px; */
-          /* padding-top: 2px; */
-          /* border-radius: 5px; */
-          /* cursor:pointer; */
-          /* display: flex; */
-          /* flex-direction: row; */
-          /* gap:2px; */ 
+        
          
           cursor:none;
         
@@ -1153,20 +1098,7 @@ font-size: 24px;
   padding: 10px;
   box-sizing: border-box;
 }
-/* adjust max heightto 3.9 for 3 and set lineclamp to 3 */
-/* .title-section { */
-  /* width: 100%; */
-  /* max-height: 2.6em; Adjust the maximum height for two lines */
-  /* line-height: 1.3em; Set line height to control the line break */
- 
-  /* overflow: hidden; */
-  /* text-overflow: ellipsis; */
-/* 
-  display: -webkit-box;
-  -webkit-line-clamp: 2; /* Limit the text to 2 lines */
-  /* -webkit-box-orient: vertical; */
-  /* cursor: pointer; */ 
-/* } */
+
 .teamdiv-section-flexbox{
   display: flex;
   flex-direction: row;
@@ -1254,370 +1186,381 @@ font-size: 24px;
 }
 
 
+
+
+
+
+
 /* stepper css */
-/* The actual timeline (the vertical ruler) */
-.main-timeline {
+
+.full-timeline-container{
+  margin-right: 200px;
+  margin-left: 200px;
+  /* margin-top: 100px; */
+}
+
+
+.timeline {
+  display: flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.timeline-two {
+  display: flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 100px;
+}
+.timeline-three{
+  display: flex;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* justify-content: space-evenly; */
+  /* justify-content:flex-start; */
+  margin-top: 100px;
+
+}
+
+
+.timeline::before{
+  /* z-index: 10; */
+   content: "";
+   position: absolute;
+   height: 2px;
+   width:60%;
+   background-color:red !important;
+   margin-top: 20px;
+   /* left: 20px; */
+   /* right: 0; */
+   /* top:10px; */
+   /* margin-left:200px ; */
+   /* z-index: -1 ; */
+   
+  
+}
+.timeline-two::before{
+  /* z-index: 100; */
+   content: "";
+   position: absolute;
+   height: 2px;
+   width:60%;
+   background-color:red;
+   /* left: 10px; */
+   right: 200;
+   margin-top: 20px;
+   /* top:100px; */
+   /* margin-top: 170px; */
+   /* margin-left:10px ; */
+   /* z-index: -1 !important; */
+   
+  
+}
+
+.timeline-three::before{
+  /* z-index: 100; */
+   content: "";
+   position: absolute;
+   height: 2px;
+   width:20%;
+   background-color:red;
+   left: 0;
+   right: 0;
+   /* right:200; */
+   margin-top: 20px;
+   /* top:250px; */
+   /* margin-top: 170px; */
+   margin-left:250px ;
+   /* z-index: -1 !important; */
+   
+  
+}
+
+
+.timeline-event {
   position: relative;
+  margin-right: 20px;
 }
 
-/* The actual timeline (the vertical ruler) */
-.main-timeline::after {
-  content: "";
+
+
+.popup {
   position: absolute;
-  width: 2px !important ;
-  background-color: #0C0C0B;
-  top: 0;
-  bottom: 0;
-  /* bottom: -10px ; */
-  height: calc(86.5% ) ;
-  left: 50%;
-  /* margin-left: -1px; */
-  margin-top: 50px;
-
+  /* top: -100%; */
+  top:-100%;
+  left: 50px;
+  min-width:200px;
+  min-height: 100px;
+  transform: translateX(0%);
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  z-index: 100;
 }
 
+.number{
+  border:1px solid #0C0C0B;
 
-/* Container around content */
-.timeline-one-right {
-  position: relative;
-  background-color: inherit;
-  width: 50%;
-}
-
-/* The circles on the timeline */
-.timeline-one-right::after {
-  content: "";
-  position: absolute;
-  width: 50px;
-  height: 50px;
- left: -25px;
-  background-color:  #FEBF35;
- 
-  border: 2px solid #0C0C0B;
-  top: 15px;
+  background-color: #FEBF35;
+  width:50px;
+  height:50px;
   border-radius: 50%;
-  z-index: 1;
-  /* border-bottom: 10px solid yellow; */
-}
-
-.timeline-two-left{
-  position: relative;
-  background-color: inherit;
-  width: 50%;
-}
-
-/* The circles on the timeline */
-.timeline-two-left::after {
-  content: "";
-  position: absolute;
-  width: 50px;
-  height: 50px;
-  right: -25px;
-  background-color: #0D71B9;
- 
-  border: 2px solid #0C0C0B;
-  top: 15px;
-  border-radius: 50%;
-  z-index: 1;
-  /* border-bottom: 10px solid yellow; */
-}
-
-/* Place the container to the left */
-.timeline-two-left{
-  padding: 0px 40px 20px 0px;
-  left: 0;
-  text-align: right;
-}
-
-/* Place the container to the right */
-.timeline-one-right{
-  padding: 0px 0px 20px 40px;
-  left: 50%;
-}
-
-/* Add arrows to the left container (pointing right) */
- .timeline-two-left::before {
-  content: " ";
-  position: absolute;
-  top: 18px;
-  z-index: 1;
-  right: 32px;
-  border: medium solid #DAEFFF ;
-  border-width: 20px 0 20px 20px;
-  border-color: transparent transparent transparent #DAEFFF ;
-
-} 
-
-.timeline-one-right::before {
-  content: " ";
-  position: absolute;
-  top: 18px;
-  z-index: 1;
-  left: 32px;
-  border: medium solid #DAEFFF ;
-  border-width: 20px 20px 20px 0;
-  border-color: transparent #DAEFFF  transparent transparent;
-}
-
-/* Add arrows to the right container (pointing left) */
-
-/* Fix the circle for containers on the right side */
-.right::after {
-  left: -18px;
-}
-
-
-.timelineRight-first{
-  /* width:80%; */
-  margin-right: 100px;
-  margin-left: 10px;
-}
-.timelineLeft-first{
-  /* width:80%; */
-  margin-right: 10px;
-  margin-left: 100px;
-
-}
-/* Media queries - Responsive timeline on screens less than 600px wide */
-.num-one{
-  position:absolute;
-  color:white;
-  z-index:100;
-  left: -19px;
-  top:20px;
-   /* bottom:-5px; */
-  width:40px;
-  height:40px;
   text-align: center;
   align-items: center;
   justify-content: center;
+  z-index: 100 !important;
+
+}
+.numbers{
+  border:1px solid   #0C0C0B;;
+  background-color: #0D71B9;
+  width:50px;
+  height:50px;
+  border-radius: 50%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  z-index: 100 !important;
+
+
+}
+
+
+.yellow::before{
+  content: "";
+  position: absolute;
+  width: 2px ;
+  background-color: #0C0C0B;
+  top: 50px;
+  bottom: 0;
+  /* bottom: -10px ; */
+  height: calc(200%) ;
+  left: 50%;
+  /* z-index: -1; */
+}
+.num-contents{
+  position:absolute;
+  
+}
+.num-contents-two{
+  position:absolute;
+  left:60px;
+  top:-5px;
+
+}
+.num-contents-three{
+  position: absolute;
+  right: 60px;
+  top:-5px;
 
 }
 .bubble-one{
-  border:2px solid #0C0C0B;
+  border:2px solid black;
   /* border:2px solid  white; */
   width:10px;
   height:10px;
   border-radius:50%;
   position:absolute;
-   left: -4px;
-   top:58px;
-   background-color:#FEBF35;
+   left: -6px;
+   top:16px;
+   background-color:#0D71B9;
    z-Index:100;
-}
-.bubble-ones{
-  border:2px solid #0C0C0B;
-  /* border:2px solid  white; */
-  width:10px;
-  height:10px;
-  border-radius:50%;
-  position:absolute;
-   left: -4px;
-   top:10px;
-   background-color:#FEBF35;
-   z-Index:100;
-}
-.num-two{
-position:absolute;
- right: -21px;
- top:20px;
- color:white;
-z-index: 100;
-width:40px;
-height:40px;
-text-align: center;
-align-items: center;
-justify-content: center;
-
 }
 .bubble-two{
-border:2px solid #0C0C0B;
-width:10px;
-height:10px;
-border-radius:50%;
-position:absolute;
-right: -6px;
-top:58px;
-background-color:#0D71B9;
-z-index:1100;
-}
-.bubble-three{
-border:2px solid #0C0C0B;
-width:10px;
-height:10px;
-border-radius:50%;
-position:absolute;
- right: -6px;
- top:10px;
- background-color:#0D71B9;
- z-index:100;
-}
-
-/* .timelineLefts-first:last-child::after  */
-@media screen and (max-width: 600px) {
-  /* Place the timelime to the left */
-  .main-timeline::after {
-    left: 40px;
-  
-  }
-
-  /* Full-width containers */
-  .timeline-one-right {
-    width: 100%;
-    padding-left: 70px;
-    padding-right: 25px;
-  }
-
-  /* Make sure that all arrows are pointing leftwards */
-  .timeline-one-right::before {
-    left: 70px;
-    border: medium solid #DAEFFF;
-    border-width: 10px 10px 10px 0;
-    border-color: transparent #DAEFFF transparent transparent;
-  z-index:10;
-  top:30px;
-
-    /* content: " "; */
-  /* position: absolute; */
-  /* top: 18px; */
-  /* z-index: 1; */
-  /* left: 32px; */
-  /* border: medium solid #DAEFFF ; */
-  /* border-width: 20px 20px 20px 0; */
-  /* border-color: transparent #DAEFFF  transparent transparent; */
-  }
-
-  .timeline-two-left {
-      width: 100%;
-      padding-left: 70px;
-      padding-right: 25px;
-    }
-  
-    /* Make sure that all arrows are pointing leftwards */
-    .timeline-two-left::before {
-      left: 70px;
-      top: 25px;
-      border: medium solid #DAEFFF;
-      border-width: 10px 10px 10px 0;
-      border-color: transparent #DAEFFF transparent transparent;
-    }
-
-  /* Make sure all circles are at the same spot */
-  .timeline-two-left::after,
-  .timeline-one-right::after {
-    left: 18px;
-  }
-
-  .timeline-two-left::before {
-    right: auto;
-  }
-
-  /* Make all right containers behave like the left ones */
-  .timeline-one-right{
-    left: 0%;
-  }
-
-  .timelineRight-first{
-      /* width:80%; */
-      margin-right: 0px;
-    }
-    .timelineLeft-first{
-      /* width:90%; */
-      margin-left: 10px;
-      margin-right: 0px;
-  
-    }
-    .timelineLefts-first{
-      width:90%;
-      margin-left: 0px;
-  
-    }
-
-
-
-
-    .num-one{
-      position:absolute;
-      color:white;
-      z-index:100;
-      left: 23px;
-  
-    }
-    .bubble-one{
-      border:2px solid #0C0C0B;
-      width:10px;
-      height:10px;
-      border-radius:50%;
-      position:absolute;
-       left: 37px;
-       top:58px;
-       background-color:#FEBF35;
-       z-Index:100;
-
-
-      
-
-
-     
-  }
-  .bubble-ones{
-    border:2px solid #0C0C0B;
-    /* border:2px solid  white; */
-    width:10px;
-    height:10px;
-    border-radius:50%;
-    position:absolute;
-     left: 35px;
-     top:10px;
-     background-color:#FEBF35;
-     z-Index:100;
-  }
-  .bubble-two{
-    border:2px solid #0C0C0B;
-    width:10px;
-    height:10px;
-    border-radius:50%;
-    position:absolute;
-    left: 36px;
-    /* right: 100px;
-        right: -22px; 
-     /* right: 89%; */
+  border:2px solid black;
+  /* border:2px solid  white; */
+  width:10px;
+  height:10px;
+  border-radius:50%;
  
-     top:58px;
-     /* right: 90%;  */
-     background-color:#0D71B9;
-     z-index:100;
+  position:absolute;
+  right: -6px;
+   top:16px;
+   background-color:#0D71B9;
+   z-Index:100;
 
-    }
-    .bubble-three{
-      border:2px solid #0C0C0B;
-      width:10px;
-      height:10px;
-      border-radius:50%;
-      position:absolute;
-      left: 36px;
-      /* right: 90%;  */
-       /* right:89%; */
-       top:10px;
-       background-color:#0D71B9;
-       z-index:100;
-    }
-    
-  .num-two{
-    position:absolute;
-    left: 23px;
-     color:white;
-    z-index: 100;
-  }
-  .timelineLeft-first{
-    text-align: left;
-  }
-  .timelineLefts-first{
-    text-align: left;
-  }
-
-
-
-  
-  
 }
+
+.bubble-three{
+  border:2px solid black;
+  /* border:2px solid  white; */
+  width:10px;
+  height:10px;
+  border-radius:50%;
+  position:absolute;
+   left: -6px;
+   top:16px;
+   background-color:#FEBF35;
+   z-Index:100;
+}
+.bubble-four{
+  border:2px solid black;
+  /* border:2px solid  white; */
+  width:10px;
+  height:10px;
+  border-radius:50%;
+ 
+  position:absolute;
+  right: -6px;
+   top:16px;
+   background-color:#FEBF35;
+   z-Index:100;
+
+}
+
+.bubble-five{
+  border:2px solid black;
+  /* border:2px solid  white; */
+  width:10px;
+  height:10px;
+  border-radius:50%;
+ 
+  position:absolute;
+  left:20px;
+  bottom:-5px;
+  /* top:10px; */
+  /* right: -6px; */
+   /* top:16px; */
+   background-color:#0D71B9;
+   z-Index:100;
+
+}
+
+.bubble-fiftyfive{
+  border:2px solid black;
+  /* border:2px solid  white; */
+  width:10px;
+  height:10px;
+  border-radius:50%;
+ 
+  position:absolute;
+  left:20px;
+  bottom:-5px;
+  top:-5px;
+  /* right: -6px; */
+   /* top:16px; */
+   background-color:#FEBF35;
+   z-Index:100;
+
+}
+.bubble-fiftysix{
+  border:2px solid black;
+  /* border:2px solid  white; */
+  width:10px;
+  height:10px;
+  border-radius:50%;
+ 
+  position:absolute;
+  left:-8px;
+  bottom:25px;
+  /* top:10px; */
+  /* right: -6px; */
+   /* top:16px; */
+   background-color:#FEBF35;
+   z-Index:100;
+
+}
+
+
+
+.bubble-eightyfive{
+  border:2px solid black;
+  /* border:2px solid  white; */
+  width:10px;
+  height:10px;
+  border-radius:50%;
+ 
+  position:absolute;
+  left:20px;
+  bottom:-5px;
+  /* top:-5px; */
+  /* right: -6px; */
+   /* top:16px; */
+   background-color:#0D71B9;
+   z-Index:100;
+
+}
+.bubble-eightysix{
+  border:2px solid black;
+  /* border:2px solid  white; */
+  width:10px;
+  height:10px;
+  border-radius:50%;
+ 
+  position:absolute;
+  right:-5px;
+      /* left:-8px; */
+  bottom:25px;
+  /* top:10px; */
+  /* right: -6px; */
+   /* top:16px; */
+   background-color:#0D71B9;
+   z-Index:100;
+
+}
+
+
+
+
+.bubble-ninetyfive{
+  border:2px solid black;
+  /* border:2px solid  white; */
+  width:10px;
+  height:10px;
+  border-radius:50%;
+ 
+  position:absolute;
+  left:20px;
+  bottom:47px;
+  /* top:-5px; */
+  /* right: -6px; */
+   /* top:16px; */
+   background-color:#FEBF35;
+   z-Index:100;
+
+}
+.bubble-ninetysix{
+  border:2px solid black;
+  /* border:2px solid  white; */
+  width:10px;
+  height:10px;
+  border-radius:50%;
+ 
+  position:absolute;
+  right:-5px;
+      /* left:-8px; */
+  bottom:25px;
+  /* top:10px; */
+  /* right: -6px; */
+   /* top:16px; */
+   background-color:#FEBF35;
+   z-Index:100;
+
+}
+
+.xircularhowitworks-top-section{
+  margin-top: 0px;
+  background-color: #FFFFFF;
+  
+  padding-top: 200px;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 200px;
+  
+
+}
+
+
+
+
+
+
+
+
+
+

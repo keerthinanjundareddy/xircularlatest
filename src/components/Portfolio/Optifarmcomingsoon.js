@@ -58,6 +58,7 @@ import youtube from '../../Ayatanassets/images/black-and-white-youtube-icon 1.pn
 
 
 function Optifarmcomingsoon() {
+  const [hoveredNumber, setHoveredNumber] = useState(null);
   const accordionData = [
     { title: "Accordion Demo 1", content: "Greetings of the day 1" },
     { title: "Accordion Demo 2", content: "Greetings of the day 2" },
@@ -283,6 +284,17 @@ function Optifarmcomingsoon() {
 
   };
 
+  
+
+  const handleNumberHover = (number) => {
+    setHoveredNumber(number);
+  };
+
+  const handleNumberLeave = () => {
+    setHoveredNumber(null);
+  };
+
+
   return (
     <>
       <div className='read-more-section' >
@@ -392,203 +404,139 @@ function Optifarmcomingsoon() {
 
 
 
+{/* start of stepper section */}
+
+<div className='xircularhowitworks-top-section'  >
+
+<div className='full-timeline-container'>
+    <div className="timeline">
+      <div className="timeline-event" onMouseEnter={() => handleNumberHover(1)} onMouseLeave={handleNumberLeave}>
+        <div className="number">1</div>
+        <div className='num-contents'>Website Consultation</div>
+        {hoveredNumber === 1 && <div className="popup">We will discuss the details of the selected niche, products & brand ideas. After niche discussion, we will find a suitable Shopify store template to start with.</div>}
+      </div>
+
+      <div className="timeline-event" onMouseEnter={() => handleNumberHover(2)} onMouseLeave={handleNumberLeave}>
+        <div className="numbers">2</div>
+        <div className='bubble-one'></div>
+        <div className='bubble-two'></div>
+        <div  className='num-contents'>Brand Design</div>
+        {hoveredNumber === 2 && <div className="popup">In this step, we shall discuss about the store design that will be aligned to your brand. We have dedicated designers to help you choose or suggest the best design for your brand.</div>}
+      </div>
+
+      <div className="timeline-event" onMouseEnter={() => handleNumberHover(3)} onMouseLeave={handleNumberLeave}>
+        <div className="number ">3</div>
+        <div className='bubble-three'></div>
+        <div className='bubble-four'></div>
+        <div  className='num-contents'> Final Review</div>
+        {hoveredNumber === 3 && <div className="popup">When all the changes (if there are any required) are revised, we will deliver the final design for your approval to start the development process.</div>}
+      </div>
 
 
-        <div className="py-5" style={{ backgroundColor: "#FFFFFF", width: "100%", overflowX: "hidden" }}>
-        <div className='shopify-timelines-heading'><b>HOW WE WORK</b></div>
-          <div className="main-timeline" style={{marginTop:"20px"}}>
+      <div className="timeline-event" onMouseEnter={() => handleNumberHover(4)} onMouseLeave={handleNumberLeave}>
+        <div className="numbers  yellow">4</div>
+        <div className='bubble-one'></div>
+        <div className='bubble-five'></div>
+        <div  className='num-contents-two'>Store Development</div>
+        {hoveredNumber === 4 && <div className="popup">When the back-end is finished, we move on to start designing the front-end. We always ensure it's responsive & suits your requirements. This step mostly includes the overall webstore site development based on the design.</div>}
+      </div>
 
-            <div className="timeline-one-right">
-              <div style={{ backgroundColor: "#DAEFFF", borderBottom: "3px solid #0D71B9 ", borderRadius: "15px",boxShadow:"0.5px 0.5px 0px 1px #cccccc" }} className="timelineRight-first">
-                <div className="p-3">
-                  <div className="num-one">
-                    <img src ={websiteconsultaion} style={{width:"100%",height:"100%",objectFit:"contain"}} />
-                  </div>
-                  <div className="bubble-one"></div>
-                  <div className='timeline-heading-div'>Website Consultation</div>
-                  <div className='timeline-para-div' >
-                    We will discuss the details of the selected niche, products & brand ideas. After niche discussion, we will find a suitable Shopify store template to start with.
-                  </div>
-                </div>
-              </div>
-            </div>
+     
 
-            <div className="timeline-two-left">
-              <div style={{ backgroundColor: "#DAEFFF", borderBottom: "3px solid #0D71B9 ", borderRadius: "15px",boxShadow:"0.5px 0.5px 0px 1px #cccccc" }} className="timelineLeft-first">
-                <div className="p-4">
-                  <div className="num-two">
-                  <img src={finalrevision} style={{width:"100%",height:"100%",objectFit:"contain"}} />
-                  </div>
-                  <div className="bubble-two"></div>
-                  <div className="bubble-three"></div>
-                  <div className='timeline-heading-div'>Brand Design</div>
-                  <div className='timeline-para-div' >
-                  In this step, we shall discuss about the store design that will be aligned to your brand. We have dedicated designers to help you choose or suggest the best design for your brand.
-                  </div>
-                </div>
-              </div>
-            </div>
+    </div>
 
 
-            <div className="timeline-one-right">
-              <div style={{ backgroundColor: "#DAEFFF", borderBottom: "3px solid #0D71B9 ", borderRadius: "15px",boxShadow:"0.5px 0.5px 0px 1px #cccccc" }} className="timelineRight-first">
-                <div className="p-4">
-                  <div className="num-one">
-                  <img src ={productdelivery} style={{width:"100%",height:"100%",objectFit:"contain"}} />
-                  </div>
-                  <div className="bubble-one"></div>
-                  <div className="bubble-ones"></div>
-              
-                  <div className='timeline-heading-div'>Final Review</div>       
-                  <div className='timeline-para-div' >
-                  When all the changes (if there are any required) are revised, we will deliver the final design for your approval to start the development process.
-                  </div>
-                </div>
-              </div>
-            </div>
+    <div className="timeline-two">
+     
 
-            <div className="timeline-two-left">
-              <div style={{ backgroundColor: "#DAEFFF", borderBottom: "3px solid #0D71B9 ", borderRadius: "15px",boxShadow:"0.5px 0.5px 0px 1px #cccccc" }} className="timelineLeft-first">
-                <div className="p-4">
-                  <div className="num-two">
-                  <img src ={storedev} style={{width:"100%",height:"100%",objectFit:"contain"}} />
-                  </div>
-                  <div className="bubble-two"></div>
-                  <div className="bubble-three"></div>
-                  <div className='timeline-heading-div'>Store Development</div>  
-                  <div className='timeline-para-div' >
-                  When the back-end is finished, we move on to start designing the front-end. We always ensure it's responsive & suits your requirements. This step mostly includes the overall webstore site development based on the design.
-                  </div>
-                </div>
-              </div>
-            </div>
+      <div className="timeline-event" onMouseEnter={() => handleNumberHover(5)} onMouseLeave={handleNumberLeave}>
+        <div className="numbers yellow">8</div>
+        <div className='bubble-eightyfive'></div>
+        <div className='bubble-eightysix'></div>
+        <div  className='num-contents-three'>Content Upload</div>
+        {hoveredNumber === 6 && <div className="popup">Our team will begin with uploading pages, plugins, images, products, videos & more onto the shopify admin panel.</div>}
+      </div>
+
+      <div className="timeline-event" onMouseEnter={() => handleNumberHover(6)} onMouseLeave={handleNumberLeave}>
+        <div className="number">7</div>
+        <div className='bubble-three'></div>
+        <div className='bubble-four'></div>
+        <div  className='num-contents'>Milestone</div>
+        {hoveredNumber === 7 && <div className="popup">All the stakeholders will have a meeting with you to discuss about the development and you will get a chance to see your store development and the first milestone.</div>}
+      </div>
+
+      
+      <div className="timeline-event" onMouseEnter={() => handleNumberHover(6)} onMouseLeave={handleNumberLeave}>
+        <div className="numbers">6</div>
+        <div className='bubble-one'></div>
+        <div className='bubble-two'></div>
+        <div  className='num-contents'>Milestone</div>
+        {hoveredNumber === 8 && <div className="popup">All the stakeholders will have a meeting with you to discuss about the development and you will get a chance to see your store development and the first milestone.</div>}
+      </div>
+
+      <div className="timeline-event" onMouseEnter={() => handleNumberHover(6)} onMouseLeave={handleNumberLeave}>
+        <div className="number">5</div>
+        <div className='bubble-fiftyfive'></div>
+        <div className='bubble-fiftysix'></div>
+        <div className='num-contents' >Milestone</div>
+        {hoveredNumber === 7 && <div className="popup">All the stakeholders will have a meeting with you to discuss about the development and you will get a chance to see your store development and the first milestone.</div>}
+      </div>
+
+    
+
+    </div>
 
 
-            <div className="timeline-one-right">
-              <div style={{ backgroundColor: "#DAEFFF", borderBottom: "3px solid #0D71B9 ", borderRadius: "15px",boxShadow:"0.5px 0.5px 0px 1px #cccccc"}} className="timelineRight-first">
-                <div className="p-4">
-                  <div className="num-one">
-                  <img src ={contentupload} style={{width:"100%",height:"100%",objectFit:"contain"}} />
-                  </div>
-                  <div className="bubble-one"></div>
-                  <div className="bubble-ones"></div>
-                  <div className='timeline-heading-div'>Content Upload</div>  
-                  <div className='timeline-para-div' >
-                  Our team will begin with uploading pages, plugins, images, products, videos & more onto the shopify admin panel.
-                  </div>
-              
-                 
-                </div>
-              </div>
-            </div>
-            <div className="timeline-two-left">
-              <div style={{ backgroundColor: "#DAEFFF", borderBottom: "3px solid #0D71B9 ", borderRadius: "15px",boxShadow:"0.5px 0.5px 0px 1px #cccccc" }} className="timelineLeft-first">
-                <div className="p-4">
-                  <div className="num-two">
-                  <img src ={milestone} style={{width:"100%",height:"100%",objectFit:"contain"}} />
-                  </div>
-                  <div className="bubble-two"></div>
-                  <div className="bubble-three"></div>
-                  <div className='timeline-heading-div'>Milestone</div>  
-                  <div className='timeline-para-div' >
-                  All the stakeholders will have a meeting with you to discuss about the development and you will get a chance to see your store development and the first milestone.
-                  </div>
-                </div>
-              </div>
-            </div>
+    
+    <div className="timeline-three">
+     
+
+      <div className="timeline-event" onMouseEnter={() => handleNumberHover(5)} onMouseLeave={handleNumberLeave}>
+        <div className="number">9</div>
+        <div className='bubble-ninetyfive'></div>
+        <div className='bubble-ninetysix'></div>
+        <div className="num-contents">Content Upload</div>
+        {hoveredNumber === 9 && <div className="popup">Our team will begin with uploading pages, plugins, images, products, videos & more onto the shopify admin panel.</div>}
+      </div>
+      <div className="timeline-event" onMouseEnter={() => handleNumberHover(5)} onMouseLeave={handleNumberLeave}>
+      <div className="numbers">10</div>
+        <div className='bubble-one'></div>
+        {/* <div className='bubble-two'></div> */}
+        <div className='num-contents'>Content Upload</div>
+        {hoveredNumber === 9 && <div className="popup">Our team will begin with uploading pages, plugins, images, products, videos & more onto the shopify admin panel.</div>}
+      </div>
+      <div className="timeline-event" onMouseEnter={() => handleNumberHover(5)} onMouseLeave={handleNumberLeave} style={{display:"hidden",visibility:"hidden"}}>
+        <div className="number">11</div>
+        <div className='num-contents'>Content Upload</div>
+        {hoveredNumber === 9 && <div className="popup">Our team will begin with uploading pages, plugins, images, products, videos & more onto the shopify admin panel.</div>}
+      </div>
+      <div className="timeline-event" onMouseEnter={() => handleNumberHover(5)} onMouseLeave={handleNumberLeave} style={{display:"hidden",visibility:"hidden"}}>
+        <div className="number">11</div>
+        <div className='num-contents'>Content Upload</div>
+        {hoveredNumber === 9 && <div className="popup">Our team will begin with uploading pages, plugins, images, products, videos & more onto the shopify admin panel.</div>}
+      </div>
+
+      
+
+    </div>
+
+    
+    </div>
+    </div>
+         
+
 
             
+            
 
-            <div className="timeline-one-right">
-              <div style={{ backgroundColor: "#DAEFFF", borderBottom: "3px solid #0D71B9 ", borderRadius: "15px",boxShadow:"0.5px 0.5px 0px 1px #cccccc" }} className="timelineRight-first">
-                <div className="p-4">
-                  <div className="num-one">
-                  <img src ={productdelivery} style={{width:"100%",height:"100%",objectFit:"contain"}} />
-                  </div>
-                  <div className="bubble-one"></div>
-                  <div className="bubble-ones"></div>
-                  <div className='timeline-heading-div'>Final Revision</div>  
-                  <div className='timeline-para-div' >
-                  The team will work on the feedback provided in the previous step and will work towards the changes.
-                  </div>
+
+            
+              
+
+            
                 
                 
-                
-                </div>
-              </div>
-            </div>
-            <div className="timeline-two-left">
-              <div style={{ backgroundColor: "#DAEFFF", borderBottom: "3px solid #0D71B9 ", borderRadius: "15px",boxShadow:"0.5px 0.5px 0px 1px #cccccc" }} className="timelineLeft-first">
-                <div className="p-4">
-                  <div className="num-two">
-                  <img src ={finaldesign} style={{width:"100%",height:"100%",objectFit:"contain"}} />
-                  </div>
-                  <div className="bubble-two"></div>
-                  <div className="bubble-three"></div>
-                  <div className='timeline-heading-div'>Product Delivery</div>  
-                  <div className='timeline-para-div' >
-                  After the final revision, we should be ready with the product. You will get your fully-working shopify webstore that is ready to go live for the public.
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="timeline-one-right">
-              <div style={{ backgroundColor: "#DAEFFF", borderBottom: "3px solid #0D71B9 ", borderRadius: "15px",boxShadow:"0.5px 0.5px 0px 1px #cccccc" }} className="timelineRight-first">
-                <div className="p-4">
-                  <div className="num-one">
-                  <img src ={ownership} style={{width:"100%",height:"100%",objectFit:"contain"}} />
-                  </div>
-                  <div className="bubble-one"></div>
-                  <div className="bubble-ones"></div>
-                  <div className='timeline-heading-div'>Ownership Transfer</div>  
-                  <div className='timeline-para-div' >
-                  At the last stage, we transfer over the ownership to you, from where you can start your e-commerce journey!:)
-                  </div>
-                
-                </div>
-              </div>
-            </div>
-            <div className="timeline-two-left">
-              <div style={{ backgroundColor: "#DAEFFF", borderBottom: "3px solid #0D71B9 ", borderRadius: "15px",boxShadow:"0.5px 0.5px 0px 1px #cccccc" }} className="timelineLeft-first">
-                <div className="p-4">
-                  <div className="num-two">
-                  <img src ={maintanence} style={{width:"100%",height:"100%",objectFit:"contain"}} />
-                  </div>
-                  {/* <div className="bubble-two"></div> */}
-                  <div className="bubble-three"></div>
-                  <div className='timeline-heading-div'>Maintenance support</div>  
-                  <div className='timeline-para-div' >
-                  We at renergii will always be happy to help you should you need help with anything while operating the shopify webstore. We have a dedicated support team to work with you on a daily basis whenever you need us to step in.
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* <div className="timeline-one-right">
-              <div style={{ backgroundColor: "#DAEFFF", borderBottom: "3px solid #0D71B9 ", borderRadius: "15px" }} className="timelineRight-first">
-                <div className="p-4">
-                  <div className="num-one">
-                  <img src ={maintanence} style={{width:"100%",height:"100%",objectFit:"contain"}} />
-                  </div>
-                  <div className="bubble-one"></div>
-                  <div className='timeline-heading-div'>Maintenance support</div>  
-                  <div className='timeline-para-div' >
-                  We at renergii will always be happy to help you should you need help with anything while operating the shopify webstore. We have a dedicated support team to work with you on a daily basis whenever you need us to step in.
-                  </div>
-                
-       
-                
-                </div>
-              </div>
-            </div> */}
-
-
-
-
-          </div>
-
-        </div>
+          
 
         {/* end of stepper section */}
 
