@@ -405,8 +405,10 @@ function Optifarmcomingsoon() {
 
 
 {/* start of stepper section */}
-
+<div className='faq-heading' style={{textAlign:"center"}}><b>How We Work</b></div>
 <div className='xircularhowitworks-top-section'  >
+
+
 
 <div className='full-timeline-container'>
     <div className="timeline">
