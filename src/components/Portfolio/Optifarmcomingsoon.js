@@ -414,6 +414,8 @@ function Optifarmcomingsoon() {
     <div className="timeline">
       <div className="timeline-event" onMouseEnter={() => handleNumberHover(1)} onMouseLeave={handleNumberLeave}>
         <div className="number">1</div>
+        {/* <div className='bubble-three'></div> */}
+        <div className='bubble-four'></div>
         <div className='num-contents'>Website Consultation</div>
         {hoveredNumber === 1 && <div className="popup">We will discuss the details of the selected niche, products & brand ideas. After niche discussion, we will find a suitable Shopify store template to start with.</div>}
       </div>
@@ -451,20 +453,20 @@ function Optifarmcomingsoon() {
     <div className="timeline-two">
      
 
-      <div className="timeline-event" onMouseEnter={() => handleNumberHover(5)} onMouseLeave={handleNumberLeave}>
+      <div className="timeline-event" onMouseEnter={() => handleNumberHover(8)} onMouseLeave={handleNumberLeave}>
         <div className="numbers yellow">8</div>
         <div className='bubble-eightyfive'></div>
         <div className='bubble-eightysix'></div>
-        <div  className='num-contents-three'>Content Upload</div>
-        {hoveredNumber === 6 && <div className="popup">Our team will begin with uploading pages, plugins, images, products, videos & more onto the shopify admin panel.</div>}
+        <div  className='num-contents-three'>Product Delivery</div>
+        {hoveredNumber === 8 && <div className="popup">After the final revision, we should be ready with the product. You will get your fully-working shopify webstore that is ready to go live for the public.</div>}
       </div>
 
-      <div className="timeline-event" onMouseEnter={() => handleNumberHover(6)} onMouseLeave={handleNumberLeave}>
+      <div className="timeline-event" onMouseEnter={() => handleNumberHover(7)} onMouseLeave={handleNumberLeave}>
         <div className="number">7</div>
         <div className='bubble-three'></div>
         <div className='bubble-four'></div>
-        <div  className='num-contents'>Milestone</div>
-        {hoveredNumber === 7 && <div className="popup">All the stakeholders will have a meeting with you to discuss about the development and you will get a chance to see your store development and the first milestone.</div>}
+        <div  className='num-contents'>Final Revision</div>
+        {hoveredNumber === 7 && <div className="popup">The team will work on the feedback provided in the previous step and will work towards the changes.</div>}
       </div>
 
       
@@ -473,15 +475,15 @@ function Optifarmcomingsoon() {
         <div className='bubble-one'></div>
         <div className='bubble-two'></div>
         <div  className='num-contents'>Milestone</div>
-        {hoveredNumber === 8 && <div className="popup">All the stakeholders will have a meeting with you to discuss about the development and you will get a chance to see your store development and the first milestone.</div>}
+        {hoveredNumber === 6 && <div className="popup">All the stakeholders will have a meeting with you to discuss about the development and you will get a chance to see your store development and the first milestone.</div>}
       </div>
 
-      <div className="timeline-event" onMouseEnter={() => handleNumberHover(6)} onMouseLeave={handleNumberLeave}>
+      <div className="timeline-event" onMouseEnter={() => handleNumberHover(5)} onMouseLeave={handleNumberLeave}>
         <div className="number">5</div>
         <div className='bubble-fiftyfive'></div>
         <div className='bubble-fiftysix'></div>
-        <div className='num-contents' >Milestone</div>
-        {hoveredNumber === 7 && <div className="popup">All the stakeholders will have a meeting with you to discuss about the development and you will get a chance to see your store development and the first milestone.</div>}
+        <div className='num-contents' >Content Upload</div>
+        {hoveredNumber === 5 && <div className="popup">Our team will begin with uploading pages, plugins, images, products, videos & more onto the shopify admin panel.</div>}
       </div>
 
     
@@ -493,29 +495,29 @@ function Optifarmcomingsoon() {
     <div className="timeline-three">
      
 
-      <div className="timeline-event" onMouseEnter={() => handleNumberHover(5)} onMouseLeave={handleNumberLeave}>
+      <div className="timeline-event" onMouseEnter={() => handleNumberHover(9)} onMouseLeave={handleNumberLeave}>
         <div className="number">9</div>
         <div className='bubble-ninetyfive'></div>
         <div className='bubble-ninetysix'></div>
-        <div className="num-contents">Content Upload</div>
-        {hoveredNumber === 9 && <div className="popup">Our team will begin with uploading pages, plugins, images, products, videos & more onto the shopify admin panel.</div>}
+        <div className="num-contents">Ownership Transfer</div>
+        {hoveredNumber === 9 && <div className="popup">At the last stage, we transfer over the ownership to you, from where you can start your e-commerce journey! :).</div>}
       </div>
-      <div className="timeline-event" onMouseEnter={() => handleNumberHover(5)} onMouseLeave={handleNumberLeave}>
+      <div className="timeline-event" onMouseEnter={() => handleNumberHover(10)} onMouseLeave={handleNumberLeave}>
       <div className="numbers">10</div>
         <div className='bubble-one'></div>
         {/* <div className='bubble-two'></div> */}
-        <div className='num-contents'>Content Upload</div>
-        {hoveredNumber === 9 && <div className="popup">Our team will begin with uploading pages, plugins, images, products, videos & more onto the shopify admin panel.</div>}
+        <div className='num-contents'>Maintenance support</div>
+        {hoveredNumber === 10 && <div className="popup">We at renergii will always be happy to help you should you need help with anything while operating the shopify webstore. We have a dedicated support team to work with you on a daily basis whenever you need us to step in.</div>}
       </div>
-      <div className="timeline-event" onMouseEnter={() => handleNumberHover(5)} onMouseLeave={handleNumberLeave} style={{display:"hidden",visibility:"hidden"}}>
+      <div className="timeline-event" onMouseEnter={() => handleNumberHover(11)} onMouseLeave={handleNumberLeave} style={{display:"hidden",visibility:"hidden"}}>
         <div className="number">11</div>
         <div className='num-contents'>Content Upload</div>
-        {hoveredNumber === 9 && <div className="popup">Our team will begin with uploading pages, plugins, images, products, videos & more onto the shopify admin panel.</div>}
+        {hoveredNumber === 11 && <div className="popup">Our team will begin with uploading pages, plugins, images, products, videos & more onto the shopify admin panel.</div>}
       </div>
-      <div className="timeline-event" onMouseEnter={() => handleNumberHover(5)} onMouseLeave={handleNumberLeave} style={{display:"hidden",visibility:"hidden"}}>
+      <div className="timeline-event" onMouseEnter={() => handleNumberHover(12)} onMouseLeave={handleNumberLeave} style={{display:"hidden",visibility:"hidden"}}>
         <div className="number">11</div>
         <div className='num-contents'>Content Upload</div>
-        {hoveredNumber === 9 && <div className="popup">Our team will begin with uploading pages, plugins, images, products, videos & more onto the shopify admin panel.</div>}
+        {hoveredNumber === 11 && <div className="popup">Our team will begin with uploading pages, plugins, images, products, videos & more onto the shopify admin panel.</div>}
       </div>
 
       
