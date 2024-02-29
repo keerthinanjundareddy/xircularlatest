@@ -614,6 +614,14 @@ margin-bottom: 50px !important;
         
          
           cursor:none;
+         padding-top: 0px;
+         padding-bottom: 0px;
+         width: 40px;
+         height: 40px;
+         object-fit: contain;
+         justify-content: center;
+         align-items: center;
+         align-content: center;
         
          
       }

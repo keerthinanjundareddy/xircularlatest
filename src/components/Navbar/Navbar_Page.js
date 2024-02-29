@@ -102,7 +102,13 @@ const NavbarPage = (props) => {
                             : <img src={logodark} alt="" className="logo-darks" height="60" />
                         }
                     </NavbarBrand>
-                    <NavbarToggler onClick={toggle}><i className="mdi mdi-menu"></i></NavbarToggler>
+                    <NavbarToggler onClick={toggle}>
+  {isOpenMenu ? (
+    <i className="mdi mdi-close"></i> 
+  ) : (
+    <i className="mdi mdi-menu"></i> 
+  )}
+</NavbarToggler>
 
                     <Collapse id="navbarCollapse" isOpen={isOpenMenu} navbar>
                         <ScrollspyNav
