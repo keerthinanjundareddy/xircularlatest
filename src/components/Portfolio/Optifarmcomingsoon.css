@@ -1336,7 +1336,7 @@ transform: translate(-50%, -110%);
   position:absolute;
   width:200px;
   /* border:1px solid blue; */
-  margin-left: -30px;
+  margin-left: -15px;
   margin-top: 5px;
   color: #0D71B9;
   font-weight: 600;
@@ -1345,6 +1345,16 @@ transform: translate(-50%, -110%);
 
   
 }
+.webleft{
+  position:absolute;
+  width:200px;
+  /* border:1px solid blue; */
+  margin-left: -90px;
+  margin-top: 5px;
+  color: #0D71B9;
+  font-weight: 600;
+}
+
 .num-contents-two{
   position:absolute;
   left:60px;
@@ -1805,7 +1815,7 @@ background-color: #0D71B9;
 .mobile-popup-right{
   position: absolute;
  
-  min-width:350px;
+  min-width:300px;
   min-height: 150px;
   transform: translateX(0%);
   background-color: #fff;

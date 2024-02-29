@@ -760,7 +760,7 @@ function Optifarmcomingsoon() {
         </div>
         {/* <div className='bubble-three'></div> */}
         <div className='bubble-four'></div>
-        <div className='num-contents'>Website Consultation</div>
+        <div className='num-contents webleft'>Website Consultation</div>
         {hoveredNumber === 1 && <div className="popup">
           <div className='xircular-popup-heading'>Website consultation</div>
           <div className='xircular-popup-textheading'>We will discuss the details of the selected niche, products & brand ideas. After niche discussion, we will find a suitable Shopify store template to start with.</div>
@@ -911,7 +911,7 @@ function Optifarmcomingsoon() {
         </div>
         <div className='bubble-ninetyfive'></div>
         <div className='bubble-ninetysix'></div>
-        <div className="num-contents">Ownership Transfer</div>
+        <div className="num-contents webleft">Ownership Transfer</div>
         {hoveredNumber === 9 && <div className="popup">
         <div className='xircular-popup-heading'>Ownership Transfer</div>
         <div className='xircular-popup-textheading'>At the last stage, we transfer over the ownership to you, from where you can start your e-commerce journey! :).</div>
