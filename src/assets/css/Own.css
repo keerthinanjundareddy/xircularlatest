@@ -303,7 +303,11 @@
 }
 .navbar-nav .nav-link {
   padding-left: 20px !important;
+ 
 
+}
+.navbar-collapse {
+  padding-top: 5px !important;
 }
 }
 
