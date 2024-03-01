@@ -7,7 +7,7 @@ import HomeUrl from '../../isibisiassets/images/home-border.png'
 import isibisilogo from '../../isibisiassets/Userimages/isibisi-removebg-preview.png'
 import home from '../../isibisiassets/Userimages/home.png'
 import { useNavigate } from 'react-router-dom';
-import phone from '../../Ayatanassets/images/phone.png'
+import phone from '../../Ayatanassets/images/call.png'
 
 const Section = () => {
   const [isVideoOpen, setIsVideoOpen] = useState(false);

@@ -19,7 +19,7 @@ import three from "../../Ayatanassets/images/Carosel 14 (3).png";
 import { useNavigate } from 'react-router-dom';
 // import shopify_logo from '../assets/images/Group.png'
 import home from '../../Ayatanassets/images/home.png'
-import phone from '../../Ayatanassets/images/phone.png'
+import phone from '../../Ayatanassets/images/call.png'
 import ayatanalogo from '../../Ayatanassets/images/Ayatana_logo_final_cropped.png'
 function Pricing(){
   const [scrolled, setScrolled] = useState(false);
