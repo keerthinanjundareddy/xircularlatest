@@ -94,7 +94,7 @@ function Footer(){
                               
                                  <div>
                                  <hr className="" />
-                                <p className="copy-rights" style={{textAlign:"center",paddingTop:"5px"}}> 2024 © Copyright Ayatana.All Rights Reserved</p>
+                                <p className="copy-rights" style={{textAlign:"center",paddingTop:"5px"}}> {new Date().getFullYear()} &copy; Copyright Ayatana. All Rights Reserved. </p>
                                 </div>
 
                                 </div>

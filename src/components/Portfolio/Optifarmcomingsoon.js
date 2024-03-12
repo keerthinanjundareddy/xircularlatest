@@ -117,11 +117,11 @@ function Optifarmcomingsoon() {
 
     { title: socialmedia, heading: 'Social media & market places', contenttwo: `We help you reach more audience and potential customers via social media. We have a team of experts who predominantly work on soical media stragies including market place integrations. Whether you have social media accounts or need a new ones, we handle them all.`, bullets: { one: 'TikTok shop', two: 'Instagram shop', three: 'Facebook', four: 'Zalora' } },
 
-    { title: shopifyapps, heading: 'Featureful Shopify Apps', contenttwo: `We have developed numerous apps to help you manage and style your shopify webstore. Most of our shopify apps are available with an affordable price. Do check them out in the ` + <a href='https://apps.shopify.com/'>shopify app store</a> + ` Here are some of our awesome apps:`, bullets: { one: 'Notify', two: 'MobyApp Mobile App Builder', three: 'Form Builder', four: 'RateMe Product review App' } },
+    { title: shopifyapps, heading: 'Featureful Shopify Apps', contenttwo: `We have developed numerous apps to help you manage and style your shopify webstore. Most of our shopify apps are available with an affordable price. Do check them out in the ` + <a href='https://apps.shopify.com/'>shopify app store</a> + ` Here are some of our awesome apps:`, bullets: { one: 'Notify', two: 'StorefrontX: App Builder', three: 'Form Builder', four: 'RateMe Product review App' } },
 
     {
       title: seo, heading: 'Seo & Tracking', contenttwo: `Our in-house experts can fastrack your webstore performance and fine-tune uisng the best strategy. We would otherwise help you integrate your available pixels on the shopify webstore for event tracking. 
-        Shopify provides it's own analytical dashboard to visualize trends. SEO is another essential part of webstore performance. Shopify has a minimalistic stragey in-place for seo but we at RENRGII go beyond shopify and make your webstore more visibile to your customers.`, bullets: { one: 'Pixel tracking', two: 'Analytics', three: 'Seo' }
+        Shopify provides it's own analytical dashboard to visualize trends. SEO is another essential part of webstore performance. Shopify has a minimalistic stragey in-place for seo but we at Xircular go beyond shopify and make your webstore more visibile to your customers.`, bullets: { one: 'Pixel tracking', two: 'Analytics', three: 'Seo' }
     },
     { title: additionalofferings, heading: 'Additional Offerings', contenttwo: `When you partner with us, why settle for less. Shopify's default notification templates may not be suitable for you and therefore we help design the email notification templates which are modern and aligned with your brand. Below are the additional offerings you can enjoy while we are at your service.`, bullets: { one: 'Server management', two: 'Third party apps installation', three: 'Weekly content import support', four: 'Notification template customizations' } },
 
@@ -157,7 +157,7 @@ function Optifarmcomingsoon() {
     },
     {
       question: 'I want mobile apps along with the Shopify website?',
-      answer: 'Sure thing. We are not limited to Shopify, we at renergii provide complete software solutions. ',
+      answer: 'Sure thing. We are not limited to Shopify, we at Xircular, provide complete software solutions. ',
     },
     {
       question: 'What are the Shopify subscription plans?',
@@ -231,7 +231,7 @@ function Optifarmcomingsoon() {
     },
     {
       label: 'Maintenance support',
-      description: `We at renergii will always be happy to help you should you need help with anything while operating the shopify webstore. We have a dedicated support team to work with you on a daily basis whenever you need us to step in.`,
+      description: `We at Xircular will always be happy to help you should you need help with anything while operating the shopify webstore. We have a dedicated support team to work with you on a daily basis whenever you need us to step in.`,
     },
   ];
 
@@ -929,7 +929,7 @@ function Optifarmcomingsoon() {
         <div className='num-contents stores'>Maintenance support</div>
         {hoveredNumber === 10 && <div className="popup">
         <div className='xircular-popup-heading'>Maintenance support</div>
-        <div className='xircular-popup-textheading'>We at renergii will always be happy to help you should you need help with anything while operating the shopify webstore. We have a dedicated support team to work with you on a daily basis whenever you need us to step in.</div>
+        <div className='xircular-popup-textheading'>We at Xircular will always be happy to help you should you need help with anything while operating the shopify webstore. We have a dedicated support team to work with you on a daily basis whenever you need us to step in.</div>
         </div>}
       </div>
       <div className="timeline-event" onMouseEnter={() => handleNumberHover(11)} onMouseLeave={handleNumberLeave} style={{display:"hidden",visibility:"hidden"}}>
@@ -1017,7 +1017,7 @@ function Optifarmcomingsoon() {
 
                 <div>
                   {/* <hr className="" /> */}
-                  <p className="copy-rights" style={{ textAlign: "center", paddingTop: "5px" }}> 2024 © Copyright StorefrontX.All Rights Reserved</p>
+                  <p className="copy-rights" style={{ textAlign: "center", paddingTop: "5px" }}> {new Date().getFullYear()} &copy; Copyright StorefrontX. All Rights Reserved.</p>
                 </div>
 
               </div>

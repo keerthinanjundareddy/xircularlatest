@@ -197,7 +197,7 @@ const GetInTouch = () => {
                                         <Media className="mt-4">
                                             <i className="mdi mdi-phone h4" style={{color:"#f1894c"}}></i>
                                             <Media body className="ml-4">
-                                                <p className="text-muted">Phone: +91 9845116925</p>
+                                                <p className="text-muted">Phone: +91 9480642352</p>
                                                     {/* <br/>Fax: +954-627-9727</p> */}
                                             </Media>
                                         </Media>
