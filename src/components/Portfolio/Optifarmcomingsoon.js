@@ -986,7 +986,7 @@ function Optifarmcomingsoon() {
                 )}
               </div>
             ))}
-          </div>
+          </div> 
         </div>
 
       </div>

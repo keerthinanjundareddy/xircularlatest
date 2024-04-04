@@ -86,7 +86,8 @@ const GetInTouch = () => {
         }
 
 
-        const nameRegex = /^[A-Za-z]+$/;
+        const nameRegex = /^[A-Za-z\s]+$/;
+
         if (!nameRegex.test(name)) {
             setNamerrmsg("Name should contain  only alphabets");
             return; // Stop form submission if name contains non-alphabetic characters
@@ -142,7 +143,7 @@ const GetInTouch = () => {
                 setEmail('');
                 setPhone('');
                 setMessage('');
-               
+                
                
                     }
                     if (res.data.msg === "name can not be empty") {
