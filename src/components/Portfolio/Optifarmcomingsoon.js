@@ -724,7 +724,7 @@ function Optifarmcomingsoon() {
         <div  className='num-contents-mobile'>Maintenance support</div>
         {hoveredNumber === 10 && <div className="mobile-popup-right">
         <div className='xircular-popup-heading'>Maintenance support</div>
-        <div className='xircular-popup-textheading'>We at renergii will always be happy to help you should you need help with anything while operating the shopify webstore. We have a dedicated support team to work with you on a daily basis whenever you need us to step in.</div>
+        <div className='xircular-popup-textheading'>We at Xircular will always be happy to help you should you need help with anything while operating the shopify webstore. We have a dedicated support team to work with you on a daily basis whenever you need us to step in.</div>
         </div>
         }
       </div>

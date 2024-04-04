@@ -39,7 +39,7 @@ class Pricing extends Component {
     state = {
         data : [
             { icon : require("../../assets/images/012-money.png") , title : "Funding", desc : "We provide our startups with the capital they need to bring their ideas to life." },
-            { icon : require("../../assets/images/Brillliant Mind@2x.png"), title : "Talent", desc : "We provide inhouse talents and also help connect our startups to get the first MVP aand scaling." },
+            { icon : require("../../assets/images/Brillliant Mind@2x.png"), title : "Talent", desc : "We provide inhouse talents and also help connect our startups to get the first MVP and scaling." },
             { icon : require("../../assets/images/Hand shake@2x.png"), title : "	Partnerships", desc : "We help our startups build relationships with key players in the ecosystem." },
              { icon :require("../../assets/images/036-like.png"), title : "Validation", desc : "We provide our startups with the feedback and support they need to refine their ideas and make them successful." },
         ]

@@ -177,7 +177,7 @@ function Readmore() {
     },
     {
       question: 'I want mobile apps along with the Shopify website?',
-      answer: 'Sure thing. We are not limited to Shopify, we at renergii provide complete software solutions. ',
+      answer: 'Sure thing. We are not limited to Shopify, we at Xircular provide complete software solutions. ',
     },
     {
       question: 'What are the Shopify subscription plans?',
@@ -251,7 +251,7 @@ function Readmore() {
     },
     {
       label: 'Maintenance support',
-      description: `We at renergii will always be happy to help you should you need help with anything while operating the shopify webstore. We have a dedicated support team to work with you on a daily basis whenever you need us to step in.`,
+      description: `We at Xircular will always be happy to help you should you need help with anything while operating the shopify webstore. We have a dedicated support team to work with you on a daily basis whenever you need us to step in.`,
     },
   ];
 
