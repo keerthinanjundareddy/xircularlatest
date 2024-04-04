@@ -178,7 +178,7 @@ function  GetInTouch() {
               <Col sm="4">
                 <div className="contact-footer-box text-center">
                   <i className="ti-email"></i>
-                  <h5>surender@renergii.com</h5>
+                  {/* <h5>surender@renergii.com</h5> */}
                 </div>
               </Col>
             </Row>
